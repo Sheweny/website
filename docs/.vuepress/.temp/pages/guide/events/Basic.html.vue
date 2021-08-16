@@ -1,13 +1,13 @@
 <template><h1 id="basic-event" tabindex="-1"><a class="header-anchor" href="#basic-event" aria-hidden="true">#</a> Basic event</h1>
-<p>With sapphire each Event must be a class which extends from the <RouterLink to="/doc/Events.html">Event</RouterLink> class</p>
+<p>With sheweny each Event must be a class which extends from the <RouterLink to="/doc/Events.html">Event</RouterLink> class</p>
 <h2 id="import-event" tabindex="-1"><a class="header-anchor" href="#import-event" aria-hidden="true">#</a> Import Event</h2>
 <p>Import the <RouterLink to="/doc/guide/classes/Event.html">Event</RouterLink> :</p>
 <CodeGroup>
 <CodeGroupItem title="CommonJS">
-<div class="language-javascript ext-js line-numbers-mode"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> Event <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"@sapphire/framework"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<div class="language-javascript ext-js line-numbers-mode"><pre v-pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> Event <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"@sheweny/framework"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div></CodeGroupItem>
 <CodeGroupItem title="ESM">
-<div class="language-javascript ext-js line-numbers-mode"><pre v-pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> Event <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"@sapphire/framework"</span><span class="token punctuation">;</span>
+<div class="language-javascript ext-js line-numbers-mode"><pre v-pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> Event <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"@sheweny/framework"</span><span class="token punctuation">;</span>
 </code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div></CodeGroupItem>
 </CodeGroup>
 <h2 id="create-the-event" tabindex="-1"><a class="header-anchor" href="#create-the-event" aria-hidden="true">#</a> Create the Event</h2>

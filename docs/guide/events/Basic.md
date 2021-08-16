@@ -1,6 +1,6 @@
 # Basic event
 
-With sapphire each Event must be a class which extends from the [Event](../../doc/Events.md) class
+With sheweny each Event must be a class which extends from the [Event](../../doc/Events.md) class
 
 ## Import Event
 
@@ -10,14 +10,14 @@ Import the [Event](../../doc/guide/classes/Event.md) :
 ::: code-group-item CommonJS
 
 ```js
-const { Event } = require("@sapphire/framework");
+const { Event } = require("@sheweny/framework");
 ```
 
 :::
 ::: code-group-item ESM
 
 ```js
-import { Event } from "@sapphire/framework";
+import { Event } from "@sheweny/framework";
 ```
 
 :::
@@ -25,7 +25,7 @@ import { Event } from "@sapphire/framework";
 
 ## Create the Event
 
-### Slash-Event
+### guildMemberAdd Event
 
 :::: code-group
 ::: code-group-item JS CommonJS
@@ -33,7 +33,7 @@ import { Event } from "@sapphire/framework";
 ```js
 const { Event } = require("@sheweny/framework");
 
-export class GuildMemberAdd extends Event {
+module.exports = class GuildMemberAdd extends Event {
   constructor(client) {
     super(client, "guildMemberAdd", {
       description: "Member join the guild",
@@ -55,8 +55,8 @@ import type { GuildMember } from "discord.js";
 
 export class GuildMemberAdd extends Event {
   constructor(client: ShewenyClient) {
-    super(client, "ping", {
-      description: "Ping the bot",
+    super(client, "guildMemberAdd", {
+      description: "Member join the guild",
       once: false,
     });
   }
@@ -77,15 +77,15 @@ export class GuildMemberAdd extends Event {
 ```js
 const { Event } = require("@sheweny/framework");
 
-export class GuildMemberAdd extends Event {
+module.exports = class Message extends Event {
   constructor(client) {
-    super(client, "ping", {
-      description: "Ping the bot",
+    super(client, "messageCreate", {
+      description: "Message has created",
       once: false,
     });
   }
-  execute(member) {
-    console.log(member);
+  execute(message) {
+    console.log(message);
   }
 }
 ```
@@ -95,17 +95,17 @@ export class GuildMemberAdd extends Event {
 
 ```ts
 import { Event, ShewenyClient } from "@sheweny/framework";
-import type { GuildMember } from "discord.js";
+import type { Message } from "discord.js";
 
 export class GuildMemberAdd extends Event {
   constructor(client: ShewenyClient) {
-    super(client, "ping", {
-      description: "Ping the bot",
+    super(client, "messageCreate", {
+      description: "Message has created",
       once: false,
     });
   }
-  execute(member: GuildMember) {
-    console.log(member);
+  execute(message: Message) {
+    console.log(message);
   }
 }
 ```
