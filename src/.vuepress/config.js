@@ -18,6 +18,7 @@ module.exports = {
    */
   themeConfig: {
     repo: '',
+    base: 'https://www.sheweny.smaug-6739.com/',
     editLinks: false,
     editLinkText: '',
     lastUpdated: false,
