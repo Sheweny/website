@@ -9,8 +9,9 @@
   },
   "repository": "https://github.com/Discord-util/website/sheweny-website",
   "scripts": {
-    "dev": "vuepress dev src",
-    "build": "vuepress build src"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "docs:build": "vuepress build docs"
   },
   "license": "MIT",
   "devDependencies": {
