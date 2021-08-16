@@ -47,12 +47,12 @@ jobs:
       # @see https://github.com/crazy-max/ghaction-github-pages
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2
-        fqdn: www.sheweny.smaug-6739.com
         with:
           # deploy to gh-pages branch
           target_branch: gh-pages
           # deploy the default output dir of VuePress
           build_dir: src/.vuepress/dist
+          fqdn: www.sheweny.smaug-6739.com
         env:
           # @see https://docs.github.com/en/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
