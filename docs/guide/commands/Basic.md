@@ -1,6 +1,6 @@
 # Basic command
 
-With sapphire each command must be a class which extends from the [Command](../../doc/Command.md) class
+With sheweny each command must be a class which extends from the [Command](../../doc/Command.md) class
 
 ## Import Command
 
@@ -10,14 +10,14 @@ Import the [Command](../../doc/guide/classes/Command.md) :
 ::: code-group-item CommonJS
 
 ```js
-const { Command } = require("@sapphire/framework");
+const { Command } = require("@sheweny/framework");
 ```
 
 :::
 ::: code-group-item ESM
 
 ```js
-import { Command } from "@sapphire/framework";
+import { Command } from "@sheweny/framework";
 ```
 
 :::
@@ -33,7 +33,7 @@ import { Command } from "@sapphire/framework";
 ```js
 const { Command } = require("@sheweny/framework");
 
-export class PingCommand extends Command {
+module.exports = class PingCommand extends Command {
   constructor(client) {
     super(client, "ping", {
       description: "Ping the bot",
@@ -77,7 +77,7 @@ export class PingCommand extends Command {
 ```js
 const { Command } = require("@sheweny/framework");
 
-export class PingCommand extends Command {
+module.exports = class PingCommand extends Command {
   constructor(client) {
     super(client, "ping", {
       description: "Ping the bot",

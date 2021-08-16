@@ -28,7 +28,7 @@ Parameters :
 ```js
 const { Command } = require("@sheweny/framework");
 
-export class PingCommand extends Command {
+module.exports = class PingCommand extends Command {
   constructor(client) {
     super(client, "ping", {
       description: "Ping the bot",
@@ -74,7 +74,7 @@ export class PingCommand extends Command {
 ```js
 const { Command } = require("@sheweny/framework");
 
-export class PingCommand extends Command {
+module.exports = class PingCommand extends Command {
   constructor(client) {
     super(client, "ping", {
       description: "Ping the bot",
