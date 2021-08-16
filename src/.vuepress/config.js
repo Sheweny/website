@@ -5,7 +5,6 @@ module.exports = {
   title: 'Sheweny',
 
   description: description,
-
   head: [
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
@@ -25,7 +24,7 @@ module.exports = {
     docsDir: 'doc',
     displayAllHeaders: true,
     sidebarDepth: 1,
-    nav: [
+    navbar: [
       {
         text: 'Guide',
         link: '/guide/',
@@ -42,13 +41,13 @@ module.exports = {
     sidebar: {
       '/doc/': [
         {
-          title: 'Home',
+          text: 'Home',
           path: '/doc/',      // optional, link of the title, which should be an absolute path and must exist
           collapsable: false, // optional, defaults to true
 
         },
         {
-          title: 'Classes',
+          text: 'Classes',
           path: '/doc/classes',
           collapsable: false,
           children: [
@@ -61,7 +60,7 @@ module.exports = {
           ]
         },
         {
-          title: 'Typedef',
+          text: 'Typedef',
           path: '/doc/typedef',
           collapsable: false,
           children: [
