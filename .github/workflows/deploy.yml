@@ -47,6 +47,7 @@ jobs:
       # @see https://github.com/crazy-max/ghaction-github-pages
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2
+        fqdn: www.sheweny.smaug-6739.com
         with:
           # deploy to gh-pages branch
           target_branch: gh-pages
