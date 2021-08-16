@@ -1,0 +1,19 @@
+{
+  "name": "sheweny-website",
+  "version": "0.0.1",
+  "description": "Website of sheweny framework",
+  "main": "index.js",
+  "authors": {
+    "name": "Raphael",
+    "email": "raphael.veauville@gmail.com"
+  },
+  "repository": "https://github.com/Discord-util/website/sheweny-website",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.8.2"
+  }
+}
