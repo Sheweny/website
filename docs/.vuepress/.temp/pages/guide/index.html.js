@@ -67,17 +67,17 @@ export const data = {
       "title": "Installing a linter",
       "slug": "installing-a-linter",
       "children": []
-    },
-    {
-      "level": 2,
-      "title": "Sumarry",
-      "slug": "sumarry",
-      "children": []
     }
   ],
   "filePathRelative": "guide/README.md",
   "git": {
-    "contributors": []
+    "contributors": [
+      {
+        "name": "Raphael",
+        "email": "veauville.raphael@gmail.com",
+        "commits": 1
+      }
+    ]
   }
 }
 

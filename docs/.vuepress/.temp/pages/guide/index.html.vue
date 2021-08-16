@@ -42,42 +42,4 @@
 <hr>
 <h2 id="installing-a-linter" tabindex="-1"><a class="header-anchor" href="#installing-a-linter" aria-hidden="true">#</a> Installing a linter</h2>
 <p>While you are coding, you may find that you run into numerous syntax errors or code in an inconsistent style. You should install a linter to ease these troubles. While code editors generally can point out syntax errors, with a linter, you can coerce your coding to be in a specific style as you define in the configuration. While this is not required, it's advisable. <RouterLink to="/preparations/setting-up-a-linter.html">Click here for the linter guide!</RouterLink></p>
-<h2 id="sumarry" tabindex="-1"><a class="header-anchor" href="#sumarry" aria-hidden="true">#</a> Sumarry</h2>
-<ul>
-<li><a href="#installation">Installation</a></li>
-<li><RouterLink to="/guide/ShewenyClient.html">ShewenyClient</RouterLink>
-<ul>
-<li><RouterLink to="/guide/ShewenyClient.html#properties">Properties</RouterLink></li>
-<li><RouterLink to="/guide/ShewenyClient.html#events">Events</RouterLink></li>
-</ul>
-</li>
-<li><RouterLink to="/guide/Command.html">Command</RouterLink>
-<ul>
-<li><RouterLink to="/guide/Command.html#methods">Methods</RouterLink></li>
-</ul>
-</li>
-<li><RouterLink to="/guide/CommandsHandler.html">CommandsHandler.md</RouterLink>
-<ul>
-<li><RouterLink to="/guide/CommandsHandler.html#properties">Properties</RouterLink></li>
-<li><RouterLink to="/guide/CommandsHandler.html#methods">Methods</RouterLink></li>
-</ul>
-</li>
-<li><a href="#SlashHandler">SlashHandler.md</a>
-<ul>
-<li><a href="#SlashHandler#properties">Properties</a></li>
-<li><a href="#SlashHandler#methods">Methods</a></li>
-</ul>
-</li>
-<li><RouterLink to="/guide/EventsHandler.html">EventsHandler</RouterLink>
-<ul>
-<li><RouterLink to="/guide/EventsHandler.html#properties">Properties</RouterLink></li>
-<li><RouterLink to="/guide/EventsHandler.html#methods">Methods</RouterLink></li>
-</ul>
-</li>
-<li><RouterLink to="/guide/Event.html">Event</RouterLink>
-<ul>
-<li><RouterLink to="/guide/Event.html#methods">Methods</RouterLink></li>
-</ul>
-</li>
-</ul>
 </template>

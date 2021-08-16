@@ -75,23 +75,3 @@ And that's it! With all the necessities installed, you're almost ready to start 
 ## Installing a linter
 
 While you are coding, you may find that you run into numerous syntax errors or code in an inconsistent style. You should install a linter to ease these troubles. While code editors generally can point out syntax errors, with a linter, you can coerce your coding to be in a specific style as you define in the configuration. While this is not required, it's advisable. [Click here for the linter guide!](/preparations/setting-up-a-linter.md)
-
-## Sumarry
-
-- [Installation](#installation)
-- [ShewenyClient](./ShewenyClient.md)
-  - [Properties](./ShewenyClient.md#properties)
-  - [Events](./ShewenyClient.md#events)
-- [Command](./Command.md)
-  - [Methods](./Command.md#methods)
-- [CommandsHandler.md](./CommandsHandler.md)
-  - [Properties](./CommandsHandler.md#properties)
-  - [Methods](./CommandsHandler.md#methods)
-- [SlashHandler.md](#SlashHandler)
-  - [Properties](#SlashHandler#properties)
-  - [Methods](#SlashHandler#methods)
-- [EventsHandler](./EventsHandler.md)
-  - [Properties](./EventsHandler.md#properties)
-  - [Methods](./EventsHandler.md#methods)
-- [Event](./Event.md)
-  - [Methods](./Event.md#methods)
