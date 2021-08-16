@@ -1,4 +1,4 @@
-<template><h1 id="introduction" tabindex="-1"><a class="header-anchor" href="#introduction" aria-hidden="true">#</a> Introduction</h1>
+<template><h1 id="introductionsss" tabindex="-1"><a class="header-anchor" href="#introductionsss" aria-hidden="true">#</a> Introductionsss</h1>
 <p>If you're reading this, it probably means you want to learn how to make a bot with discord.js. Awesome! You've come to the right place.
 This guide will teach you things such as:</p>
 <ul>
