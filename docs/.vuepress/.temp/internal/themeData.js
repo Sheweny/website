@@ -26,7 +26,10 @@ export const themeData = {
       {
         "text": "Home",
         "path": "/doc/",
-        "collapsable": false
+        "collapsable": false,
+        "children": [
+          "/doc"
+        ]
       },
       {
         "text": "Classes",
@@ -54,7 +57,46 @@ export const themeData = {
           "/doc/typedef/EventOptions.md",
           "/doc/typedef/EventsHandlerOptions.md",
           "/doc/typedef/HandlersOptions.md",
+          "/doc/typedef/ShewenyClientOptions.md",
           "/doc/typedef/SubCommand.md"
+        ]
+      }
+    ],
+    "/guide/": [
+      {
+        "text": "Guide",
+        "collapsable": false,
+        "path": "/guide",
+        "children": [
+          "/guide"
+        ]
+      },
+      {
+        "text": "Getting started",
+        "path": "/guide/getting-started",
+        "collapsable": false,
+        "children": [
+          "/guide/getting-started/Start.md",
+          "/guide/getting-started/ProjectStructure.md",
+          "/guide/getting-started/Client.md"
+        ]
+      },
+      {
+        "text": "Commands",
+        "path": "/guide/commands",
+        "collapsable": false,
+        "children": [
+          "/guide/commands/Basic.md",
+          "/guide/commands/Cooldown.md",
+          "/guide/commands/Permissions.md"
+        ]
+      },
+      {
+        "text": "Events",
+        "path": "/guide/commands",
+        "collapsable": false,
+        "children": [
+          "/guide/events/Basic.md"
         ]
       }
     ]
@@ -82,4 +124,17 @@ export const themeData = {
   "openInNewWindow": "open in new window",
   "toggleDarkMode": "toggle dark mode",
   "toggleSidebar": "toggle sidebar"
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updateThemeData) {
+    __VUE_HMR_RUNTIME__.updateThemeData(themeData)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ themeData }) => {
+    __VUE_HMR_RUNTIME__.updateThemeData(themeData)
+  })
 }
