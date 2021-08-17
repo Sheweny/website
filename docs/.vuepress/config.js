@@ -103,6 +103,7 @@ module.exports = {
             '/guide/commands/Basic.md',
             '/guide/commands/Cooldown.md',
             '/guide/commands/Permissions.md',
+            '/guide/commands/Restrictions.md',
           ]
         },
         {
