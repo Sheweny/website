@@ -1,4 +1,4 @@
-# Command cooldown
+# Command restrictions
 
 You can add restrictions to prevent a command from being executed on a guild or in DMs
 
