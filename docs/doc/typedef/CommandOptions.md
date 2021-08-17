@@ -2,6 +2,8 @@
 
 | Name               | Type                                                                                                      | Description                                                                | Default | Required |
 | ------------------ | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- | ------- | -------- |
+| guildOnly          | [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)       | If the command is on guild only                                            | fase    | No       |
+| DMOnly             | [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)       | If the command is on DM only                                               | false   | No       |
 | description        | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)         | Desription of the command                                                  |         | Yes      |
 | type               | [ApplicationCommandType](https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandType)        | The type of the command                                                    | none    | Yes      |
 | aliases            | Array\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)> | Aliases of the command                                                     | []      | No       |
