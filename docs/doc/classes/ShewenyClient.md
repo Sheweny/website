@@ -92,7 +92,7 @@ Parameters :
 
 - interaction (type : [ContextMenuInteraction](https://discord.js.org/#/docs/main/stable/class/ContextMenuInteraction))
 
-### ShewenyClient#interactionSelectMenuItemCreate
+### ShewenyClient#interactionSelectMenuCreate
 
 Emitted when an select menu interaction is created.
 
