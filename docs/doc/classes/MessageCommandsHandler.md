@@ -35,4 +35,4 @@ Return : String
 Load all commands in directory of commands.
 Note : For load slash-commands you need to use SlashHandler.registerCommands() after.
 
-Return promise Collection\<string, [Command](./Command.md)>
+Return promise Collection\<string, [MessageCommand](../structures/MessageCommand.md)>

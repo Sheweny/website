@@ -14,7 +14,7 @@ Create an handler for bot events. The events can be in as many subfolders as des
 
 Load commands.
 
-Return : Promise<Collection<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [ApplicationCommand](../structures/ApplicationCommand.md)>>;
+Return : Promise<Collection<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [ApplicationCommand](../structures/ApplicationApplicationCommand.md)>>;
 
 ### getData()
 
@@ -28,10 +28,10 @@ Register commands.
 
 Parameters :
 
-| Name     | Type                                                                                                                                                 | Description                    | Default         | Optional |
-| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | --------------- | -------- |
-| commands | Collection\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [Command](../structures/Command.md))> | The commands                   | client.commands | ✓        |
-| guildId  | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                    | The guild to register commands |                 | ✓        |
+| Name     | Type                                                                                                                                                            | Description                    | Default         | Optional |
+| -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | --------------- | -------- |
+| commands | Collection\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [Command](../structures/ApplicationCommand.md))> | The commands                   | client.commands | ✓        |
+| guildId  | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                               | The guild to register commands |                 | ✓        |
 
 Return Promise<Collection<Snowflake, ApplicationCommand>>;
 
@@ -43,7 +43,7 @@ Parameters :
 
 | Name    | Type                                                                                              | Description                   | Default | Optional |
 | ------- | ------------------------------------------------------------------------------------------------- | ----------------------------- | ------- | -------- |
-| command | [Command](../structures/Command.md)                                                               | The command                   |         | No       |
+| command | [Command](../structures/ApplicationCommand.md)                                                    | The command                   |         | No       |
 | guildId | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The guild to register command |         | ✓        |
 
 Return Promise<Collection<Snowflake, ApplicationCommand>>;
@@ -57,7 +57,7 @@ Parameters :
 | Name       | Type                                                                                                           | Description                 | Default | Optional |
 | ---------- | -------------------------------------------------------------------------------------------------------------- | --------------------------- | ------- | -------- |
 | command    | [ApplicationCommandResolvable](https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandResolvable) | The command to edit         |         | no       |
-| newCommand | [Command](../structures/Command.md)                                                                            | The new command             |         | No       |
+| newCommand | [Command](../structures/ApplicationCommand.md)                                                                 | The new command             |         | No       |
 | guildId    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)              | The guild to update command |         | ✓        |
 
 Return Promise<Collection<Snowflake, ApplicationCommand>>;
