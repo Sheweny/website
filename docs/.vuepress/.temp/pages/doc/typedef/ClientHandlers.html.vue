@@ -1,4 +1,4 @@
-<template><h1 id="command-args" tabindex="-1"><a class="header-anchor" href="#command-args" aria-hidden="true">#</a> Command Args</h1>
+<template><h1 id="client-handlers" tabindex="-1"><a class="header-anchor" href="#client-handlers" aria-hidden="true">#</a> Client handlers</h1>
 <table>
 <thead>
 <tr>
@@ -9,14 +9,34 @@
 </thead>
 <tbody>
 <tr>
-<td>commands</td>
-<td><RouterLink to="/doc/CommandsHandler.html">CommandsHandler</RouterLink></td>
-<td>The commands handler</td>
+<td>messageCommands</td>
+<td><RouterLink to="/doc/classes/MessageCommandsHandler.html">CommandsHandler</RouterLink></td>
+<td>The message commands handler</td>
+</tr>
+<tr>
+<td>applicationCommands</td>
+<td><RouterLink to="/doc/classes/ApplicationCommandsHandler.html">ApplicationCommandsHandler</RouterLink></td>
+<td>The application commands handler</td>
 </tr>
 <tr>
 <td>events</td>
-<td><RouterLink to="/doc/EventsHandler.html">EventsHandler</RouterLink></td>
+<td><RouterLink to="/doc/classes/EventsHandler.html">EventsHandler</RouterLink></td>
 <td>The events handler</td>
+</tr>
+<tr>
+<td>buttons</td>
+<td><RouterLink to="/doc/classes/ButtonsHandler.html">ButtonsHandler</RouterLink></td>
+<td>The buttons handler</td>
+</tr>
+<tr>
+<td>selectMenus</td>
+<td><RouterLink to="/doc/classes/SelectMenusHandler.html">SelectMenusHandler</RouterLink></td>
+<td>The selectMenus handler</td>
+</tr>
+<tr>
+<td>inhibitors</td>
+<td><RouterLink to="/doc/classes/InhibitorsHandler.html">InhibitorsHandler</RouterLink></td>
+<td>The inhibitors handler</td>
 </tr>
 </tbody>
 </table>

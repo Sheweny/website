@@ -20,7 +20,7 @@
 </tr>
 <tr>
 <td>handlers</td>
-<td><RouterLink to="/doc/typedef/HandlersOptions.html">HandlersOptions</RouterLink></td>
+<td><RouterLink to="/doc/typedef/ClientHandlersOptions.html">HandlersOptions</RouterLink></td>
 <td>The options for the handlers</td>
 <td></td>
 <td>No</td>

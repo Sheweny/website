@@ -34,7 +34,13 @@ export const data = {
   ],
   "filePathRelative": "guide/getting-started/Client.md",
   "git": {
-    "contributors": []
+    "contributors": [
+      {
+        "name": "Raphael",
+        "email": "veauville.raphael@gmail.com",
+        "commits": 1
+      }
+    ]
   }
 }
 

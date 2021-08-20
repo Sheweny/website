@@ -1,7 +1,7 @@
 export const data = {
   "key": "v-63d85b7e",
   "path": "/doc/classes/ShewenyClient.html",
-  "title": "Sheweny client",
+  "title": "ShewenyClient",
   "lang": "en-US",
   "frontmatter": {},
   "excerpt": "",
@@ -13,29 +13,29 @@ export const data = {
       "children": [
         {
           "level": 3,
-          "title": "ShewenyClient.handlers",
-          "slug": "shewenyclient-handlers",
+          "title": "handlers",
+          "slug": "handlers",
           "children": []
         },
         {
           "level": 3,
-          "title": "ShewenyClient.commands",
-          "slug": "shewenyclient-commands",
+          "title": "commands",
+          "slug": "commands",
           "children": []
         },
         {
           "level": 3,
-          "title": "ShewenyClient.commandsType",
-          "slug": "shewenyclient-commandstype",
-          "children": []
-        },
-        {
-          "level": 3,
-          "title": "ShewenyClient.events",
-          "slug": "shewenyclient-events",
+          "title": "events",
+          "slug": "events",
           "children": []
         }
       ]
+    },
+    {
+      "level": 2,
+      "title": "Events",
+      "slug": "events-1",
+      "children": []
     },
     {
       "level": 2,
@@ -44,14 +44,14 @@ export const data = {
       "children": [
         {
           "level": 3,
-          "title": "ShewenyClient#userMissingPermissions",
-          "slug": "shewenyclient-usermissingpermissions",
+          "title": "userMissingPermissions",
+          "slug": "usermissingpermissions",
           "children": []
         },
         {
           "level": 3,
-          "title": "ShewenyClient#botMissingPermissions",
-          "slug": "shewenyclient-botmissingpermissions",
+          "title": "botMissingPermissions",
+          "slug": "botmissingpermissions",
           "children": []
         }
       ]
@@ -63,8 +63,8 @@ export const data = {
       "children": [
         {
           "level": 3,
-          "title": "ShewenyClient#cooldownLimite",
-          "slug": "shewenyclient-cooldownlimite",
+          "title": "cooldownLimite",
+          "slug": "cooldownlimite",
           "children": []
         }
       ]
@@ -76,32 +76,32 @@ export const data = {
       "children": [
         {
           "level": 3,
-          "title": "ShewenyClient#interactionButtonCreate",
-          "slug": "shewenyclient-interactionbuttoncreate",
+          "title": "interactionButtonCreate",
+          "slug": "interactionbuttoncreate",
           "children": []
         },
         {
           "level": 3,
-          "title": "ShewenyClient#interactionCommmandCreate",
-          "slug": "shewenyclient-interactioncommmandcreate",
+          "title": "interactionCommmandCreate",
+          "slug": "interactioncommmandcreate",
           "children": []
         },
         {
           "level": 3,
-          "title": "ShewenyClient#interactionContextMenuCreate",
-          "slug": "shewenyclient-interactioncontextmenucreate",
+          "title": "interactionContextMenuCreate",
+          "slug": "interactioncontextmenucreate",
           "children": []
         },
         {
           "level": 3,
-          "title": "ShewenyClient#interactionSelectMenuItemCreate",
-          "slug": "shewenyclient-interactionselectmenuitemcreate",
+          "title": "interactionSelectMenuCreate",
+          "slug": "interactionselectmenucreate",
           "children": []
         },
         {
           "level": 3,
-          "title": "ShewenyClient#interactionMessageComponentCreate",
-          "slug": "shewenyclient-interactionmessagecomponentcreate",
+          "title": "interactionMessageComponentCreate",
+          "slug": "interactionmessagecomponentcreate",
           "children": []
         }
       ]
@@ -113,7 +113,7 @@ export const data = {
       {
         "name": "Raphael",
         "email": "veauville.raphael@gmail.com",
-        "commits": 1
+        "commits": 4
       }
     ]
   }

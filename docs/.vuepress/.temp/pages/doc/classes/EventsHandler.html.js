@@ -1,7 +1,7 @@
 export const data = {
   "key": "v-84a266be",
   "path": "/doc/classes/EventsHandler.html",
-  "title": "Events Handler",
+  "title": "EventsHandler",
   "lang": "en-US",
   "frontmatter": {},
   "excerpt": "",
@@ -32,14 +32,14 @@ export const data = {
       "children": [
         {
           "level": 3,
-          "title": "EventsHandler#registerAll()",
-          "slug": "eventshandler-registerall",
+          "title": "EventsHandler#loadAll()",
+          "slug": "eventshandler-loadall",
           "children": []
         },
         {
           "level": 3,
-          "title": "EventsHandler#loadAll()",
-          "slug": "eventshandler-loadall",
+          "title": "EventsHandler#regieterAll()",
+          "slug": "eventshandler-regieterall",
           "children": []
         }
       ]
@@ -51,7 +51,7 @@ export const data = {
       {
         "name": "Raphael",
         "email": "veauville.raphael@gmail.com",
-        "commits": 1
+        "commits": 3
       }
     ]
   }

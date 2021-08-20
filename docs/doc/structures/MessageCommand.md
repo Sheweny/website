@@ -6,7 +6,7 @@ Represents a message command.
 | ------- | ------------------------------------------------------------------------------------------------- | -------------------------- | ------- | -------- |
 | client  | [ShewenyClient](../classes/ShewenyClient.md)                                                      | The client.                | None    | Yes      |
 | name    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The name of the command.   | None    | Yes      |
-| options | [ApplicationCommandOptions](../typedef/ApplicationCommandOptions.md)                              | The options of the command | None    | Yes      |
+| options | [ApplicationCommandOptions](../typedef/CommandOptions.md)                                         | The options of the command | None    | Yes      |
 
 ## Methods
 

@@ -19,8 +19,8 @@ export const data = {
       "children": [
         {
           "level": 3,
-          "title": "Slash-Event",
-          "slug": "slash-event",
+          "title": "guildMemberAdd Event",
+          "slug": "guildmemberadd-event",
           "children": []
         },
         {
@@ -34,7 +34,18 @@ export const data = {
   ],
   "filePathRelative": "guide/events/Basic.md",
   "git": {
-    "contributors": []
+    "contributors": [
+      {
+        "name": "Natchi",
+        "email": "nathan.caron@natchi.fr",
+        "commits": 1
+      },
+      {
+        "name": "Raphael",
+        "email": "veauville.raphael@gmail.com",
+        "commits": 1
+      }
+    ]
   }
 }
 

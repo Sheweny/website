@@ -1,12 +1,12 @@
-# SlashHandler
+# ApplicationCommandsHandler
 
 Create an handler for bot events. The events can be in as many subfolders as desired.
 
 | Name      | Type                                                                                                    | Description                                           | Default | Required |
 | --------- | ------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ------- | -------- |
-| client    | [ShewenyClient](./ShewenyClient.md) or [Client](https://discord.js.org/#/docs/main/stable/class/Client) | The client                                            | None    | Yes      |
-| directory | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)       | The directory of commands                             | None    | Yes      |
-| loadAll   | [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)     | If the loadAll function must be called in constructor | None    | No       |
+| client    | [ShewenyClient](./ShewenyClient.md) or [Client](https://discord.js.org/#/docs/main/stable/class/Client) | The client                                            | None    | ✓        |
+| directory | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)       | The directory of commands                             | None    | ✓        |
+| loadAll   | [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)     | If the loadAll function must be called in constructor | None    | no       |
 
 ## Methods
 
@@ -20,7 +20,7 @@ Return : Promise<Collection<[String](https://developer.mozilla.org/en-US/docs/We
 
 Create an array with all commands data for register it.
 
-Return : [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)<[Applic]>
+Return : [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)<[ApplicationCommandData](https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandData)>
 
 ### [async] registerCommands(commands, guildId)
 
@@ -43,7 +43,7 @@ Parameters :
 
 | Name    | Type                                                                                              | Description                   | Default | Optional |
 | ------- | ------------------------------------------------------------------------------------------------- | ----------------------------- | ------- | -------- |
-| command | [Command](../structures/ApplicationCommand.md)                                                    | The command                   |         | No       |
+| command | [Command](../structures/ApplicationCommand.md)                                                    | The command                   |         | no       |
 | guildId | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The guild to register command |         | ✓        |
 
 Return Promise<Collection<Snowflake, ApplicationCommand>>;
@@ -57,7 +57,7 @@ Parameters :
 | Name       | Type                                                                                                           | Description                 | Default | Optional |
 | ---------- | -------------------------------------------------------------------------------------------------------------- | --------------------------- | ------- | -------- |
 | command    | [ApplicationCommandResolvable](https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandResolvable) | The command to edit         |         | no       |
-| newCommand | [Command](../structures/ApplicationCommand.md)                                                                 | The new command             |         | No       |
+| newCommand | [Command](../structures/ApplicationCommand.md)                                                                 | The new command             |         | no       |
 | guildId    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)              | The guild to update command |         | ✓        |
 
 Return Promise<Collection<Snowflake, ApplicationCommand>>;

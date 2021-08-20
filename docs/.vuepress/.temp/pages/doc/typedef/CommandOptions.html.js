@@ -1,7 +1,7 @@
 export const data = {
   "key": "v-579a73d2",
   "path": "/doc/typedef/CommandOptions.html",
-  "title": "CommandOptions",
+  "title": "ApplicationCommandOptions",
   "lang": "en-US",
   "frontmatter": {},
   "excerpt": "",
@@ -12,7 +12,7 @@ export const data = {
       {
         "name": "Raphael",
         "email": "veauville.raphael@gmail.com",
-        "commits": 1
+        "commits": 2
       }
     ]
   }

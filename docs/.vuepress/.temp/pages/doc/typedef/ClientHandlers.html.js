@@ -1,7 +1,7 @@
 export const data = {
   "key": "v-1d6871f1",
   "path": "/doc/typedef/ClientHandlers.html",
-  "title": "Command Args",
+  "title": "Client handlers",
   "lang": "en-US",
   "frontmatter": {},
   "excerpt": "",
@@ -12,7 +12,7 @@ export const data = {
       {
         "name": "Raphael",
         "email": "veauville.raphael@gmail.com",
-        "commits": 1
+        "commits": 2
       }
     ]
   }

@@ -2,10 +2,10 @@
 
 Create an handler for bot commands. The commands can be in as many subfolders as desired.
 
-| Name    | Type                                                          | Description               | Default | Required |
-| ------- | ------------------------------------------------------------- | ------------------------- | ------- | -------- |
-| client  | [ShewenyClientOptions](./ShewenyClient.md)                    | The client                | None    | Yes      |
-| options | [CommandsHandlerOptions](./typedef/CommandsHandlerOptions.md) | The directory of commands | None    | Yes      |
+| Name    | Type                                                                | Description               | Default | Required |
+| ------- | ------------------------------------------------------------------- | ------------------------- | ------- | -------- |
+| client  | [ShewenyClientOptions](./ShewenyClient.md)                          | The client                | None    | Yes      |
+| options | [CommandsHandlerOptions](./typedef/MessageCommandHandlerOptions.md) | The directory of commands | None    | Yes      |
 
 ## Properties
 

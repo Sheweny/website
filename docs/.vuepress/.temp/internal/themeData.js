@@ -36,12 +36,26 @@ export const themeData = {
         "path": "/doc/classes",
         "collapsable": false,
         "children": [
-          "/doc/classes/ShewenyClient.md",
-          "/doc/classes/Command.md",
-          "/doc/classes/Event.md",
-          "/doc/classes/CommandsHandler.md",
+          "/doc/classes/ApplicationCommandsHandler.md",
+          "/doc/classes/ButtonsHandler.md",
           "/doc/classes/EventsHandler.md",
-          "/doc/classes/SlashHandler.md"
+          "/doc/classes/InhibitorsHandler.md",
+          "/doc/classes/MessageCommandsHandler.md",
+          "/doc/classes/SelectMenusHandler.md",
+          "/doc/classes/ShewenyClient.md"
+        ]
+      },
+      {
+        "text": "Structures",
+        "path": "/doc/structures",
+        "collapsable": false,
+        "children": [
+          "/doc/structures/ApplicationCommand.md",
+          "/doc/structures/Button.md",
+          "/doc/structures/Event.md",
+          "/doc/structures/Inhibitor.md",
+          "/doc/structures/MessageCommand.md",
+          "/doc/structures/SelectMenu.md"
         ]
       },
       {
@@ -49,16 +63,18 @@ export const themeData = {
         "path": "/doc/typedef",
         "collapsable": false,
         "children": [
+          "/doc/typedef/ClientCommandsManager.md",
           "/doc/typedef/ClientHandlers.md",
-          "/doc/typedef/CommandArg.md",
+          "/doc/typedef/ClientHandlersOptions.md",
+          "/doc/typedef/CommandOptionsOnly.md",
           "/doc/typedef/CommandOptions.md",
-          "/doc/typedef/CommandsHandlerOptions.md",
-          "/doc/typedef/CommandTypeResolvable.md",
           "/doc/typedef/EventOptions.md",
           "/doc/typedef/EventsHandlerOptions.md",
-          "/doc/typedef/HandlersOptions.md",
-          "/doc/typedef/ShewenyClientOptions.md",
-          "/doc/typedef/SubCommand.md"
+          "/doc/typedef/HandlerOptions.md",
+          "/doc/typedef/InhibitorOptions.md",
+          "/doc/typedef/InhibitorTypeResolvable.md",
+          "/doc/typedef/MessageCommandHandlerOptions.md",
+          "/doc/typedef/ShewenyClientOptions.md"
         ]
       }
     ],
@@ -88,7 +104,8 @@ export const themeData = {
         "children": [
           "/guide/commands/Basic.md",
           "/guide/commands/Cooldown.md",
-          "/guide/commands/Permissions.md"
+          "/guide/commands/Permissions.md",
+          "/guide/commands/Restrictions.md"
         ]
       },
       {

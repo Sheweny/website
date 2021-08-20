@@ -12,7 +12,7 @@ export const data = {
       {
         "name": "Raphael",
         "email": "veauville.raphael@gmail.com",
-        "commits": 1
+        "commits": 2
       }
     ]
   }

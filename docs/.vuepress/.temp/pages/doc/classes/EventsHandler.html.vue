@@ -1,4 +1,4 @@
-<template><h1 id="events-handler" tabindex="-1"><a class="header-anchor" href="#events-handler" aria-hidden="true">#</a> Events Handler</h1>
+<template><h1 id="eventshandler" tabindex="-1"><a class="header-anchor" href="#eventshandler" aria-hidden="true">#</a> EventsHandler</h1>
 <p>Create an handler for bot events. The events can be in as many subfolders as desired.</p>
 <table>
 <thead>
@@ -25,6 +25,13 @@
 <td>None</td>
 <td>Yes</td>
 </tr>
+<tr>
+<td>loadAll</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank" rel="noopener noreferrer">Boolean<OutboundLink/></a></td>
+<td>If handler load all in constructor</td>
+<td>None</td>
+<td>No</td>
+</tr>
 </tbody>
 </table>
 <h2 id="properties" tabindex="-1"><a class="header-anchor" href="#properties" aria-hidden="true">#</a> Properties</h2>
@@ -35,10 +42,31 @@
 <p>The directory of events.</p>
 <p>Return : String</p>
 <h2 id="methods" tabindex="-1"><a class="header-anchor" href="#methods" aria-hidden="true">#</a> Methods</h2>
-<h3 id="eventshandler-registerall" tabindex="-1"><a class="header-anchor" href="#eventshandler-registerall" aria-hidden="true">#</a> EventsHandler#registerAll()</h3>
+<h3 id="eventshandler-loadall" tabindex="-1"><a class="header-anchor" href="#eventshandler-loadall" aria-hidden="true">#</a> EventsHandler#loadAll()</h3>
 <p>Regsiter all events in client.events Collection.</p>
 <p>Return promise Collection&lt;string, <RouterLink to="/doc/classes/Event.html">Event</RouterLink>&gt;</p>
-<h3 id="eventshandler-loadall" tabindex="-1"><a class="header-anchor" href="#eventshandler-loadall" aria-hidden="true">#</a> EventsHandler#loadAll()</h3>
-<p>Load registereds events and register them if no events exist.</p>
+<h3 id="eventshandler-regieterall" tabindex="-1"><a class="header-anchor" href="#eventshandler-regieterall" aria-hidden="true">#</a> EventsHandler#regieterAll()</h3>
+<p>Register loaded events and register them if no events exist.</p>
+<p>Parameters :</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+<th>Optional</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>events</td>
+<td>Collection&lt;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank" rel="noopener noreferrer">String<OutboundLink/></a>, <RouterLink to="/doc/structures/Command.html">Command</RouterLink>)&gt;</td>
+<td>The events</td>
+<td>client.events</td>
+<td>✓</td>
+</tr>
+</tbody>
+</table>
 <p>Return Promise&lt;undefined&gt;</p>
 </template>

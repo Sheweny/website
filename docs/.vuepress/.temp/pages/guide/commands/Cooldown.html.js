@@ -21,7 +21,18 @@ export const data = {
   ],
   "filePathRelative": "guide/commands/Cooldown.md",
   "git": {
-    "contributors": []
+    "contributors": [
+      {
+        "name": "Natchi",
+        "email": "nathan.caron@natchi.fr",
+        "commits": 1
+      },
+      {
+        "name": "Raphael",
+        "email": "veauville.raphael@gmail.com",
+        "commits": 1
+      }
+    ]
   }
 }
 

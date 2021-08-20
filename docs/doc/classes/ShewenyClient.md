@@ -22,19 +22,15 @@ Commands manager
 
 Return : [ClientCommandsManager](../typedef/ClientCommandsManager.md)
 
-### commandsType
-
-The type of the commands (MESSAGE_COMMANDS or SLASH_COMMANDS)
-
-Return : [CommandTypeResolvable](../typedef/CommandTypeResolvable.md) .
-
 ### events
 
 A collection of commands or undefined if no command handler provided
 
 Return : Collection\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [Event](./Event.md)>.
 
-# Events
+## Events
+
+---
 
 ## Events permissions
 

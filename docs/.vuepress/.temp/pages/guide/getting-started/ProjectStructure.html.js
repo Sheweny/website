@@ -27,7 +27,13 @@ export const data = {
   ],
   "filePathRelative": "guide/getting-started/ProjectStructure.md",
   "git": {
-    "contributors": []
+    "contributors": [
+      {
+        "name": "Raphael",
+        "email": "veauville.raphael@gmail.com",
+        "commits": 1
+      }
+    ]
   }
 }
 

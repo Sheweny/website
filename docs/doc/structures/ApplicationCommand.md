@@ -6,7 +6,7 @@ Represents an application command.
 | ------- | -------------------------------------------------------------------------------------------------- | -------------------------- | ------- | -------- |
 | client  | [ShewenyClient](../classes/ShewenyClient.md)                                                       | The client.                | None    | Yes      |
 | data    | [ApplicationCommandData](https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandData) | The data of command.       | None    | Yes      |
-| options | [ApplicationCommandOptions](../typedef/ApplicationCommandOptions.md)                               | The options of the command | None    | Yes      |
+| options | [ApplicationCommandOptions](../typedef/CommandOptions.md)                                          | The options of the command | None    | Yes      |
 
 ## Methods
 
