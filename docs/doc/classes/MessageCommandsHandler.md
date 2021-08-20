@@ -9,20 +9,20 @@ Create an handler for bot commands. The commands can be in as many subfolders as
 
 ## Properties
 
-### CommandsHandler.client
+### client
 
 The client of framework.
 
 Return : [ShewenyClientOptions](./ShewenyClient.md)
 
-### CommandsHandler.slashCommands
+### slashCommands
 
 The slash commands manager.
 Note this is only available when options.type is SLASH_COMMANDS
 
 Return : [SlashHandler](./SlashHandler.md)
 
-### CommandsHandler.directory
+### directory
 
 The directory of commands.
 
@@ -30,7 +30,7 @@ Return : String
 
 ## Methods
 
-### CommandsHandler#loadAll()
+### loadAll()
 
 Load all commands in directory of commands.
 Note : For load slash-commands you need to use SlashHandler.registerCommands() after.

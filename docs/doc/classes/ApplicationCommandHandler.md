@@ -2,25 +2,19 @@
 
 Create an handler for bot events. The events can be in as many subfolders as desired.
 
-| Name   | Type                                | Description | Default | Required |
-| ------ | ----------------------------------- | ----------- | ------- | -------- |
-| client | [ShewenyClient](./ShewenyClient.md) | The client  | None    | Yes      |
-
-## Properties
-
-### client
-
-The client of framework.
-
-Return : [ShewenyClient](./ShewenyClient.md)
-
-### commands
-
-The commands of bot.
-
-Return : String
+| Name      | Type                                                                                                    | Description                                           | Default | Required |
+| --------- | ------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ------- | -------- |
+| client    | [ShewenyClient](./ShewenyClient.md) or [Client](https://discord.js.org/#/docs/main/stable/class/Client) | The client                                            | None    | Yes      |
+| directory | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)       | The directory of commands                             | None    | Yes      |
+| loadAll   | [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)     | If the loadAll function must be called in constructor | None    | No       |
 
 ## Methods
+
+### [async] loadAll()
+
+Load commands.
+
+Return : Promise<Collection<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [ApplicationCommand](../structures/ApplicationCommand.md)>>;
 
 ### getData()
 
@@ -37,7 +31,7 @@ Parameters :
 | Name     | Type                                                                                                                                                 | Description                    | Default         | Optional |
 | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | --------------- | -------- |
 | commands | Collection\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [Command](../structures/Command.md))> | The commands                   | client.commands | ✓        |
-| guildId  | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                    | The guild to register commands | None            | ✓        |
+| guildId  | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                    | The guild to register commands |                 | ✓        |
 
 Return Promise<Collection<Snowflake, ApplicationCommand>>;
 
@@ -50,7 +44,7 @@ Parameters :
 | Name    | Type                                                                                              | Description                   | Default | Optional |
 | ------- | ------------------------------------------------------------------------------------------------- | ----------------------------- | ------- | -------- |
 | command | [Command](../structures/Command.md)                                                               | The command                   |         | No       |
-| guildId | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The guild to register command | None    | ✓        |
+| guildId | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The guild to register command |         | ✓        |
 
 Return Promise<Collection<Snowflake, ApplicationCommand>>;
 
@@ -62,9 +56,9 @@ Parameters :
 
 | Name       | Type                                                                                                           | Description                 | Default | Optional |
 | ---------- | -------------------------------------------------------------------------------------------------------------- | --------------------------- | ------- | -------- |
-| command    | [ApplicationCommandResolvable](https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandResolvable) | The command to edit         | None    | no       |
+| command    | [ApplicationCommandResolvable](https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandResolvable) | The command to edit         |         | no       |
 | newCommand | [Command](../structures/Command.md)                                                                            | The new command             |         | No       |
-| guildId    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)              | The guild to update command | None    | ✓        |
+| guildId    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)              | The guild to update command |         | ✓        |
 
 Return Promise<Collection<Snowflake, ApplicationCommand>>;
 
@@ -76,8 +70,8 @@ Parameters :
 
 | Name    | Type                                                                                                           | Description                 | Default | Optional |
 | ------- | -------------------------------------------------------------------------------------------------------------- | --------------------------- | ------- | -------- |
-| command | [ApplicationCommandResolvable](https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandResolvable) | The command to delete       | None    | no       |
-| guildId | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)              | The guild to delete command | None    | ✓        |
+| command | [ApplicationCommandResolvable](https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandResolvable) | The command to delete       |         | no       |
+| guildId | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)              | The guild to delete command |         | ✓        |
 
 Return Promise<Collection<Snowflake, ApplicationCommand>>;
 
@@ -89,6 +83,6 @@ Parameters :
 
 | Name    | Type                                                                                              | Description                 | Default | Optional |
 | ------- | ------------------------------------------------------------------------------------------------- | --------------------------- | ------- | -------- |
-| guildId | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The guild to delete command | None    | ✓        |
+| guildId | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The guild to delete command |         | ✓        |
 
 Return Promise<Collection<Snowflake, ApplicationCommand>>;

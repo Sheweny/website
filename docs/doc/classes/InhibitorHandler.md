@@ -2,11 +2,11 @@
 
 Create an handler for bot inhibitors. The inhibitors can be in as many subfolders as desired.
 
-| Name        | Type                                                                                                | Description                        | Default | Required |
-| ----------- | --------------------------------------------------------------------------------------------------- | ---------------------------------- | ------- | -------- |
-| directory   | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The directory of inhibitors        | None    | Yes      |
-| client      | [ShewenyClientOptions](./ShewenyClient.md)                                                          | The client                         | None    | No       |
-| registerAll | [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | If handler load all in constructor | None    | No       |
+| Name      | Type                                                                                                | Description                        | Default | Required |
+| --------- | --------------------------------------------------------------------------------------------------- | ---------------------------------- | ------- | -------- |
+| directory | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The directory of inhibitors        | None    | Yes      |
+| client    | [ShewenyClientOptions](./ShewenyClient.md)                                                          | The client                         | None    | No       |
+| loadAll   | [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | If handler load all in constructor | None    | No       |
 
 ## Properties
 
@@ -24,7 +24,7 @@ Return : String
 
 ## Methods
 
-### registerAll()
+### loadAll()
 
 Load all inhibitors in directory of inhibitors.
 
