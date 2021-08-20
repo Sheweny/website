@@ -1,4 +1,4 @@
-# Sheweny client
+# ShewenyClient
 
 The Sheweny framework client.
 

@@ -1,4 +1,4 @@
-# Events Handler
+# EventsHandler
 
 Create an handler for bot events. The events can be in as many subfolders as desired.
 
