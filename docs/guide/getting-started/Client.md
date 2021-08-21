@@ -2,7 +2,7 @@
 
 ## Import ShewenyClient
 
-Import the class [ShewenyClient](../../doc/classes/ShewenyClient.md) from library.
+Import the [ShewenyClient](../../doc/classes/ShewenyClient.md) class from library.
 
 ### Using CommonJS syntax
 

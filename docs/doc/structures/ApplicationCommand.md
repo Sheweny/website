@@ -1,4 +1,4 @@
-# Command
+# ApplicationCommand
 
 Represents an application command.
 
@@ -19,8 +19,6 @@ Parameters :
 | Name        | Type                                                                                     | Description     |
 | ----------- | ---------------------------------------------------------------------------------------- | --------------- |
 | interaction | [CommandInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction) | The interaction |
-
-Return true
 
 ### [abstract] execute()
 

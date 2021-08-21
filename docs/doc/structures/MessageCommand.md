@@ -1,4 +1,4 @@
-# Command
+# MessageCommand
 
 Represents a message command.
 
@@ -20,8 +20,6 @@ Parameters :
 | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
 | message | [Message](https://discord.js.org/#/docs/main/stable/class/Message)                                                                                                                                 | The message              |
 | args    | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)> | The arguments of command |
-
-Return true
 
 ### [abstract] execute()
 

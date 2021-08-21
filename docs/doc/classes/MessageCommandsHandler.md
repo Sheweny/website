@@ -1,4 +1,4 @@
-# CommandsHandler
+# MessageCommandsHandler
 
 Create an handler for bot commands. The commands can be in as many subfolders as desired.
 

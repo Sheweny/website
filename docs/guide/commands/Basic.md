@@ -1,64 +1,80 @@
 # Basic command
 
-With sheweny each command must be a class which extends from the [Command](../../doc/Command.md) class
+With sheweny each command must be a class which extends from the [ApplicationCommand](../../doc/structures/ApplicationCommand.md) for slash-commands and context-menus or [MessageCommand](../../doc/structures/MessageCommand.md) for message commands.class
 
 ## Import Command
 
-Import the [Command](../../doc/guide/classes/Command.md) :
+Import the [ApplicationCommand](../../doc/structures/ApplicationCommand.md) or [MessageCommand](../../doc/structures/MessageCommand.md) class:
 
 :::: code-group
 ::: code-group-item CommonJS
 
 ```js
-const { Command } = require("@sheweny/framework");
+const { ApplicationCommand, MessageCommand } = require("@sheweny/framework");
 ```
 
 :::
 ::: code-group-item ESM
 
 ```js
-import { Command } from "@sheweny/framework";
+import { ApplicationCommand, MessageCommand } from "@sheweny/framework";
 ```
 
 :::
 ::::
 
-## Create the command
+## Application Command
 
 ### Slash-command
+
+::: tip
+Command applications can be: slash-commands or context-menus.
+:::
 
 :::: code-group
 ::: code-group-item JS CommonJS
 
 ```js
-const { Command } = require("@sheweny/framework");
+const { ApplicationCommand } = require("@sheweny/framework");
 
-module.exports = class PingCommand extends Command {
+module.exports = class PingCommand extends ApplicationCommand {
   constructor(client) {
-    super(client, "ping", {
-      description: "Ping the bot",
-      category: "Misc",
-    });
+    super(
+      client,
+      {
+        name: "ping",
+        description: "Ping the bot",
+      },
+      {
+        category: "Misc",
+      }
+    );
   }
   execute(interaction) {
     interaction.reply("Pong !");
   }
-}
+};
 ```
 
 :::
 ::: code-group-item TS ES Modules
 
 ```ts
-import { Command, ShewenyClient } from "@sheweny/framework";
+import { ApplicationCommand, ShewenyClient } from "@sheweny/framework";
 import type { CommandInteraction } from "discord.js";
 
-export class PingCommand extends Command {
+export class PingCommand extends ApplicationCommand {
   constructor(client: ShewenyClient) {
-    super(client, "ping", {
-      description: "Ping the bot",
-      category: "Misc",
-    });
+    super(
+      client,
+      {
+        name: "ping",
+        description: "Ping the bot",
+      },
+      {
+        category: "Misc",
+      }
+    );
   }
   execute(interaction: CommandInteraction) {
     interaction.reply("Pong !");
@@ -69,15 +85,69 @@ export class PingCommand extends Command {
 :::
 ::::
 
-### Message command
+### Context-menu
 
 :::: code-group
 ::: code-group-item JS CommonJS
 
 ```js
-const { Command } = require("@sheweny/framework");
+const { ApplicationCommand } = require("@sheweny/framework");
 
-module.exports = class PingCommand extends Command {
+module.exports = class PingUserCommand extends ApplicationCommand {
+  constructor(client) {
+    super(
+      client,
+      {
+        name: "ping-user",
+        description: "Send ping to a user",
+        type: "USER",
+      },
+      { category: "Misc" }
+    );
+  }
+  execute(interaction) {
+    message.channel.send({ content: `Pong <@${interaction.targetId}> !` });
+  }
+};
+```
+
+:::
+::: code-group-item TS ES Modules
+
+```ts
+import { ApplicationCommand, ShewenyClient } from "@sheweny/framework";
+import type { ContextMenuInteraction } from "discord.js";
+
+export class PingUserCommand extends ApplicationCommand {
+  constructor(client: ShewenyClient) {
+    super(
+      client,
+      {
+        name: "ping-user",
+        description: "Send ping to a user",
+        type: "USER",
+      },
+      { category: "Misc" }
+    );
+  }
+  execute(interaction: ContextMenuInteraction) {
+    message.channel.send({ content: `Pong <@${interaction.targetId}> !` });
+  }
+}
+```
+
+:::
+::::
+
+## Message command
+
+:::: code-group
+::: code-group-item JS CommonJS
+
+```js
+const { MessageCommand } = require("@sheweny/framework");
+
+module.exports = class PingCommand extends MessageCommand {
   constructor(client) {
     super(client, "ping", {
       description: "Ping the bot",
@@ -87,17 +157,17 @@ module.exports = class PingCommand extends Command {
   execute(message) {
     message.channel.send({ content: "Pong !" });
   }
-}
+};
 ```
 
 :::
 ::: code-group-item TS ES Modules
 
 ```ts
-import { Command, ShewenyClient } from "@sheweny/framework";
+import { MessageCommand, ShewenyClient } from "@sheweny/framework";
 import type { Message } from "discord.js";
 
-export class PingCommand extends Command {
+export class PingCommand extends MessageCommand {
   constructor(client: ShewenyClient) {
     super(client, "ping", {
       description: "Ping the bot",
