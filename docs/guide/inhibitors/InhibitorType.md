@@ -11,3 +11,7 @@ For inhibitors you can choose different types :
 - `SELECT_MENU` : Inhibitors for select-menus.
 
 - `ALL` : Inhibitors for all types.
+
+::: warning
+The inhibitors types must be an array of this types
+:::

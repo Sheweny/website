@@ -8,6 +8,14 @@ Represents a event.
 | name    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The name of the event.   | None    | Yes      |
 | options | [EventOptions](../typedef/EventOptions.md)                                                        | The options of the event | None    | Yes      |
 
+## Properties
+
+- `client` - The client.
+- `path` - The file path of the event.
+- `name` - The name of the event.
+- `description` - The description of the event.
+- `once` - If event is executed once.
+
 ## Methods
 
 ### unregister()

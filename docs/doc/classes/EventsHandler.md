@@ -2,11 +2,11 @@
 
 Create an handler for bot events. The events can be in as many subfolders as desired.
 
-| Name      | Type                                                                                                | Description                        | Default | Required |
-| --------- | --------------------------------------------------------------------------------------------------- | ---------------------------------- | ------- | -------- |
-| client    | [ShewenyClientOptions](./ShewenyClient.md)                                                          | The client                         | None    | Yes      |
-| directory | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The directory of events            | None    | Yes      |
-| loadAll   | [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | If handler load all in constructor | None    | No       |
+| Name      | Type                                                                                                    | Description                        | Default | Required |
+| --------- | ------------------------------------------------------------------------------------------------------- | ---------------------------------- | ------- | -------- |
+| client    | [ShewenyClient](./ShewenyClient.md) or [Client](https://discord.js.org/#/docs/main/stable/class/Client) | The client                         | None    | Yes      |
+| directory | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)       | The directory of events            | None    | Yes      |
+| loadAll   | [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)     | If handler load all in constructor | None    | No       |
 
 ## Properties
 
@@ -14,7 +14,7 @@ Create an handler for bot events. The events can be in as many subfolders as des
 
 The client of framework.
 
-Return : [ShewenyClientOptions](./ShewenyClient.md)
+Return : [ShewenyClient](./ShewenyClient.md) or [Client](https://discord.js.org/#/docs/main/stable/class/Client)
 
 ### EventsHandler.directory
 

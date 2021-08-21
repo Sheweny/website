@@ -24,45 +24,29 @@ Return : [ClientCommandsManager](../typedef/ClientCommandsManager.md)
 
 ### events
 
-A collection of commands or undefined if no command handler provided
+A collection of events or undefined if events are not loadeds
 
-Return : Collection\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [Event](./Event.md)>.
+Return : Collection\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [Event](../structures/Event.md)> or undefined.
+
+### buttons
+
+A collection of buttons or undefined if buttons are not loadeds
+
+Return : Collection\<[Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>, [Button](../structures/Button.md)> or undefined.
+
+### selectMenus
+
+A collection of commands or undefined if select-menus are not loadeds
+
+Return : Collection\<[Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>, [SelectMenu](../structures/selectMenu.md)> or undefined.
+
+### inhibitors
+
+A collection of commands or undefined if select-menus are not loadeds
+
+Return : Collection\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [Inhibitor](../structures/Inhibitor.md)> or undefined.
 
 ## Events
-
----
-
-## Events permissions
-
-### userMissingPermissions
-
-Emitted when an user missing permission for a command.
-
-Parameters :
-
-- interaction or message (if bot use slash-commands or not) (type : [Interaction](https://discord.js.org/#/docs/main/stable/class/Interaction) or [Message](https://discord.js.org/#/docs/main/stable/class/Message))
-- missing (type : [Array\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>)
-
-### botMissingPermissions
-
-Emitted when bot missing permission for a command.
-
-Parameters :
-
-- interaction or message (if bot use slash-commands or not) (type : [Interaction](https://discord.js.org/#/docs/main/stable/class/Interaction) or [Message](https://discord.js.org/#/docs/main/stable/class/Message))
-- missing (type : [Array\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>)
-
-## Events cooldowns
-
-### cooldownLimite
-
-Emitted when command cooldown limit is reached.
-
-Parameters :
-
-- interaction or message (if bot use slash-commands or not) (type : [Interaction](https://discord.js.org/#/docs/main/stable/class/Interaction) or [Message](https://discord.js.org/#/docs/main/stable/class/Message))
-
-## Events interactions
 
 ### interactionButtonCreate
 
@@ -78,7 +62,7 @@ Emitted when an slash-command is created.
 
 Parameters :
 
-- interaction (type : [CommandInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction))
+- interaction (type : [CommandInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction) or [ContextMenuInteraction](https://discord.js.org/#/docs/main/stable/class/ContextMenuInteraction)))
 
 ### interactionContextMenuCreate
 

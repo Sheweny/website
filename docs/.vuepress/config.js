@@ -29,12 +29,12 @@ module.exports = {
     sidebarDepth: 1,
     navbar: [
       {
-        text: "Guide",
-        link: "/guide/",
-      },
-      {
         text: "Ducumentation",
         link: "/doc/",
+      },
+      {
+        text: "Guide",
+        link: "/guide/",
       },
       {
         text: "Github",
@@ -47,7 +47,7 @@ module.exports = {
           text: "Home",
           path: "/doc/", // optional, link of the title, which should be an absolute path and must exist
           collapsable: false, // optional, defaults to true
-          children: ["/doc"],
+          children: ["/doc/README.md"],
         },
         {
           text: "Classes",
@@ -88,7 +88,6 @@ module.exports = {
             "/doc/typedef/CommandOptionsOnly.md",
             "/doc/typedef/CommandOptions.md",
             "/doc/typedef/EventOptions.md",
-            "/doc/typedef/EventsHandlerOptions.md",
             "/doc/typedef/HandlerApplicationCommandOptions.md",
             "/doc/typedef/InhibitorOptions.md",
             "/doc/typedef/InhibitorTypeResolvable.md",
@@ -102,7 +101,7 @@ module.exports = {
           text: "Guide",
           collapsable: false, // optional, defaults to true
           path: "/guide",
-          children: ["/guide"],
+          children: ["/guide/README.md"],
         },
         {
           text: "Getting started",

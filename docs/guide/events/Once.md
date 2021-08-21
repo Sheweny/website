@@ -16,7 +16,7 @@ module.exports = class Ready extends Event {
     });
   }
   execute(client) {
-    console.log(`Logged in as ${client.user.tag}!`);
+    console.log("The client is logged in");
   }
 };
 ```
@@ -36,7 +36,7 @@ export class Ready extends Event {
     });
   }
   execute(client: Client) {
-    console.log(`Logged in as ${client.user.tag}!`);
+    console.log("The client is logged in");
   }
 }
 ```

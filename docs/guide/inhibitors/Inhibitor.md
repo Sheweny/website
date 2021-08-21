@@ -21,7 +21,7 @@ const { Inhibitor } = require('@sheweny/framework')
 module.exports =  class BlackListInhibitor extends Inhibitor {
   constructor(client) {
     super(client, "blacklist", {
-      type: "APPLICATION_COMMAND",
+      type: ["APPLICATION_COMMAND"],
     });
   }
   execute(client, interaction) {
@@ -44,7 +44,7 @@ import type { CommandInteraction } from "discord.js";
 export class BlackListInhibitor extends Inhibitor {
   constructor(client: ShewenyClient) {
     super(client, "blacklist", {
-      type: "APPLICATION_COMMAND",
+      type: ["APPLICATION_COMMAND"],
     });
   }
   execute(client: ShewenyClient, interaction: CommandInteraction) {

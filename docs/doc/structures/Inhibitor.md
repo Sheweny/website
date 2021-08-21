@@ -8,6 +8,14 @@ Represents a inhibitor.
 | name    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The name of the inhibitor.   | None    | Yes      |
 | options | [InhibitorOptions](../typedef/InhibitorOptions.md)                                                | The options of the inhibitor | None    | Yes      |
 
+## Properties
+
+- `client` - The client.
+- `path` - The file path of the event.
+- `name` - The name of the event.
+- `type` - The type of the inhibitor.
+- `priority` - The priority of the inhibitor.
+
 ## Methods
 
 ### unregister()

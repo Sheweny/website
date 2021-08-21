@@ -2,10 +2,10 @@
 
 Create an handler for bot commands. The commands can be in as many subfolders as desired.
 
-| Name    | Type                                                                | Description               | Default | Required |
-| ------- | ------------------------------------------------------------------- | ------------------------- | ------- | -------- |
-| client  | [ShewenyClientOptions](./ShewenyClient.md)                          | The client                | None    | Yes      |
-| options | [CommandsHandlerOptions](./typedef/MessageCommandHandlerOptions.md) | The directory of commands | None    | Yes      |
+| Name    | Type                                                                                                    | Description               | Default | Required |
+| ------- | ------------------------------------------------------------------------------------------------------- | ------------------------- | ------- | -------- |
+| client  | [ShewenyClient](./ShewenyClient.md) or [Client](https://discord.js.org/#/docs/main/stable/class/Client) | The client                | None    | Yes      |
+| options | [CommandsHandlerOptions](./typedef/MessageCommandHandlerOptions.md)                                     | The directory of commands | None    | Yes      |
 
 ## Properties
 
@@ -13,7 +13,7 @@ Create an handler for bot commands. The commands can be in as many subfolders as
 
 The client of framework.
 
-Return : [ShewenyClientOptions](./ShewenyClient.md)
+Return : [ShewenyClient](./ShewenyClient.md) or [Client](https://discord.js.org/#/docs/main/stable/class/Client)
 
 ### slashCommands
 
@@ -36,3 +36,37 @@ Load all commands in directory of commands.
 Note : For load slash-commands you need to use SlashHandler.registerCommands() after.
 
 Return promise Collection\<string, [MessageCommand](../structures/MessageCommand.md)>
+
+## Events
+
+### userMissingPermissions
+
+Emitted when user missing permissions.
+
+Parameters :
+
+| Name        | Type                                                                                              | Description                    |
+| ----------- | ------------------------------------------------------------------------------------------------- | ------------------------------ |
+| interaction | [Message](https://discord.js.org/#/docs/main/stable/class/Message)                                | The message                    |
+| missing     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The name of missing permission |
+
+### clientMissingPermissions
+
+Emitted when client missing permissions.
+
+Parameters :
+
+| Name        | Type                                                                                              | Description                    |
+| ----------- | ------------------------------------------------------------------------------------------------- | ------------------------------ |
+| interaction | [Message](https://discord.js.org/#/docs/main/stable/class/Message)                                | The message                    |
+| missing     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The name of missing permission |
+
+### cooldownLimit
+
+Emitted when user hit the cooldown limit.
+
+Parameters :
+
+| Name        | Type                                                               | Description |
+| ----------- | ------------------------------------------------------------------ | ----------- |
+| interaction | [Message](https://discord.js.org/#/docs/main/stable/class/Message) | The message |

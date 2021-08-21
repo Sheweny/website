@@ -14,7 +14,7 @@ Create an handler for bot events. The events can be in as many subfolders as des
 
 Load commands.
 
-Return : Promise<Collection<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [ApplicationCommand](../structures/ApplicationApplicationCommand.md)>>;
+Return : Promise<Collection<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [ApplicationCommand](../structures/ApplicationCommand.md)>>;
 
 ### getData()
 
@@ -28,12 +28,12 @@ Register commands.
 
 Parameters :
 
-| Name     | Type                                                                                                                                                            | Description                    | Default         | Optional |
-| -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | --------------- | -------- |
-| commands | Collection\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [Command](../structures/ApplicationCommand.md))> | The commands                   | client.commands | ✓        |
-| guildId  | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                               | The guild to register commands |                 | ✓        |
+| Name     | Type                                                                                                                                                                       | Description                    | Default         | Optional |
+| -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | --------------- | -------- |
+| commands | Collection\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [ApplicationCommand](../structures/ApplicationCommand.md))> | The commands                   | client.commands | ✓        |
+| guildId  | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                          | The guild to register commands |                 | ✓        |
 
-Return Promise<Collection<Snowflake, ApplicationCommand>>;
+Return Promise<Collection<[Snowflake](https://discord.js.org/#/docs/main/stable/typedef/Snowflake), [ApplicationCommand](https://discord.js.org/#/docs/main/stable/class/ApplicationCommand)>>;
 
 ### [async] createCommand(command, guildId)
 
@@ -43,10 +43,10 @@ Parameters :
 
 | Name    | Type                                                                                              | Description                   | Default | Optional |
 | ------- | ------------------------------------------------------------------------------------------------- | ----------------------------- | ------- | -------- |
-| command | [Command](../structures/ApplicationCommand.md)                                                    | The command                   |         | no       |
+| command | [ApplicationCommand](../structures/ApplicationCommand.md)                                         | The command                   |         | no       |
 | guildId | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The guild to register command |         | ✓        |
 
-Return Promise<Collection<Snowflake, ApplicationCommand>>;
+Return Promise<Collection<[Snowflake](https://discord.js.org/#/docs/main/stable/typedef/Snowflake), [ApplicationCommand](https://discord.js.org/#/docs/main/stable/class/ApplicationCommand)>>;
 
 ### [async] editCommand(oldCommand, newCommand, guildId)
 
@@ -57,10 +57,10 @@ Parameters :
 | Name       | Type                                                                                                           | Description                 | Default | Optional |
 | ---------- | -------------------------------------------------------------------------------------------------------------- | --------------------------- | ------- | -------- |
 | command    | [ApplicationCommandResolvable](https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandResolvable) | The command to edit         |         | no       |
-| newCommand | [Command](../structures/ApplicationCommand.md)                                                                 | The new command             |         | no       |
+| newCommand | [ApplicationCommand](../structures/ApplicationCommand.md)                                                      | The new command             |         | no       |
 | guildId    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)              | The guild to update command |         | ✓        |
 
-Return Promise<Collection<Snowflake, ApplicationCommand>>;
+Return Promise<Collection<[Snowflake](https://discord.js.org/#/docs/main/stable/typedef/Snowflake), [ApplicationCommand](https://discord.js.org/#/docs/main/stable/class/ApplicationCommand)>>;
 
 ### [async] deleteCommand(command, guildId)
 
@@ -73,7 +73,7 @@ Parameters :
 | command | [ApplicationCommandResolvable](https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandResolvable) | The command to delete       |         | no       |
 | guildId | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)              | The guild to delete command |         | ✓        |
 
-Return Promise<Collection<Snowflake, ApplicationCommand>>;
+Return Promise<Collection<[Snowflake](https://discord.js.org/#/docs/main/stable/typedef/Snowflake), [ApplicationCommand](https://discord.js.org/#/docs/main/stable/class/ApplicationCommand)>>;
 
 ### [async] deleteAllCommands( guildId)
 
@@ -85,4 +85,38 @@ Parameters :
 | ------- | ------------------------------------------------------------------------------------------------- | --------------------------- | ------- | -------- |
 | guildId | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The guild to delete command |         | ✓        |
 
-Return Promise<Collection<Snowflake, ApplicationCommand>>;
+Return Promise<Collection<[Snowflake](https://discord.js.org/#/docs/main/stable/typedef/Snowflake), [ApplicationCommand](https://discord.js.org/#/docs/main/stable/class/ApplicationCommand)>>;
+
+## Events
+
+### userMissingPermissions
+
+Emitted when user missing permissions.
+
+Parameters :
+
+| Name        | Type                                                                                                                                                                                     | Description                    |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
+| interaction | [CommandInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction) or [ContextMenuInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction) | The interaction                |
+| missing     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                        | The name of missing permission |
+
+### clientMissingPermissions
+
+Emitted when client missing permissions.
+
+Parameters :
+
+| Name        | Type                                                                                                                                                                                     | Description                    |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
+| interaction | [CommandInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction) or [ContextMenuInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction) | The interaction                |
+| missing     | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                        | The name of missing permission |
+
+### cooldownLimit
+
+Emitted when user hit the cooldown limit.
+
+Parameters :
+
+| Name        | Type                                                                                                                                                                                     | Description     |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
+| interaction | [CommandInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction) or [ContextMenuInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction) | The interaction |

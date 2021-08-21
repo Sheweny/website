@@ -7,6 +7,12 @@ Represents a button.
 | client   | [ShewenyClient](./ShewenyClient.md)                                                                                                                                                                | The client.             | None    | Yes      |
 | customId | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)> | The list of buttons ids | None    | Yes      |
 
+## Properties
+
+- `client` - The client.
+- `path` - The file path of the button.
+- `customId` - Array of customIds.
+
 ## Methods
 
 ### unregister()

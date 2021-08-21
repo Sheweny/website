@@ -8,6 +8,20 @@ Represents a message command.
 | name    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The name of the command.   | None    | Yes      |
 | options | [ApplicationCommandOptions](../typedef/CommandOptions.md)                                         | The options of the command | None    | Yes      |
 
+## Properties
+
+- `client` - The client.
+- `path` - The file path of the command.
+- `only` - The place whre the command should be executed.
+- `name` - The name of the command.
+- `description` - The description of the command.
+- `aliases` - The aliases of the command.
+- `category` - The category of the command.
+- `cooldown` - The cooldown of the command.
+- `userPermissions` - The permissions required to execute the command for users.
+- `clientPermissions` - The permissions required to execute the command for client.
+- `cooldowns` - The actives cooldowns of the command.
+
 ## Methods
 
 ### before()

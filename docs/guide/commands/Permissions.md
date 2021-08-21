@@ -6,14 +6,14 @@ With sheweny you can defined permissions of bot and user.
 You can use `BOT_ADMIN` permissions for check if user is admin of bot.
 :::
 
-If user missing permissions the client emit `userMissingPermissions` :
+If user missing permissions the command `userMissingPermissions` :
 
 Parameters :
 
 - interaction or message (if bot use slash-commands or not) (type : [Interaction](https://discord.js.org/#/docs/main/stable/class/Interaction) or [Message](https://discord.js.org/#/docs/main/stable/class/Message))
 - missing (type : [Array\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>)
 
-If bot missing permissions the client emit `botMissingPermissions` :
+If bot missing permissions the command `botMissingPermissions` :
 
 Parameters :
 
@@ -39,7 +39,7 @@ module.exports = class PingCommand extends Command {
   execute(interaction) {
     interaction.reply("Pong !");
   }
-}
+};
 ```
 
 :::
@@ -85,7 +85,7 @@ module.exports = class PingCommand extends Command {
   execute(message) {
     message.channel.send({ content: "Pong !" });
   }
-}
+};
 ```
 
 :::
