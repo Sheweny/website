@@ -4,9 +4,10 @@ The Sheweny framework client.
 
 Parameters :
 
-| Name    | Type                                                       | Description                | Default | Required |
-| ------- | ---------------------------------------------------------- | -------------------------- | ------- | -------- |
-| options | [ShewenyClientOptions](../typedef/ShewenyClientOptions.md) | The options for the client | None    | Yes      |
+| Name          | Type                                                                             | Description                                                                 | Default | Required |
+| ------------- | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ------- | -------- |
+| options       | [ShewenyClientOptions](../typedef/ShewenyClientOptions.md)                       | The options for the client                                                  | None    | Yes      |
+| clientOptions | [ClientOptions](https://discord.js.org/#/docs/main/stable/typedef/ClientOptions) | The options for the discord.js client (use first parameter if not provided) |         | no       |
 
 ## Properties
 
