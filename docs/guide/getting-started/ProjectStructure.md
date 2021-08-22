@@ -24,18 +24,35 @@ Create directory for the events (usually called `events` or `listners`).
 This directory can have the desired number of sub-directory
 :::
 
+## Interactions
+
+Create directory for the buttons and select-menus (usually called `interactions`).
+
+### Buttons
+
+Create directory for the buttons (usually called `buttons`).
+
+### Select-menus
+
+Create directory for the select-menus (usually called `select-menus`).
+
 ## Final structure
 
 The final structure of the bot :
 
 ```
-│   config.json
-│   package-lock.json
-│   package.json
-│
-└───src
-    │   index.js
-    │
-    ├───commands
-    └───events
+bot
+   │   config.json
+   │   package-lock.json
+   │   package.json
+   │
+   ├───node_modules
+   └───src
+       │   index.js
+       │
+       ├───commands
+       ├───events
+       └───interactions
+           ├───buttons
+           └───select-menus
 ```

@@ -15,7 +15,7 @@ module.exports = class PingCommand extends Command {
     super(client, "ping", {
       description: "Ping the bot",
       category: "Misc",
-      guildOnly: true, // The command cannot be executing in DMs
+      only: "GUILD", // The command cannot be executing in DMs
     });
   }
   execute(interaction) {
@@ -36,7 +36,7 @@ export class PingCommand extends Command {
     super(client, "ping", {
       description: "Ping the bot",
       category: "Misc",
-      guildOnly: true, // The command cannot be executing in DMs
+      only: "GUILD", // The command cannot be executing in DMs
     });
   }
   execute(interaction: CommandInteraction) {
@@ -61,7 +61,7 @@ module.exports = class PingCommand extends Command {
     super(client, "ping", {
       description: "Ping the bot",
       category: "Misc",
-      DMOnly: true, // The command cannot be executing in DMs
+      only: "DM", // The command cannot be executing in DMs
     });
   }
   execute(message) {
@@ -82,7 +82,7 @@ export class PingCommand extends Command {
     super(client, "ping", {
       description: "Ping the bot",
       category: "Misc",
-      DMOnly: true, // The command cannot be executing in DMs
+      only: "DM", // The command cannot be executing in DMs
     });
   }
   execute(message: Message) {

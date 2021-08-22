@@ -1,10 +1,10 @@
 # Basic event
 
-With sheweny each Event must be a class which extends from the [Event](../../doc/Events.md) class
+With sheweny each Event must be a class which extends from the [Event](../../doc/structures/Event.md) class
 
 ## Import Event
 
-Import the [Event](../../doc/guide/classes/Event.md) :
+Import the [Event](../../doc/structures/Event.md) class :
 
 :::: code-group
 ::: code-group-item CommonJS
@@ -43,7 +43,7 @@ module.exports = class GuildMemberAdd extends Event {
   execute(member) {
     console.log(member);
   }
-}
+};
 ```
 
 :::
@@ -69,7 +69,7 @@ export class GuildMemberAdd extends Event {
 :::
 ::::
 
-### Message Event
+### Message event
 
 :::: code-group
 ::: code-group-item JS CommonJS
@@ -87,7 +87,7 @@ module.exports = class Message extends Event {
   execute(message) {
     console.log(message);
   }
-}
+};
 ```
 
 :::
