@@ -20,7 +20,7 @@ module.exports = {
    */
   themeConfig: {
     repo: "",
-    base: "/",
+    base: "/website",
     editLinks: false,
     editLinkText: "",
     lastUpdated: false,
