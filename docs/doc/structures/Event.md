@@ -2,11 +2,11 @@
 
 Represents a event.
 
-| Name    | Type                                                                                              | Description              | Default | Required |
+| Name    | Type                                                                                              | Description              | Default | Optional |
 | ------- | ------------------------------------------------------------------------------------------------- | ------------------------ | ------- | -------- |
-| client  | [ShewenyClient](../classes/ShewenyClient.md)                                                      | The client.              | None    | Yes      |
-| name    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The name of the event.   | None    | Yes      |
-| options | [EventOptions](../typedef/EventOptions.md)                                                        | The options of the event | None    | Yes      |
+| client  | [ShewenyClient](../classes/ShewenyClient.md)                                                      | The client.              | None    |          |
+| name    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The name of the event.   | None    |          |
+| options | [EventOptions](../typedef/EventOptions.md)                                                        | The options of the event | None    |          |
 
 ## Properties
 

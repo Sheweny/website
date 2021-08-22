@@ -2,11 +2,11 @@
 
 Represents an application command.
 
-| Name    | Type                                                                                               | Description                | Default | Required |
+| Name    | Type                                                                                               | Description                | Default | Optional |
 | ------- | -------------------------------------------------------------------------------------------------- | -------------------------- | ------- | -------- |
-| client  | [ShewenyClient](../classes/ShewenyClient.md)                                                       | The client.                | None    | Yes      |
-| data    | [ApplicationCommandData](https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandData) | The data of command.       | None    | Yes      |
-| options | [ApplicationCommandOptions](../typedef/CommandOptions.md)                                          | The options of the command | None    | Yes      |
+| client  | [ShewenyClient](../classes/ShewenyClient.md)                                                       | The client.                | None    |          |
+| data    | [ApplicationCommandData](https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandData) | The data of command.       | None    |          |
+| options | [ApplicationCommandOptions](../typedef/CommandOptions.md)                                          | The options of the command | None    |          |
 
 ## Properties
 

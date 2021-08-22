@@ -2,10 +2,10 @@
 
 Create an handler for bot commands. The commands can be in as many subfolders as desired.
 
-| Name    | Type                                                                                                    | Description               | Default | Required |
+| Name    | Type                                                                                                    | Description               | Default | Optional |
 | ------- | ------------------------------------------------------------------------------------------------------- | ------------------------- | ------- | -------- |
-| client  | [ShewenyClient](./ShewenyClient.md) or [Client](https://discord.js.org/#/docs/main/stable/class/Client) | The client                | None    | Yes      |
-| options | [CommandsHandlerOptions](./typedef/MessageCommandHandlerOptions.md)                                     | The directory of commands | None    | Yes      |
+| client  | [ShewenyClient](./ShewenyClient.md) or [Client](https://discord.js.org/#/docs/main/stable/class/Client) | The client                | None    |          |
+| options | [CommandsHandlerOptions](./typedef/MessageCommandHandlerOptions.md)                                     | The directory of commands | None    |          |
 
 ## Properties
 

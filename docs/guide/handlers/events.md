@@ -50,9 +50,9 @@ You can also use the class to set up the handler somewhere else :
 const { ShewenyClient, EventsHandler } = require("@sheweny/framework");
 const client = new ShewenyClient({ intents: ["GUILDS"] });
 
-const buttonsHandler = new EventsHandler(client, "./buttons");
+const eventsHandler = new EventsHandler(client, "./events");
 
-buttonsHandler.loadAll();
+eventsHandler.loadAll();
 ```
 
 :::
@@ -62,7 +62,7 @@ buttonsHandler.loadAll();
 import { ShewenyClient, EventsHandler } = from "@sheweny/framework";
 const client = new ShewenyClient({ intents: ["GUILDS"] });
 
-const eventsHandler = new EventsHandler(client, "./buttons");
+const eventsHandler = new EventsHandler(client, "./events");
 
 eventsHandler.loadAll().then(() => this.registerAll());
 ```
