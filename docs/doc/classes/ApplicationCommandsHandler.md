@@ -2,11 +2,11 @@
 
 Create an handler for bot events. The events can be in as many subfolders as desired.
 
-| Name      | Type                                                                                                    | Description                                           | Default | Required |
+| Name      | Type                                                                                                    | Description                                           | Default | Optional |
 | --------- | ------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ------- | -------- |
-| client    | [ShewenyClient](./ShewenyClient.md) or [Client](https://discord.js.org/#/docs/main/stable/class/Client) | The client                                            | None    | ✓        |
-| directory | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)       | The directory of commands                             | None    | ✓        |
-| loadAll   | [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)     | If the loadAll function must be called in constructor | None    | no       |
+| client    | [ShewenyClient](./ShewenyClient.md) or [Client](https://discord.js.org/#/docs/main/stable/class/Client) | The client                                            | None    |          |
+| directory | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)       | The directory of commands                             | None    |          |
+| loadAll   | [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)     | If the loadAll function must be called in constructor | None    | ✓        |
 
 ## Methods
 
@@ -43,7 +43,7 @@ Parameters :
 
 | Name    | Type                                                                                              | Description                   | Default | Optional |
 | ------- | ------------------------------------------------------------------------------------------------- | ----------------------------- | ------- | -------- |
-| command | [ApplicationCommand](../structures/ApplicationCommand.md)                                         | The command                   |         | no       |
+| command | [ApplicationCommand](../structures/ApplicationCommand.md)                                         | The command                   |         |          |
 | guildId | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The guild to register command |         | ✓        |
 
 Return Promise<Collection<[Snowflake](https://discord.js.org/#/docs/main/stable/typedef/Snowflake), [ApplicationCommand](https://discord.js.org/#/docs/main/stable/class/ApplicationCommand)>>;
@@ -56,8 +56,8 @@ Parameters :
 
 | Name       | Type                                                                                                           | Description                 | Default | Optional |
 | ---------- | -------------------------------------------------------------------------------------------------------------- | --------------------------- | ------- | -------- |
-| command    | [ApplicationCommandResolvable](https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandResolvable) | The command to edit         |         | no       |
-| newCommand | [ApplicationCommand](../structures/ApplicationCommand.md)                                                      | The new command             |         | no       |
+| command    | [ApplicationCommandResolvable](https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandResolvable) | The command to edit         |         |          |
+| newCommand | [ApplicationCommand](../structures/ApplicationCommand.md)                                                      | The new command             |         |          |
 | guildId    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)              | The guild to update command |         | ✓        |
 
 Return Promise<Collection<[Snowflake](https://discord.js.org/#/docs/main/stable/typedef/Snowflake), [ApplicationCommand](https://discord.js.org/#/docs/main/stable/class/ApplicationCommand)>>;
@@ -70,7 +70,7 @@ Parameters :
 
 | Name    | Type                                                                                                           | Description                 | Default | Optional |
 | ------- | -------------------------------------------------------------------------------------------------------------- | --------------------------- | ------- | -------- |
-| command | [ApplicationCommandResolvable](https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandResolvable) | The command to delete       |         | no       |
+| command | [ApplicationCommandResolvable](https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandResolvable) | The command to delete       |         |          |
 | guildId | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)              | The guild to delete command |         | ✓        |
 
 Return Promise<Collection<[Snowflake](https://discord.js.org/#/docs/main/stable/typedef/Snowflake), [ApplicationCommand](https://discord.js.org/#/docs/main/stable/class/ApplicationCommand)>>;

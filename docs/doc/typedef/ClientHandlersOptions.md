@@ -1,10 +1,10 @@
 # HandlersOptions
 
-| Name                | Type                                                                      | Description                 | Default | Required |
-| ------------------- | ------------------------------------------------------------------------- | --------------------------- | ------- | -------- |
-| messageCommands     | [MessageCommandHandlerOptions](./MessageCommandHandlerOptions.md)         | The options for the handler |         | Yes      |
-| applicationCommands | [ApplicationCommandHandlerOptions](./HandlerApplicationCommandOptions.md) | The options for the handler |         | Yes      |
-| events              | [BaseHandlerOptions](./BaseHandlerOptions.md)                             | The options for the handler |         | Yes      |
-| buttons             | [BaseHandlerOptions](./BaseHandlerOptions.md)                             | The options for the handler |         | Yes      |
-| selectMenus         | [BaseHandlerOptions](./BaseHandlerOptions.md)                             | The options for the handler |         | Yes      |
-| inhibitors          | [BaseHandlerOptions](./BaseHandlerOptions.md)                             | The options for the handler |         | Yes      |
+| Name                | Type                                                                      | Description                 |
+| ------------------- | ------------------------------------------------------------------------- | --------------------------- |
+| messageCommands     | [MessageCommandHandlerOptions](./MessageCommandHandlerOptions.md)         | The options for the handler |
+| applicationCommands | [ApplicationCommandHandlerOptions](./HandlerApplicationCommandOptions.md) | The options for the handler |
+| events              | [BaseHandlerOptions](./BaseHandlerOptions.md)                             | The options for the handler |
+| buttons             | [BaseHandlerOptions](./BaseHandlerOptions.md)                             | The options for the handler |
+| selectMenus         | [BaseHandlerOptions](./BaseHandlerOptions.md)                             | The options for the handler |
+| inhibitors          | [BaseHandlerOptions](./BaseHandlerOptions.md)                             | The options for the handler |

@@ -2,7 +2,7 @@
 
 Represents a button.
 
-| Name     | Type                                                                                                                                                                                               | Description                  | Default | Required |
+| Name     | Type                                                                                                                                                                                               | Description                  | Default | Optional |
 | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- | ------- | -------- |
 | client   | [ShewenyClient](./ShewenyClient.md)                                                                                                                                                                | The client.                  | None    | Yes      |
 | customId | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)> | The list of select-menus ids | None    | Yes      |

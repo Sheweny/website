@@ -1,4 +1,4 @@
-# Advanced command
+# Before command
 
 ## Application command
 
@@ -25,7 +25,7 @@ module.exports = class PingCommand extends ApplicationCommand {
       }
     );
   }
-  before(interaction: CommandInteraction) {
+  before(interaction) {
     // Action before all checks
   }
   execute(interaction) {
@@ -82,7 +82,7 @@ module.exports = class PingCommand extends MessageCommand {
       cooldown: 5, // cooldown 5 seconds
     });
   }
-  before(interaction: CommandInteraction) {
+  before(interaction) {
     // Action before all checks
   }
   execute(message) {
@@ -120,5 +120,5 @@ export class PingCommand extends MessageCommand {
 
 ::: warning
 The before function cannot prevent the execution of the command.  
-If you want to add checks to the commands use the [inhibitors](../inhibitors/Basic.md).
+If you want to add checks to the commands use the [inhibitors](../inhibitors/Inhibitor.md).
 :::

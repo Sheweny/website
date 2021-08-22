@@ -2,11 +2,11 @@
 
 Represents a inhibitor.
 
-| Name    | Type                                                                                              | Description                  | Default | Required |
+| Name    | Type                                                                                              | Description                  | Default | Optional |
 | ------- | ------------------------------------------------------------------------------------------------- | ---------------------------- | ------- | -------- |
-| client  | [ShewenyClient](../classes/ShewenyClient.md)                                                      | The client.                  | None    | Yes      |
-| name    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The name of the inhibitor.   | None    | Yes      |
-| options | [InhibitorOptions](../typedef/InhibitorOptions.md)                                                | The options of the inhibitor | None    | Yes      |
+| client  | [ShewenyClient](../classes/ShewenyClient.md)                                                      | The client.                  | None    |          |
+| name    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The name of the inhibitor.   | None    |          |
+| options | [InhibitorOptions](../typedef/InhibitorOptions.md)                                                | The options of the inhibitor | None    |          |
 
 ## Properties
 

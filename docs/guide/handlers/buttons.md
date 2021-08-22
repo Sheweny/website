@@ -15,7 +15,7 @@ const client = new ShewenyClient({
   intents: ["GUILDS"],
   handlers: {
     buttons: {
-      directory: "./interactions/SelectMenus",
+      directory: "./interactions/buttons",
     },
   },
 });
@@ -30,7 +30,7 @@ const client = new ShewenyClient({
   intents: ["GUILDS"],
   handlers: {
     buttons: {
-      directory: "./interactions/SelectMenus",
+      directory: "./interactions/buttons",
     },
   },
 });
@@ -50,7 +50,7 @@ You can also use the class to set up the handler somewhere else :
 const { ShewenyClient, ButtonsHandler } = require("@sheweny/framework");
 const client = new ShewenyClient({ intents: ["GUILDS"] });
 
-const buttonsHandler = new ButtonsHandler(client, "./interactions/SelectMenus");
+const buttonsHandler = new ButtonsHandler(client, "./interactions/buttons");
 
 buttonsHandler.loadAll();
 ```
@@ -62,7 +62,7 @@ buttonsHandler.loadAll();
 import { ShewenyClient, ButtonsHandler } = from "@sheweny/framework";
 const client = new ShewenyClient({ intents: ["GUILDS"] });
 
-const buttonsHandler = new ButtonsHandler(client, "./interactions/SelectMenus");
+const buttonsHandler = new ButtonsHandler(client, "./interactions/buttons");
 
 buttonsHandler.loadAll()
 ```
