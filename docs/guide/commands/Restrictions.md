@@ -1,4 +1,4 @@
-# Command cooldown
+# Command restrictions
 
 You can add restrictions to prevent a command from being executed on a guild or in DMs
 
@@ -8,14 +8,14 @@ You can add restrictions to prevent a command from being executed on a guild or 
 ::: code-group-item JS CommonJS
 
 ```js
-const { Command } = require("@sheweny/framework");
+const { Command } = require("sheweny");
 
 module.exports = class PingCommand extends Command {
   constructor(client) {
     super(client, "ping", {
       description: "Ping the bot",
       category: "Misc",
-      guildOnly: true, // The command cannot be executing in DMs
+      only: "GUILD", // The command cannot be executing in DMs
     });
   }
   execute(interaction) {
@@ -28,7 +28,7 @@ module.exports = class PingCommand extends Command {
 ::: code-group-item TS ES Modules
 
 ```ts
-import { Command, ShewenyClient } from "@sheweny/framework";
+import { Command, ShewenyClient } from "sheweny";
 import type { CommandInteraction } from "discord.js";
 
 export class PingCommand extends Command {
@@ -36,7 +36,7 @@ export class PingCommand extends Command {
     super(client, "ping", {
       description: "Ping the bot",
       category: "Misc",
-      guildOnly: true, // The command cannot be executing in DMs
+      only: "GUILD", // The command cannot be executing in DMs
     });
   }
   execute(interaction: CommandInteraction) {
@@ -54,14 +54,14 @@ export class PingCommand extends Command {
 ::: code-group-item JS CommonJS
 
 ```js
-const { Command } = require("@sheweny/framework");
+const { Command } = require("sheweny");
 
 module.exports = class PingCommand extends Command {
   constructor(client) {
     super(client, "ping", {
       description: "Ping the bot",
       category: "Misc",
-      DMOnly: true, // The command cannot be executing in DMs
+      only: "DM", // The command cannot be executing in DMs
     });
   }
   execute(message) {
@@ -74,7 +74,7 @@ module.exports = class PingCommand extends Command {
 ::: code-group-item TS ES Modules
 
 ```ts
-import { Command, ShewenyClient } from "@sheweny/framework";
+import { Command, ShewenyClient } from "sheweny";
 import type { Message } from "discord.js";
 
 export class PingCommand extends Command {
@@ -82,7 +82,7 @@ export class PingCommand extends Command {
     super(client, "ping", {
       description: "Ping the bot",
       category: "Misc",
-      DMOnly: true, // The command cannot be executing in DMs
+      only: "DM", // The command cannot be executing in DMs
     });
   }
   execute(message: Message) {

@@ -1,23 +1,23 @@
 # Basic event
 
-With sheweny each Event must be a class which extends from the [Event](../../doc/Events.md) class
+With sheweny each Event must be a class which extends from the [Event](../../doc/structures/Event.md) class
 
 ## Import Event
 
-Import the [Event](../../doc/guide/classes/Event.md) :
+Import the [Event](../../doc/structures/Event.md) class :
 
 :::: code-group
 ::: code-group-item CommonJS
 
 ```js
-const { Event } = require("@sheweny/framework");
+const { Event } = require("sheweny");
 ```
 
 :::
 ::: code-group-item ESM
 
 ```js
-import { Event } from "@sheweny/framework";
+import { Event } from "sheweny";
 ```
 
 :::
@@ -31,7 +31,7 @@ import { Event } from "@sheweny/framework";
 ::: code-group-item JS CommonJS
 
 ```js
-const { Event } = require("@sheweny/framework");
+const { Event } = require("sheweny");
 
 module.exports = class GuildMemberAdd extends Event {
   constructor(client) {
@@ -43,14 +43,14 @@ module.exports = class GuildMemberAdd extends Event {
   execute(member) {
     console.log(member);
   }
-}
+};
 ```
 
 :::
 ::: code-group-item TS ES Modules
 
 ```ts
-import { Event, ShewenyClient } from "@sheweny/framework";
+import { Event, ShewenyClient } from "sheweny";
 import type { GuildMember } from "discord.js";
 
 export class GuildMemberAdd extends Event {
@@ -69,13 +69,13 @@ export class GuildMemberAdd extends Event {
 :::
 ::::
 
-### Message Event
+### Message event
 
 :::: code-group
 ::: code-group-item JS CommonJS
 
 ```js
-const { Event } = require("@sheweny/framework");
+const { Event } = require("sheweny");
 
 module.exports = class Message extends Event {
   constructor(client) {
@@ -87,14 +87,14 @@ module.exports = class Message extends Event {
   execute(message) {
     console.log(message);
   }
-}
+};
 ```
 
 :::
 ::: code-group-item TS ES Modules
 
 ```ts
-import { Event, ShewenyClient } from "@sheweny/framework";
+import { Event, ShewenyClient } from "sheweny";
 import type { Message } from "discord.js";
 
 export class GuildMemberAdd extends Event {

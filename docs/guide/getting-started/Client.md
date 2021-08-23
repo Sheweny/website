@@ -2,18 +2,18 @@
 
 ## Import ShewenyClient
 
-Import the class [ShewenyClient](../../doc/classes/ShewenyClient.md) from library.
+Import the [ShewenyClient](../../doc/classes/ShewenyClient.md) class from library.
 
 ### Using CommonJS syntax
 
 ```js
-const { ShewenyClient } = require("@sheweny/framework");
+const { ShewenyClient } = require("sheweny");
 ```
 
 ### Using ES modules syntax
 
 ```js
-import { ShewenyClient } from "@sheweny/framework";
+import { ShewenyClient } from "sheweny";
 ```
 
 ## Create new instance of client
@@ -25,13 +25,17 @@ const client = new ShewenyClient({
   intents: ["GUILDS", "GUILDS_MESSAGES"],
   admins: ["611468402263064577"], // Admins permissions for the bot
   handlers: {
-    commands: {
-      type: "SLASH_COMMANDS", // Use slash-commands instead of message commands (MESSAGE_COMMANDS)
+    applicationCommands: {
       directory: "./commands",
     },
   },
 });
 ```
+
+::: warning
+The applications commands handler is for slash-commands and context-menus.
+For use message commands use messageCommands handler instead.
+:::
 
 ::: warning
 The `intents` options is required with discord.js V13.0.0 or higher.

@@ -6,19 +6,19 @@ With sheweny you can defined permissions of bot and user.
 You can use `BOT_ADMIN` permissions for check if user is admin of bot.
 :::
 
-If user missing permissions the client emit `userMissingPermissions` :
+If user missing permissions the command `userMissingPermissions` :
 
 Parameters :
 
 - interaction or message (if bot use slash-commands or not) (type : [Interaction](https://discord.js.org/#/docs/main/stable/class/Interaction) or [Message](https://discord.js.org/#/docs/main/stable/class/Message))
-- missing (type : [Array\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>)
+- missing (type : Array\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>)
 
-If bot missing permissions the client emit `botMissingPermissions` :
+If bot missing permissions the command `botMissingPermissions` :
 
 Parameters :
 
 - interaction or message (if bot use slash-commands or not) (type : [Interaction](https://discord.js.org/#/docs/main/stable/class/Interaction) or [Message](https://discord.js.org/#/docs/main/stable/class/Message))
-- missing (type : [Array\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>)
+- missing (type : Array\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>)
 
 ## Slash-command
 
@@ -26,7 +26,7 @@ Parameters :
 ::: code-group-item JS CommonJS
 
 ```js
-const { Command } = require("@sheweny/framework");
+const { Command } = require("sheweny");
 
 module.exports = class PingCommand extends Command {
   constructor(client) {
@@ -39,14 +39,14 @@ module.exports = class PingCommand extends Command {
   execute(interaction) {
     interaction.reply("Pong !");
   }
-}
+};
 ```
 
 :::
 ::: code-group-item TS ES Modules
 
 ```ts
-import { Command, ShewenyClient } from "@sheweny/framework";
+import { Command, ShewenyClient } from "sheweny";
 import type { CommandInteraction } from "discord.js";
 
 export class PingCommand extends Command {
@@ -72,7 +72,7 @@ export class PingCommand extends Command {
 ::: code-group-item JS CommonJS
 
 ```js
-const { Command } = require("@sheweny/framework");
+const { Command } = require("sheweny");
 
 module.exports = class PingCommand extends Command {
   constructor(client) {
@@ -85,14 +85,14 @@ module.exports = class PingCommand extends Command {
   execute(message) {
     message.channel.send({ content: "Pong !" });
   }
-}
+};
 ```
 
 :::
 ::: code-group-item TS ES Modules
 
 ```ts
-import { Command, ShewenyClient } from "@sheweny/framework";
+import { Command, ShewenyClient } from "sheweny";
 import type { Message } from "discord.js";
 
 export class PingCommand extends Command {

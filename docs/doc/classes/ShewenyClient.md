@@ -1,74 +1,55 @@
-# Sheweny client
+# ShewenyClient
 
 The Sheweny framework client.
 
 Parameters :
 
-| Name    | Type                                                      | Description                | Default | Required |
-| ------- | --------------------------------------------------------- | -------------------------- | ------- | -------- |
-| options | [ShewenyClientOptions](./typedef/ShewenyClientOptions.md) | The options for the client | None    | Yes      |
+| Name          | Type                                                                             | Description                                                                 | Default | Optional |
+| ------------- | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ------- | -------- |
+| options       | [ShewenyClientOptions](../typedef/ShewenyClientOptions.md)                       | The options for the client                                                  | None    |          |
+| clientOptions | [ClientOptions](https://discord.js.org/#/docs/main/stable/typedef/ClientOptions) | The options for the discord.js client (use first parameter if not provided) |         | ✓        |
 
 ## Properties
 
-### ShewenyClient.handlers
+### handlers
 
 The handlers of the client.
 
-Return : [ClientHandlers](./typedef/ClientHandlers.md).
+Return : [ClientHandlers](../typedef/ClientHandlers.md).
 
-### ShewenyClient.commands
+### commands
 
-A collection of commands or undefined if no command handler provided
+A collection of commands or undefined if events are not loadeds.
 
-Return : Collection\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [Command](./Command.md)>.
+Return : [ClientCommandsManager](../typedef/ClientCommandsManager.md)
 
-### ShewenyClient.commandsType
+### events
 
-The type of the commands (MESSAGE_COMMANDS or SLASH_COMMANDS)
+A collection of events or undefined if events are not loadeds.
 
-Return : [CommandTypeResolvable](./typedef/CommandTypeResolvable.md) .
+Return : Collection\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [Event](../structures/Event.md)> or undefined.
 
-### ShewenyClient.events
+### buttons
 
-A collection of commands or undefined if no command handler provided
+A collection of buttons or undefined if buttons are not loadeds.
 
-Return : Collection\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [Event](./Event.md)>.
+Return : Collection\<[Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>, [Button](../structures/Button.md)> or undefined.
 
-# Events
+### selectMenus
 
-## Events permissions
+A collection of selectMenus or undefined if selectMenus are not loadeds.
 
-### ShewenyClient#userMissingPermissions
+Return : Collection\<[Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>, [SelectMenu](../structures/selectMenu.md)> or undefined.
 
-Emitted when an user missing permission for a command.
+### inhibitors
 
-Parameters :
+A collection of inhibitors or undefined if inhibitors are not loadeds.
 
-- interaction or message (if bot use slash-commands or not) (type : [Interaction](https://discord.js.org/#/docs/main/stable/class/Interaction) or [Message](https://discord.js.org/#/docs/main/stable/class/Message))
-- missing (type : [Array\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>)
+Return : Collection\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [Inhibitor](../structures/Inhibitor.md)> or undefined.
 
-### ShewenyClient#botMissingPermissions
+## Events
 
-Emitted when bot missing permission for a command.
-
-Parameters :
-
-- interaction or message (if bot use slash-commands or not) (type : [Interaction](https://discord.js.org/#/docs/main/stable/class/Interaction) or [Message](https://discord.js.org/#/docs/main/stable/class/Message))
-- missing (type : [Array\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>)
-
-## Events cooldowns
-
-### ShewenyClient#cooldownLimite
-
-Emitted when command cooldown limit is reached.
-
-Parameters :
-
-- interaction or message (if bot use slash-commands or not) (type : [Interaction](https://discord.js.org/#/docs/main/stable/class/Interaction) or [Message](https://discord.js.org/#/docs/main/stable/class/Message))
-
-## Events interactions
-
-### ShewenyClient#interactionButtonCreate
+### interactionButtonCreate
 
 Emitted when an interaction button is created.
 
@@ -76,33 +57,33 @@ Parameters :
 
 - interaction (type : [ButtonInteraction](https://discord.js.org/#/docs/main/stable/class/ButtonInteraction))
 
-### ShewenyClient#interactionCommmandCreate
+### interactionCommmandCreate
 
-Emitted when an slash-command is created.
+Emitted when an Slash Command or Context Menu is created.
 
 Parameters :
 
-- interaction (type : [CommandInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction))
+- interaction (type : [CommandInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction) or [ContextMenuInteraction](https://discord.js.org/#/docs/main/stable/class/ContextMenuInteraction)))
 
-### ShewenyClient#interactionContextMenuCreate
+### interactionContextMenuCreate
 
-Emitted when an interaction context menu is created.
+Emitted when an interaction Context Menu is created.
 
 Parameters :
 
 - interaction (type : [ContextMenuInteraction](https://discord.js.org/#/docs/main/stable/class/ContextMenuInteraction))
 
-### ShewenyClient#interactionSelectMenuCreate
+### interactionSelectMenuCreate
 
-Emitted when an select menu interaction is created.
+Emitted when an Select Menu interaction is created.
 
 Parameters :
 
 - interaction (type : [SelectMenuInteraction](https://discord.js.org/#/docs/main/stable/class/SelectMenuInteraction))
 
-### ShewenyClient#interactionMessageComponentCreate
+### interactionMessageComponentCreate
 
-Emitted when an message component interaction is created.
+Emitted when an Message Component interaction is created.
 
 Parameters :
 

@@ -1,12 +1,10 @@
-# Command cooldown
+# Before command
 
-Create cooldown in a command with the cooldown property in the constructor.
+## Application command
 
-::: tip
-The cooldown value is in seconds and it type is `number`
-:::
+The `before` fuction is executed before all checks like cooldowns, permissions, inhibitors etc.
 
-## Slash-command
+### Example :
 
 :::: code-group
 ::: code-group-item JS CommonJS
@@ -24,9 +22,11 @@ module.exports = class PingCommand extends ApplicationCommand {
       },
       {
         category: "Misc",
-        cooldown: 5, // cooldown 5 seconds
       }
     );
+  }
+  before(interaction) {
+    // Action before all checks
   }
   execute(interaction) {
     interaction.reply("Pong !");
@@ -51,9 +51,11 @@ export class PingCommand extends ApplicationCommand {
       },
       {
         category: "Misc",
-        cooldown: 5, // cooldown 5 seconds
       }
     );
+  }
+  before(interaction: CommandInteraction) {
+    // Action before all checks
   }
   execute(interaction: CommandInteraction) {
     interaction.reply("Pong !");
@@ -80,6 +82,9 @@ module.exports = class PingCommand extends MessageCommand {
       cooldown: 5, // cooldown 5 seconds
     });
   }
+  before(interaction) {
+    // Action before all checks
+  }
   execute(message) {
     message.channel.send({ content: "Pong !" });
   }
@@ -101,6 +106,9 @@ export class PingCommand extends MessageCommand {
       cooldown: 5, // cooldown 5 seconds
     });
   }
+  before(interaction: CommandInteraction) {
+    // Action before all checks
+  }
   execute(message: Message) {
     message.channel.send({ content: "Pong !" });
   }
@@ -111,5 +119,6 @@ export class PingCommand extends MessageCommand {
 ::::
 
 ::: warning
-After a restart of the bot the cooldowns are not kept
+The before function cannot prevent the execution of the command.  
+If you want to add checks to the commands use the [inhibitors](../inhibitors/Inhibitor.md).
 :::

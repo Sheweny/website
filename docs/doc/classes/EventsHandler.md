@@ -1,36 +1,43 @@
-# Events Handler
+# EventsHandler
 
 Create an handler for bot events. The events can be in as many subfolders as desired.
 
-| Name      | Type                                                                                              | Description             | Default | Required |
-| --------- | ------------------------------------------------------------------------------------------------- | ----------------------- | ------- | -------- |
-| client    | [ShewenyClientOptions](./ShewenyClient.md)                                                        | The client              | None    | Yes      |
-| directory | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The directory of events | None    | Yes      |
+| Name      | Type                                                                                                    | Description                        | Default | Optional |
+| --------- | ------------------------------------------------------------------------------------------------------- | ---------------------------------- | ------- | -------- |
+| directory | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)       | The directory of events            | None    |          |
+| client    | [ShewenyClient](./ShewenyClient.md) or [Client](https://discord.js.org/#/docs/main/stable/class/Client) | The client                         | None    |          |
+| loadAll   | [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)     | If handler load all in constructor | None    | ✓        |
 
 ## Properties
 
-### EventsHandler.client
+### client
 
 The client of framework.
 
-Return : [ShewenyClientOptions](./ShewenyClient.md)
+Return : [ShewenyClient](./ShewenyClient.md) or [Client](https://discord.js.org/#/docs/main/stable/class/Client)
 
-### EventsHandler.directory
+### directory
 
 The directory of events.
 
-Return : String
+Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 
 ## Methods
 
-### EventsHandler#registerAll()
+### loadAll()
 
-Regsiter all events in client.events Collection.
+Load all inhibitors in directory of events.
 
-Return promise Collection\<string, [Event](./Event.md)>
+Return : [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<Collection\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [Event](./Event.md)>>
 
-### EventsHandler#loadAll()
+### registerAll()
 
-Load registereds events and register them if no events exist.
+Register loaded events and register them if no events exist.
 
-Return Promise\<undefined>
+Parameters :
+
+| Name   | Type                                                                                                                                             | Description | Default       | Optional |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- | ------------- | -------- |
+| events | Collection\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [Event](../structures/Event.md))> | The events  | client.events | ✓        |
+
+Return : [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>
