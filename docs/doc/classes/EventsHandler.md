@@ -40,4 +40,4 @@ Parameters :
 | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- | ------------- | -------- |
 | events | Collection<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [Event](../structures/Event.md))> | The events  | client.events | ✓        |
 
-Return : [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<void>
+Return : [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>
