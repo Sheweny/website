@@ -5,7 +5,7 @@ Represents a button.
 | Name     | Type                                                                                                                                                                                               | Description                  | Default | Optional |
 | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- | ------- | -------- |
 | client   | [ShewenyClient](./ShewenyClient.md)                                                                                                                                                                | The client.                  | None    | ✓        |
-| customId | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)> | The list of select-menus ids | None    | ✓        |
+| customId | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)> | The list of select-menus ids | None    | ✓        |
 
 ## Properties
 
@@ -25,7 +25,7 @@ Parameters :
 | ----------- | ---------------------------------------------------------------------------------------------- | --------------- |
 | interaction | [SelectMenuInteraction](https://discord.js.org/#/docs/main/stable/class/SelectMenuInteraction) | The interaction |
 
-Return : [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<any> | any
+Return : [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<any> | any
 
 ### [abstract] execute()
 
@@ -37,7 +37,7 @@ Parameters :
 | ----------- | ---------------------------------------------------------------------------------------------- | --------------- |
 | interaction | [SelectMenuInteraction](https://discord.js.org/#/docs/main/stable/class/SelectMenuInteraction) | The interaction |
 
-Return : [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<any> | any
+Return : [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<any> | any
 
 ### unregister()
 
@@ -49,10 +49,10 @@ Return : [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refer
 
 Reload a select-menus group.
 
-Return : [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[SelectMenu](./SelectMenu.md)> | [null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Null)
+Return : [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[SelectMenu](./SelectMenu.md)> | [null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Null)
 
 ### [async] register()
 
 Register the select-menu.
 
-Return : [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[SelectMenu](./SelectMenu.md)> | [null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Null)
+Return : [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[SelectMenu](./SelectMenu.md)> | [null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Null)

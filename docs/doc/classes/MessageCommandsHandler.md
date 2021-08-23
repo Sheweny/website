@@ -27,7 +27,7 @@ Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refere
 
 Load all commands in directory of commands.
 
-Return : [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<Collection<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [MessageCommand](../structures/MessageCommand.md)>>
+Return : [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<Collection\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [MessageCommand](../structures/MessageCommand.md)>>
 
 ## Events
 

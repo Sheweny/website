@@ -27,25 +27,25 @@ Return : [ClientCommandsManager](../typedef/ClientCommandsManager.md)
 
 A collection of events or undefined if events are not loadeds.
 
-Return : Collection<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [Event](../structures/Event.md)> or undefined.
+Return : Collection\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [Event](../structures/Event.md)> or undefined.
 
 ### buttons
 
 A collection of buttons or undefined if buttons are not loadeds.
 
-Return : Collection<[Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>, [Button](../structures/Button.md)> or undefined.
+Return : Collection\<[Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>, [Button](../structures/Button.md)> or undefined.
 
 ### selectMenus
 
 A collection of selectMenus or undefined if selectMenus are not loadeds.
 
-Return : Collection<[Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>, [SelectMenu](../structures/selectMenu.md)> or undefined.
+Return : Collection\<[Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>, [SelectMenu](../structures/selectMenu.md)> or undefined.
 
 ### inhibitors
 
 A collection of inhibitors or undefined if inhibitors are not loadeds.
 
-Return : Collection<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [Inhibitor](../structures/Inhibitor.md)> or undefined.
+Return : Collection\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [Inhibitor](../structures/Inhibitor.md)> or undefined.
 
 ## Events
 

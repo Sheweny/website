@@ -10,14 +10,14 @@ Import the [ApplicationCommand](../../doc/structures/ApplicationCommand.md) or [
 ::: code-group-item CommonJS
 
 ```js
-const { ApplicationCommand, MessageCommand } = require("@sheweny/framework");
+const { ApplicationCommand, MessageCommand } = require("sheweny");
 ```
 
 :::
 ::: code-group-item ESM
 
 ```js
-import { ApplicationCommand, MessageCommand } from "@sheweny/framework";
+import { ApplicationCommand, MessageCommand } from "sheweny";
 ```
 
 :::
@@ -35,7 +35,7 @@ Command applications can be: slash-commands or context-menus.
 ::: code-group-item JS CommonJS
 
 ```js
-const { ApplicationCommand } = require("@sheweny/framework");
+const { ApplicationCommand } = require("sheweny");
 
 module.exports = class PingCommand extends ApplicationCommand {
   constructor(client) {
@@ -60,7 +60,7 @@ module.exports = class PingCommand extends ApplicationCommand {
 ::: code-group-item TS ES Modules
 
 ```ts
-import { ApplicationCommand, ShewenyClient } from "@sheweny/framework";
+import { ApplicationCommand, ShewenyClient } from "sheweny";
 import type { CommandInteraction } from "discord.js";
 
 export class PingCommand extends ApplicationCommand {
@@ -91,7 +91,7 @@ export class PingCommand extends ApplicationCommand {
 ::: code-group-item JS CommonJS
 
 ```js
-const { ApplicationCommand } = require("@sheweny/framework");
+const { ApplicationCommand } = require("sheweny");
 
 module.exports = class PingUserCommand extends ApplicationCommand {
   constructor(client) {
@@ -115,7 +115,7 @@ module.exports = class PingUserCommand extends ApplicationCommand {
 ::: code-group-item TS ES Modules
 
 ```ts
-import { ApplicationCommand, ShewenyClient } from "@sheweny/framework";
+import { ApplicationCommand, ShewenyClient } from "sheweny";
 import type { ContextMenuInteraction } from "discord.js";
 
 export class PingUserCommand extends ApplicationCommand {
@@ -145,7 +145,7 @@ export class PingUserCommand extends ApplicationCommand {
 ::: code-group-item JS CommonJS
 
 ```js
-const { MessageCommand } = require("@sheweny/framework");
+const { MessageCommand } = require("sheweny");
 
 module.exports = class PingCommand extends MessageCommand {
   constructor(client) {
@@ -164,7 +164,7 @@ module.exports = class PingCommand extends MessageCommand {
 ::: code-group-item TS ES Modules
 
 ```ts
-import { MessageCommand, ShewenyClient } from "@sheweny/framework";
+import { MessageCommand, ShewenyClient } from "sheweny";
 import type { Message } from "discord.js";
 
 export class PingCommand extends MessageCommand {

@@ -6,7 +6,7 @@ You can defined a priority to run some checks first.
 ::: code-group-item JS CommonJS
 
 ```js
-const { Inhibitor } = require("@sheweny/framework");
+const { Inhibitor } = require("sheweny");
 module.exports = class InDatabaseInhibitor extends Inhibitor {
   constructor(client) {
     super(client, "blacklist", {
@@ -27,8 +27,8 @@ module.exports = class InDatabaseInhibitor extends Inhibitor {
 ::: code-group-item TS ES Modules
 
 ```ts
-import { Inhibitor } from "@sheweny/framework";
-import type { ShewenyClient } from "@sheweny/framework";
+import { Inhibitor } from "sheweny";
+import type { ShewenyClient } from "sheweny";
 import type { CommandInteraction } from "discord.js";
 
 export class InDatabaseInhibitor extends Inhibitor {

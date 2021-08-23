@@ -7,13 +7,13 @@ Import the [ShewenyClient](../../doc/classes/ShewenyClient.md) class from librar
 ### Using CommonJS syntax
 
 ```js
-const { ShewenyClient } = require("@sheweny/framework");
+const { ShewenyClient } = require("sheweny");
 ```
 
 ### Using ES modules syntax
 
 ```js
-import { ShewenyClient } from "@sheweny/framework";
+import { ShewenyClient } from "sheweny";
 ```
 
 ## Create new instance of client
