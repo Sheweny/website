@@ -1,4 +1,4 @@
-# SelectMenuHandler
+# SelectMenusHandler
 
 Create an handler for bot select-menus. The select-menus can be in as many subfolders as desired.
 
@@ -20,7 +20,7 @@ Return : [ShewenyClient](./ShewenyClient.md) or [Client](https://discord.js.org/
 
 The directory of select-menus.
 
-Return : String
+Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 
 ## Methods
 
@@ -28,4 +28,4 @@ Return : String
 
 Load all select-menus in directory of select-menus.
 
-Return : [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<Collection<[Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>, [SelectMenu](../structures/SelectMenu.md)>>
+Return : [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<Collection<[Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>, [SelectMenu](../structures/SelectMenu.md)>>

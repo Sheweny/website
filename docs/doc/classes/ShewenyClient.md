@@ -19,33 +19,33 @@ Return : [ClientHandlers](../typedef/ClientHandlers.md).
 
 ### commands
 
-Commands manager
+A collection of commands or undefined if events are not loadeds.
 
 Return : [ClientCommandsManager](../typedef/ClientCommandsManager.md)
 
 ### events
 
-A collection of events or undefined if events are not loadeds
+A collection of events or undefined if events are not loadeds.
 
-Return : Collection\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [Event](../structures/Event.md)> or undefined.
+Return : Collection<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [Event](../structures/Event.md)> or undefined.
 
 ### buttons
 
-A collection of buttons or undefined if buttons are not loadeds
+A collection of buttons or undefined if buttons are not loadeds.
 
-Return : Collection\<[Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>, [Button](../structures/Button.md)> or undefined.
+Return : Collection<[Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>, [Button](../structures/Button.md)> or undefined.
 
 ### selectMenus
 
-A collection of commands or undefined if select-menus are not loadeds
+A collection of selectMenus or undefined if selectMenus are not loadeds.
 
-Return : Collection\<[Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>, [SelectMenu](../structures/selectMenu.md)> or undefined.
+Return : Collection<[Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>, [SelectMenu](../structures/selectMenu.md)> or undefined.
 
 ### inhibitors
 
-A collection of commands or undefined if select-menus are not loadeds
+A collection of inhibitors or undefined if inhibitors are not loadeds.
 
-Return : Collection\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [Inhibitor](../structures/Inhibitor.md)> or undefined.
+Return : Collection<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [Inhibitor](../structures/Inhibitor.md)> or undefined.
 
 ## Events
 
@@ -59,7 +59,7 @@ Parameters :
 
 ### interactionCommmandCreate
 
-Emitted when an slash-command is created.
+Emitted when an Slash Command or Context Menu is created.
 
 Parameters :
 
@@ -67,7 +67,7 @@ Parameters :
 
 ### interactionContextMenuCreate
 
-Emitted when an interaction context menu is created.
+Emitted when an interaction Context Menu is created.
 
 Parameters :
 
@@ -75,7 +75,7 @@ Parameters :
 
 ### interactionSelectMenuCreate
 
-Emitted when an select menu interaction is created.
+Emitted when an Select Menu interaction is created.
 
 Parameters :
 
@@ -83,7 +83,7 @@ Parameters :
 
 ### interactionMessageComponentCreate
 
-Emitted when an message component interaction is created.
+Emitted when an Message Component interaction is created.
 
 Parameters :
 

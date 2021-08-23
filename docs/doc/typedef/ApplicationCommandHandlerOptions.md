@@ -1,4 +1,4 @@
-# HandlersOptions
+# ApplicationCommandHandlerOptions
 
 | Name      | Type                                                                                              | Description                        | Default | Optional |
 | --------- | ------------------------------------------------------------------------------------------------- | ---------------------------------- | ------- | -------- |

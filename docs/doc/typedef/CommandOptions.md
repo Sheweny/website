@@ -1,9 +1,9 @@
-# ApplicationCommandOptions
+# CommandOptions
 
 | Name              | Type                                                                                                                                                                                               | Description                      | Default | Optional |
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------- | ------- | -------- |
-| description       | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                  | The name of the category         | None    | ✓        |
-| category          | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                  | The name of the category         | None    |          |
+| description       | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                  | The description of the command         | None    | ✓        |
+| category          | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                  | The category of the command         | None    |          |
 | only              | [CommandOptionOnly](./CommandOptionOnly.md)                                                                                                                                                        | Whre the command can be executed | None    | ✓        |
 | cooldown          | [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)                                                                                                  | The cooldown time in seconde     | 0       | ✓        |
 | userPermissions   | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)> | The user permissions required    | []      | ✓        |

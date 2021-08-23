@@ -20,7 +20,7 @@ Return : [ShewenyClient](./ShewenyClient.md) or [Client](https://discord.js.org/
 
 The directory of inhibitors.
 
-Return : String
+Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 
 ## Methods
 

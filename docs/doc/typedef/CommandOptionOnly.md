@@ -1,4 +1,4 @@
-# CommandOptionsOnly
+# CommandOptionOnly
 
 - GUILD
 

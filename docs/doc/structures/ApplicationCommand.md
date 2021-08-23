@@ -6,7 +6,7 @@ Represents an application command.
 | ------- | -------------------------------------------------------------------------------------------------- | -------------------------- | ------- | -------- |
 | client  | [ShewenyClient](../classes/ShewenyClient.md)                                                       | The client.                | None    |          |
 | data    | [ApplicationCommandData](https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandData) | The data of command.       | None    |          |
-| options | [ApplicationCommandOptions](../typedef/CommandOptions.md)                                          | The options of the command | None    |          |
+| options | [CommandOptions](../typedef/CommandOptions.md)                                          | The options of the command | None    |          |
 
 ## Properties
 
@@ -25,13 +25,15 @@ Represents an application command.
 
 ### before()
 
-Executed before commands checks.
+Executed before command checks.
 
 Parameters :
 
 | Name        | Type                                                                                                                                                                                     | Description     |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
 | interaction | [CommandInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction) or [ContextMenuInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction) | The interaction |
+
+Return : [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<any> | any
 
 ### [abstract] execute()
 
@@ -43,20 +45,22 @@ Parameters :
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
 | interaction | [CommandInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction) or [ContextMenuInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction) | The interaction |
 
+Return : [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<any> | any
+
 ### unregister()
 
 Unregister a command from the bot.
 
-Return true
+Return : [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
 
 ### [async] reload()
 
 Reload a command of bot.
 
-Return : [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[ApplicationCommand](.)> or null
+Return : [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[ApplicationCommand](./ApplicationCommand.md)> | [null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Null)
 
 ### [async] register()
 
 Register the command.
 
-Return : [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[ApplicationCommand](.)> or null
+Return : [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)<[ApplicationCommand](./ApplicationCommand.md)> | [null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Null)
