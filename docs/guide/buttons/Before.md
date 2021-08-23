@@ -10,7 +10,7 @@ It is possible to add a `before` function to execute code before checks like inh
 ```js
 const { Button } = require("sheweny");
 
-module.exports = class Btns1And2 extends Button {
+module.exports = class Btns extends Button {
   constructor(client) {
     super(client, ["btnId1", "btnId2"]);
   }
@@ -30,7 +30,7 @@ module.exports = class Btns1And2 extends Button {
 import { Button, ShewenyClient } from "sheweny";
 import type { ButtonInteraction } from "discord.js";
 
-export class Btns1And2 extends Button {
+export class Btns extends Button {
   constructor(client: ShewenyClient) {
     super(client, ["btnId1", "btnId2"]);
   }

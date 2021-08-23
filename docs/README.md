@@ -8,7 +8,7 @@ actions:
     link: /guide/
     type: primary
   - text: Download package
-    link: https://www.npmjs.com/package/@sheweny/framework
+    link: https://www.npmjs.com/package/sheweny
     type: secondary
 features:
   - title: Simplicity First

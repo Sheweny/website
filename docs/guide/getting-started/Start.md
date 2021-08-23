@@ -66,6 +66,6 @@ Once you're done with that, you're ready to install sheweny!
 
 Now that you've installed Node.js and know how to open up your console and run commands, you can finally install sheweny!
 
-To install sheweny, run the `npm install @sheweny/framework`. This can take a bit of time but should finish fairly quickly.
+To install sheweny, run the `npm install sheweny`. This can take a bit of time but should finish fairly quickly.
 
 And that's it! With all the necessities installed, you're almost ready to start coding your bot.
