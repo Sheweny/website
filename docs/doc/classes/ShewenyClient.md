@@ -19,7 +19,7 @@ Return : [ClientHandlers](../typedef/ClientHandlers.md).
 
 ### commands
 
-A collection of events or undefined if events are not loadeds.
+A collection of commands or undefined if events are not loadeds.
 
 Return : [ClientCommandsManager](../typedef/ClientCommandsManager.md)
 
@@ -59,7 +59,7 @@ Parameters :
 
 ### interactionCommmandCreate
 
-Emitted when an Slash Command is created.
+Emitted when an Slash Command or Context Menu is created.
 
 Parameters :
 

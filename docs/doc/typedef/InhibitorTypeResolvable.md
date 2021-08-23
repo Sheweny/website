@@ -1,4 +1,4 @@
-# CommandsTypeResolvable
+# InhibitorTypeResolvable
 
 - MESSAGE_COMMAND
 

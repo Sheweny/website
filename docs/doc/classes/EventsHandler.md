@@ -10,7 +10,7 @@ Create an handler for bot events. The events can be in as many subfolders as des
 
 ## Properties
 
-### E.client
+### client
 
 The client of framework.
 
