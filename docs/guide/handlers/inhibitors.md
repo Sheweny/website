@@ -10,7 +10,7 @@ When setting up the client, it is possible to set the handler as a parameter :
 ::: code-group-item JS CommonJS
 
 ```js
-const { ShewenyClient } = require("@sheweny/framework");
+const { ShewenyClient } = require("sheweny");
 const client = new ShewenyClient({
   intents: ["GUILDS"],
   handlers: {
@@ -25,7 +25,7 @@ const client = new ShewenyClient({
 ::: code-group-item TS ES Modules
 
 ```ts
-import { ShewenyClient } from "@sheweny/framework";
+import { ShewenyClient } from "sheweny";
 const client = new ShewenyClient({
   intents: ["GUILDS"],
   handlers: {
@@ -47,7 +47,7 @@ You can also use the class to set up the handler somewhere else :
 ::: code-group-item JS CommonJS
 
 ```js
-const { ShewenyClient, InhibitorsHandler } = require("@sheweny/framework");
+const { ShewenyClient, InhibitorsHandler } = require("sheweny");
 const client = new ShewenyClient({ intents: ["GUILDS"] });
 
 const inhibitorsHandler = new InhibitorsHandler(client, "./inhibitors");
@@ -59,7 +59,7 @@ inhibitorsHandler.loadAll();
 ::: code-group-item TS ES Modules
 
 ```ts
-import { ShewenyClient, InhibitorsHandler } = from "@sheweny/framework";
+import { ShewenyClient, InhibitorsHandler } = from "sheweny";
 const client = new ShewenyClient({ intents: ["GUILDS"] });
 
 const inhibitorsHandler = new InhibitorsHandler(client, "./inhibitors");

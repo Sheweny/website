@@ -10,7 +10,7 @@ The `before` fuction is executed before all checks like cooldowns, permissions, 
 ::: code-group-item JS CommonJS
 
 ```js
-const { ApplicationCommand } = require("@sheweny/framework");
+const { ApplicationCommand } = require("sheweny");
 
 module.exports = class PingCommand extends ApplicationCommand {
   constructor(client) {
@@ -38,7 +38,7 @@ module.exports = class PingCommand extends ApplicationCommand {
 ::: code-group-item TS ES Modules
 
 ```ts
-import { ApplicationCommand, ShewenyClient } from "@sheweny/framework";
+import { ApplicationCommand, ShewenyClient } from "sheweny";
 import type { CommandInteraction } from "discord.js";
 
 export class PingCommand extends ApplicationCommand {
@@ -72,7 +72,7 @@ export class PingCommand extends ApplicationCommand {
 ::: code-group-item JS CommonJS
 
 ```js
-const { MessageCommand } = require("@sheweny/framework");
+const { MessageCommand } = require("sheweny");
 
 module.exports = class PingCommand extends MessageCommand {
   constructor(client) {
@@ -95,7 +95,7 @@ module.exports = class PingCommand extends MessageCommand {
 ::: code-group-item TS ES Modules
 
 ```ts
-import { MessageCommand, ShewenyClient } from "@sheweny/framework";
+import { MessageCommand, ShewenyClient } from "sheweny";
 import type { Message } from "discord.js";
 
 export class PingCommand extends MessageCommand {

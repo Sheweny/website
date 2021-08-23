@@ -10,14 +10,14 @@ Import the [Event](../../doc/structures/Event.md) class :
 ::: code-group-item CommonJS
 
 ```js
-const { Event } = require("@sheweny/framework");
+const { Event } = require("sheweny");
 ```
 
 :::
 ::: code-group-item ESM
 
 ```js
-import { Event } from "@sheweny/framework";
+import { Event } from "sheweny";
 ```
 
 :::
@@ -31,7 +31,7 @@ import { Event } from "@sheweny/framework";
 ::: code-group-item JS CommonJS
 
 ```js
-const { Event } = require("@sheweny/framework");
+const { Event } = require("sheweny");
 
 module.exports = class GuildMemberAdd extends Event {
   constructor(client) {
@@ -50,7 +50,7 @@ module.exports = class GuildMemberAdd extends Event {
 ::: code-group-item TS ES Modules
 
 ```ts
-import { Event, ShewenyClient } from "@sheweny/framework";
+import { Event, ShewenyClient } from "sheweny";
 import type { GuildMember } from "discord.js";
 
 export class GuildMemberAdd extends Event {
@@ -75,7 +75,7 @@ export class GuildMemberAdd extends Event {
 ::: code-group-item JS CommonJS
 
 ```js
-const { Event } = require("@sheweny/framework");
+const { Event } = require("sheweny");
 
 module.exports = class Message extends Event {
   constructor(client) {
@@ -94,7 +94,7 @@ module.exports = class Message extends Event {
 ::: code-group-item TS ES Modules
 
 ```ts
-import { Event, ShewenyClient } from "@sheweny/framework";
+import { Event, ShewenyClient } from "sheweny";
 import type { Message } from "discord.js";
 
 export class GuildMemberAdd extends Event {

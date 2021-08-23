@@ -1,4 +1,4 @@
-# Select-menus handler
+# Select-Menus handler
 
 Set up an select-menus handler to load select-menus interactions events.
 
@@ -10,7 +10,7 @@ When setting up the client, it is possible to set the handler as a parameter :
 ::: code-group-item JS CommonJS
 
 ```js
-const { ShewenyClient } = require("@sheweny/framework");
+const { ShewenyClient } = require("sheweny");
 const client = new ShewenyClient({
   intents: ["GUILDS"],
   handlers: {
@@ -25,7 +25,7 @@ const client = new ShewenyClient({
 ::: code-group-item TS ES Modules
 
 ```ts
-import { ShewenyClient } from "@sheweny/framework";
+import { ShewenyClient } from "sheweny";
 const client = new ShewenyClient({
   intents: ["GUILDS"],
   handlers: {
@@ -47,7 +47,7 @@ You can also use the class to set up the handler somewhere else :
 ::: code-group-item JS CommonJS
 
 ```js
-const { ShewenyClient, SelectMenusHandler } = require("@sheweny/framework");
+const { ShewenyClient, SelectMenusHandler } = require("sheweny");
 const client = new ShewenyClient({ intents: ["GUILDS"] });
 
 const selectMenusHandler = new SelectMenusHandler(
@@ -62,7 +62,7 @@ selectMenusHandler.loadAll();
 ::: code-group-item TS ES Modules
 
 ```ts
-import { ShewenyClient, SelectMenusHandler } = from "@sheweny/framework";
+import { ShewenyClient, SelectMenusHandler } = from "sheweny";
 const client = new ShewenyClient({ intents: ["GUILDS"] });
 
 const selectMenusHandler = new SelectMenusHandler(client, "./interactions/selectmenus");

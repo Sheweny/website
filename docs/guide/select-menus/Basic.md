@@ -10,14 +10,14 @@ Import the [SelectMenu](../../doc/structures/SelectMenu.md) class :
 ::: code-group-item CommonJS
 
 ```js
-const { SelectMenu } = require("@sheweny/framework");
+const { SelectMenu } = require("sheweny");
 ```
 
 :::
 ::: code-group-item ESM
 
 ```js
-import { SelectMenu } from "@sheweny/framework";
+import { SelectMenu } from "sheweny";
 ```
 
 :::
@@ -29,7 +29,7 @@ import { SelectMenu } from "@sheweny/framework";
 ::: code-group-item JS CommonJS
 
 ```js
-const { SelectMenu } = require("@sheweny/framework");
+const { SelectMenu } = require("sheweny");
 
 module.exports = class SelectMenus1And2 extends SelectMenu {
   constructor(client) {
@@ -45,7 +45,7 @@ module.exports = class SelectMenus1And2 extends SelectMenu {
 ::: code-group-item TS ES Modules
 
 ```ts
-import { SelectMenu, ShewenyClient } from "@sheweny/framework";
+import { SelectMenu, ShewenyClient } from "sheweny";
 import type { SelectMenuInteraction } from "discord.js";
 
 export class SelectMenus1And2 extends SelectMenu {

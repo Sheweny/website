@@ -8,7 +8,7 @@ It is possible to add a `before` function to execute code before checks like inh
 ::: code-group-item JS CommonJS
 
 ```js
-const { SelectMenu } = require("@sheweny/framework");
+const { SelectMenu } = require("sheweny");
 
 module.exports = class SelectMenus1And2 extends SelectMenu {
   constructor(client) {
@@ -27,7 +27,7 @@ module.exports = class SelectMenus1And2 extends SelectMenu {
 ::: code-group-item TS ES Modules
 
 ```ts
-import { SelectMenu, ShewenyClient } from "@sheweny/framework";
+import { SelectMenu, ShewenyClient } from "sheweny";
 import type { SelectMenuInteraction } from "discord.js";
 
 export class SelectMenus1And2 extends SelectMenu {

@@ -8,7 +8,7 @@ You can add restrictions to prevent a command from being executed on a guild or 
 ::: code-group-item JS CommonJS
 
 ```js
-const { Command } = require("@sheweny/framework");
+const { Command } = require("sheweny");
 
 module.exports = class PingCommand extends Command {
   constructor(client) {
@@ -28,7 +28,7 @@ module.exports = class PingCommand extends Command {
 ::: code-group-item TS ES Modules
 
 ```ts
-import { Command, ShewenyClient } from "@sheweny/framework";
+import { Command, ShewenyClient } from "sheweny";
 import type { CommandInteraction } from "discord.js";
 
 export class PingCommand extends Command {
@@ -54,7 +54,7 @@ export class PingCommand extends Command {
 ::: code-group-item JS CommonJS
 
 ```js
-const { Command } = require("@sheweny/framework");
+const { Command } = require("sheweny");
 
 module.exports = class PingCommand extends Command {
   constructor(client) {
@@ -74,7 +74,7 @@ module.exports = class PingCommand extends Command {
 ::: code-group-item TS ES Modules
 
 ```ts
-import { Command, ShewenyClient } from "@sheweny/framework";
+import { Command, ShewenyClient } from "sheweny";
 import type { Message } from "discord.js";
 
 export class PingCommand extends Command {

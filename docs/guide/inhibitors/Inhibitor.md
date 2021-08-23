@@ -17,7 +17,7 @@ In your `inhibitors` directory create file with your inhibitor :
 ::: code-group-item JS CommonJS
 
 ```js
-const { Inhibitor } = require('@sheweny/framework')
+const { Inhibitor } = require("sheweny");
 module.exports =  class BlackListInhibitor extends Inhibitor {
   constructor(client) {
     super(client, "blacklist", {
@@ -37,8 +37,8 @@ module.exports =  class BlackListInhibitor extends Inhibitor {
 ::: code-group-item TS ES Modules
 
 ```ts
-import { Inhibitor } from "@sheweny/framework";
-import type { ShewenyClient } from "@sheweny/framework";
+import { Inhibitor } from "sheweny";
+import type { ShewenyClient } from "sheweny";
 import type { CommandInteraction } from "discord.js";
 
 export class BlackListInhibitor extends Inhibitor {
