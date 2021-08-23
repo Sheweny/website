@@ -1,4 +1,4 @@
-# Inhibitors
+# Basic inhibitors
 
 Inhibitors allow you to limit the use of a command, an event, or an interaction.
 

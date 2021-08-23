@@ -29,7 +29,7 @@ module.exports = {
     sidebarDepth: 1,
     navbar: [
       {
-        text: "Ducumentation",
+        text: "Documentation",
         link: "/doc/",
       },
       {
@@ -38,7 +38,7 @@ module.exports = {
       },
       {
         text: "Github",
-        link: "https://github.com/Discord-util/website",
+        link: "https://github.com/Sheweny",
       },
     ],
     sidebar: {
