@@ -7,6 +7,7 @@ You can defined a priority to run some checks first.
 
 ```js
 const { Inhibitor } = require("sheweny");
+
 module.exports = class InDatabaseInhibitor extends Inhibitor {
   constructor(client) {
     super(client, "blacklist", {
@@ -14,9 +15,11 @@ module.exports = class InDatabaseInhibitor extends Inhibitor {
       priority: 1, // Executed before other inhibitors with lower priority
     });
   }
+
   execute(client, interaction) {
     return await dbPremium.findOne({ guildID: interaction.guildId });
   }
+
   onFailure(client, interaction) {
     interaction.reply("Your guild not have premium version of bot.");
   }
@@ -38,9 +41,11 @@ export class InDatabaseInhibitor extends Inhibitor {
       priority: 1, // Executed before other inhibitors with lower priority
     });
   }
+
   execute(client: ShewenyClient, interaction: CommandInteraction) {
     return await dbPremium.findOne({ guildID: interaction.guildId });
   }
+
   onFailure(client: ShewenyClient, interaction: CommandInteraction) {
     interaction.reply("Your guild not have premium version of bot.");
   }

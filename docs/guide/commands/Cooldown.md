@@ -28,6 +28,7 @@ module.exports = class PingCommand extends ApplicationCommand {
       }
     );
   }
+
   execute(interaction) {
     interaction.reply("Pong !");
   }
@@ -38,7 +39,8 @@ module.exports = class PingCommand extends ApplicationCommand {
 ::: code-group-item TS ES Modules
 
 ```ts
-import { ApplicationCommand, ShewenyClient } from "sheweny";
+import { ApplicationCommand } from "sheweny";
+import type { ShewenyClient } from "sheweny";
 import type { CommandInteraction } from "discord.js";
 
 export class PingCommand extends ApplicationCommand {
@@ -55,6 +57,7 @@ export class PingCommand extends ApplicationCommand {
       }
     );
   }
+
   execute(interaction: CommandInteraction) {
     interaction.reply("Pong !");
   }
@@ -80,6 +83,7 @@ module.exports = class PingCommand extends MessageCommand {
       cooldown: 5, // cooldown 5 seconds
     });
   }
+
   execute(message) {
     message.channel.send({ content: "Pong !" });
   }
@@ -90,7 +94,8 @@ module.exports = class PingCommand extends MessageCommand {
 ::: code-group-item TS ES Modules
 
 ```ts
-import { MessageCommand, ShewenyClient } from "sheweny";
+import { MessageCommand } from "sheweny";
+import type { ShewenyClient } from "sheweny";
 import type { Message } from "discord.js";
 
 export class PingCommand extends MessageCommand {
@@ -101,6 +106,7 @@ export class PingCommand extends MessageCommand {
       cooldown: 5, // cooldown 5 seconds
     });
   }
+  
   execute(message: Message) {
     message.channel.send({ content: "Pong !" });
   }

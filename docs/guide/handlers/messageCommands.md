@@ -11,6 +11,7 @@ When setting up the client, it is possible to set the handler as a parameter :
 
 ```js
 const { ShewenyClient } = require("sheweny");
+
 const client = new ShewenyClient({
   intents: ["GUILDS"],
   handlers: {
@@ -26,6 +27,7 @@ const client = new ShewenyClient({
 
 ```ts
 import { ShewenyClient } from "sheweny";
+
 const client = new ShewenyClient({
   intents: ["GUILDS"],
   handlers: {
@@ -48,6 +50,7 @@ You can also use the class to set up the handler somewhere else :
 
 ```js
 const { ShewenyClient, MessageCommandsHandler } = require("sheweny");
+
 const client = new ShewenyClient({ intents: ["GUILDS"] });
 
 const messageCommandsHandler = new MessageCommandsHandler(client, "./commands");
@@ -60,6 +63,7 @@ messageCommandsHandler.loadAll();
 
 ```ts
 import { ShewenyClient, MessageCommandsHandler } = from "sheweny";
+
 const client = new ShewenyClient({ intents: ["GUILDS"] });
 
 const messageCommandsHandler = new MessageCommandsHandler(client, "./commands");
