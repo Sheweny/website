@@ -60,7 +60,8 @@ module.exports = class PingCommand extends ApplicationCommand {
 ::: code-group-item TS ES Modules
 
 ```ts
-import { ApplicationCommand, ShewenyClient } from "sheweny";
+import { ApplicationCommand } from "sheweny";
+import type { ShewenyClient } from "sheweny";
 import type { CommandInteraction } from "discord.js";
 
 export class PingCommand extends ApplicationCommand {
@@ -105,6 +106,7 @@ module.exports = class PingUserCommand extends ApplicationCommand {
       { category: "Misc" }
     );
   }
+
   execute(interaction) {
     message.channel.send({ content: `Pong <@${interaction.targetId}> !` });
   }
@@ -115,7 +117,8 @@ module.exports = class PingUserCommand extends ApplicationCommand {
 ::: code-group-item TS ES Modules
 
 ```ts
-import { ApplicationCommand, ShewenyClient } from "sheweny";
+import { ApplicationCommand } from "sheweny";
+import type { ShewenyClient } from "sheweny";
 import type { ContextMenuInteraction } from "discord.js";
 
 export class PingUserCommand extends ApplicationCommand {
@@ -130,6 +133,7 @@ export class PingUserCommand extends ApplicationCommand {
       { category: "Misc" }
     );
   }
+
   execute(interaction: ContextMenuInteraction) {
     message.channel.send({ content: `Pong <@${interaction.targetId}> !` });
   }
@@ -154,6 +158,7 @@ module.exports = class PingCommand extends MessageCommand {
       category: "Misc",
     });
   }
+
   execute(message) {
     message.channel.send({ content: "Pong !" });
   }
@@ -174,6 +179,7 @@ export class PingCommand extends MessageCommand {
       category: "Misc",
     });
   }
+  
   execute(message: Message) {
     message.channel.send({ content: "Pong !" });
   }

@@ -18,15 +18,18 @@ In your `inhibitors` directory create file with your inhibitor :
 
 ```js
 const { Inhibitor } = require("sheweny");
+
 module.exports =  class BlackListInhibitor extends Inhibitor {
   constructor(client) {
     super(client, "blacklist", {
       type: ["APPLICATION_COMMAND"],
     });
   }
+
   execute(client, interaction) {
     return !["877090306103840778"].includes(interaction.guildId!);
   }
+  
   onFailure(client, interaction) {
     interaction.reply("Your guild is blacklisted.");
   }
@@ -47,9 +50,11 @@ export class BlackListInhibitor extends Inhibitor {
       type: ["APPLICATION_COMMAND"],
     });
   }
+
   execute(client: ShewenyClient, interaction: CommandInteraction) {
     return !["877090306103840778"].includes(interaction.guildId!);
   }
+
   onFailure(client: ShewenyClient, interaction: CommandInteraction) {
     interaction.reply("Your guild is blacklisted.");
   }

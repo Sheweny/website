@@ -11,6 +11,7 @@ When setting up the client, it is possible to set the handler as a parameter :
 
 ```js
 const { ShewenyClient } = require("sheweny");
+
 const client = new ShewenyClient({
   intents: ["GUILDS"],
   handlers: {
@@ -26,6 +27,7 @@ const client = new ShewenyClient({
 
 ```ts
 import { ShewenyClient } from "sheweny";
+
 const client = new ShewenyClient({
   intents: ["GUILDS"],
   handlers: {
@@ -48,6 +50,7 @@ You can also use the class to set up the handler somewhere else :
 
 ```js
 const { ShewenyClient, EventsHandler } = require("sheweny");
+
 const client = new ShewenyClient({ intents: ["GUILDS"] });
 
 const eventsHandler = new EventsHandler(client, "./events");
@@ -60,6 +63,7 @@ eventsHandler.loadAll();
 
 ```ts
 import { ShewenyClient, EventsHandler } = from "sheweny";
+
 const client = new ShewenyClient({ intents: ["GUILDS"] });
 
 const eventsHandler = new EventsHandler(client, "./events");

@@ -40,6 +40,7 @@ module.exports = class GuildMemberAdd extends Event {
       once: false,
     });
   }
+  
   execute(member) {
     console.log(member);
   }
@@ -50,7 +51,8 @@ module.exports = class GuildMemberAdd extends Event {
 ::: code-group-item TS ES Modules
 
 ```ts
-import { Event, ShewenyClient } from "sheweny";
+import { Event } from "sheweny";
+import type { ShewenyClient } from "sheweny";
 import type { GuildMember } from "discord.js";
 
 export class GuildMemberAdd extends Event {
@@ -60,6 +62,7 @@ export class GuildMemberAdd extends Event {
       once: false,
     });
   }
+
   execute(member: GuildMember) {
     console.log(member);
   }
@@ -84,6 +87,7 @@ module.exports = class Message extends Event {
       once: false,
     });
   }
+
   execute(message) {
     console.log(message);
   }
@@ -94,7 +98,8 @@ module.exports = class Message extends Event {
 ::: code-group-item TS ES Modules
 
 ```ts
-import { Event, ShewenyClient } from "sheweny";
+import { Event } from "sheweny";
+import type { ShewenyClient } from "sheweny";
 import type { Message } from "discord.js";
 
 export class GuildMemberAdd extends Event {
@@ -104,6 +109,7 @@ export class GuildMemberAdd extends Event {
       once: false,
     });
   }
+
   execute(message: Message) {
     console.log(message);
   }

@@ -36,6 +36,7 @@ module.exports = class PingCommand extends Command {
       userPermissions: ["BAN_MEMBERS", "BOT_ADMIN"],
     });
   }
+  
   execute(interaction) {
     interaction.reply("Pong !");
   }
@@ -46,7 +47,8 @@ module.exports = class PingCommand extends Command {
 ::: code-group-item TS ES Modules
 
 ```ts
-import { Command, ShewenyClient } from "sheweny";
+import { Command } from "sheweny";
+import type { ShewenyClient } from "sheweny";
 import type { CommandInteraction } from "discord.js";
 
 export class PingCommand extends Command {
@@ -57,6 +59,7 @@ export class PingCommand extends Command {
       userPermissions: ["BAN_MEMBERS", "BOT_ADMIN"],
     });
   }
+
   execute(interaction: CommandInteraction) {
     interaction.reply("Pong !");
   }
@@ -82,6 +85,7 @@ module.exports = class PingCommand extends Command {
       userPermissions: ["BAN_MEMBERS", "BOT_ADMIN"],
     });
   }
+
   execute(message) {
     message.channel.send({ content: "Pong !" });
   }
@@ -92,7 +96,8 @@ module.exports = class PingCommand extends Command {
 ::: code-group-item TS ES Modules
 
 ```ts
-import { Command, ShewenyClient } from "sheweny";
+import { Command } from "sheweny";
+import type { ShewenyClient } from "sheweny";
 import type { Message } from "discord.js";
 
 export class PingCommand extends Command {
@@ -103,6 +108,7 @@ export class PingCommand extends Command {
       userPermissions: ["BAN_MEMBERS", "BOT_ADMIN"],
     });
   }
+
   execute(message: Message) {
     message.channel.send({ content: "Pong !" });
   }
