@@ -119,6 +119,7 @@ module.exports = {
           collapsable: false,
           children: [
             "/guide/cli/Installation.md",
+            "/guide/cli/Usage.md",
           ],
         },
         {
