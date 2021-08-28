@@ -1,10 +1,9 @@
 # ClientHandlers
 
-| Name                | Type                                                                   | Description                      |
-| ------------------- | ---------------------------------------------------------------------- | -------------------------------- |
-| messageCommands     | [CommandsHandler](../classes/MessageCommandsHandler.md)                | The message commands handler     |
-| applicationCommands | [ApplicationCommandsHandler](../classes/ApplicationCommandsHandler.md) | The application commands handler |
-| events              | [EventsHandler](../classes/EventsHandler.md)                           | The events handler               |
-| buttons             | [ButtonsHandler](../classes/ButtonsHandler.md)                         | The buttons handler              |
-| selectMenus         | [SelectMenusHandler](../classes/SelectMenusHandler.md)                 | The selectMenus handler          |
-| inhibitors          | [InhibitorsHandler](../classes/InhibitorsHandler.md)                   | The inhibitors handler           |
+| Name        | Type                                                   | Description                      |
+| ----------- | ------------------------------------------------------ | -------------------------------- |
+| commands    | [CommandsManager](../classes/CommandsManager.md)       | The application commands handler |
+| events      | [EventsManager](../classes/EventsManager.md)           | The events handler               |
+| buttons     | [ButtonsManager](../classes/ButtonsManager.md)         | The buttons handler              |
+| selectMenus | [SelectMenusHandler](../classes/SelectMenusHandler.md) | The selectMenus handler          |
+| inhibitors  | [InhibitorsManager](../classes/InhibitorsManager.md)   | The inhibitors handler           |

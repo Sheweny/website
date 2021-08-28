@@ -1,37 +1,67 @@
-# ApplicationCommandsHandler
+# CommandsManager
 
 Create an handler for bot events. The events can be in as many subfolders as desired.
 
-| Name      | Type                                                                                                    | Description                                           | Default | Optional |
-| --------- | ------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ------- | -------- |
-| client    | [ShewenyClient](./ShewenyClient.md) or [Client](https://discord.js.org/#/docs/main/stable/class/Client) | The client                                            | None    |          |
-| directory | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)       | The directory of commands                             | None    |          |
-| loadAll   | [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)     | If the loadAll function must be called in constructor | None    | ✓        |
+| Name      | Type                                                                                                | Description                                           | Default | Optional |
+| --------- | --------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ------- | -------- |
+| client    | [ShewenyClient](./ShewenyClient.md)                                                                 | The client                                            | None    |          |
+| directory | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The directory of commands                             | None    |          |
+| loadAll   | [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | If the loadAll function must be called in constructor | None    | ✓        |
+| options   | [CommandsManagerOptions](../typedef/CommandsManagerOptions.md)                                      | Options of the commands manager                       | None    | ✓        |
+
+## Properties
+
+- `client` - The client.
+- `directory` - The directory of commands.
+- `guildId` - The id of guild for commands interaction.
+- `prefix` - The prefix of the command.
+- `applicationPermissions` - If application permissions is set.
+- `commands` - A collection of loaded commands.
 
 ## Methods
 
 ### [async] loadAll()
 
-Load commands.
+Load all commands in collection.
 
-Return : [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<Collection\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [ApplicationCommand](../structures/ApplicationCommand.md)>>;
+Return : [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<Collection\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [ApplicationCommand](../structures/Command.md)>>;
+
+### [async] loadAndRegisterAll()
+
+Load all commands in collection and register interactions.
+
+Return : Promise\<void>
 
 ### getData()
 
 Create an array with all commands data for register it.
 
-Return : [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)\<[ApplicationCommandData](https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandData)>
+Return : [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)\<[ApplicationCommandData](https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandData)>| [ApplicationCommandData](https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandData) | undefined
 
-### [async] registerCommands(commands, guildId)
+### [async] registerAllApplicationCommands(commands, guildId)
 
-Register commands.
+Register application commands.
 
 Parameters :
 
-| Name     | Type                                                                                                                                                                       | Description                    | Default         | Optional |
-| -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | --------------- | -------- |
-| commands | Collection\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [ApplicationCommand](../structures/ApplicationCommand.md))> | The commands                   | client.commands | ✓        |
-| guildId  | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                          | The guild to register commands |                 | ✓        |
+| Name     | Type                                                                                                                                                            | Description                    | Default         | Optional |
+| -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | --------------- | -------- |
+| commands | Collection\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [ApplicationCommand](../structures/Command.md))> | The commands                   | client.commands | ✓        |
+| guildId  | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                               | The guild to register commands |                 | ✓        |
+
+Return : [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<Collection\<[Snowflake](https://discord.js.org/#/docs/main/stable/typedef/Snowflake), [ApplicationCommand](https://discord.js.org/#/docs/main/stable/class/ApplicationCommand)>>;
+
+### [async] registerPermissions(commands, guildId)
+
+Register application commands.
+
+Parameters :
+
+| Name                | Type                                                                                                                                                                                                      | Description                    | Default         | Optional |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ | --------------- | -------- |
+| applicationCommands | Collection\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [ApplicationCommand](https://discord.js.org/#/docs/main/stable/class/ApplicationCommand))> | The application commands       | client.commands | ✓        |
+| clientCommands      | Collection\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [Command](../structures/Command.md))>                                                      | The client commands            | client.commands | ✓        |
+| guildId             | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                                         | The guild to register commands |                 | ✓        |
 
 Return : [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<Collection\<[Snowflake](https://discord.js.org/#/docs/main/stable/typedef/Snowflake), [ApplicationCommand](https://discord.js.org/#/docs/main/stable/class/ApplicationCommand)>>;
 
@@ -43,7 +73,7 @@ Parameters :
 
 | Name    | Type                                                                                              | Description                   | Default | Optional |
 | ------- | ------------------------------------------------------------------------------------------------- | ----------------------------- | ------- | -------- |
-| command | [ApplicationCommand](../structures/ApplicationCommand.md)                                         | The command                   |         |          |
+| command | [ApplicationCommand](../structures/Command.md)                                                    | The command                   |         |          |
 | guildId | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) | The guild to register command |         | ✓        |
 
 Return : [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[ApplicationCommand](https://discord.js.org/#/docs/main/stable/class/ApplicationCommand)>;
@@ -56,8 +86,8 @@ Parameters :
 
 | Name       | Type                                                                                                           | Description                 | Default | Optional |
 | ---------- | -------------------------------------------------------------------------------------------------------------- | --------------------------- | ------- | -------- |
-| oldCommand    | [ApplicationCommandResolvable](https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandResolvable) | The command to edit         |         |          |
-| newCommand | [ApplicationCommand](../structures/ApplicationCommand.md)                                                      | The new command             |         |          |
+| oldCommand | [ApplicationCommandResolvable](https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandResolvable) | The command to edit         |         |          |
+| newCommand | [ApplicationCommand](../structures/Command.md)                                                                 | The new command             |         |          |
 | guildId    | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)              | The guild to update command |         | ✓        |
 
 Return : [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[ApplicationCommand](https://discord.js.org/#/docs/main/stable/class/ApplicationCommand)>;

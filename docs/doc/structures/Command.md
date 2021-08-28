@@ -6,7 +6,7 @@ Represents an application command.
 | ------- | -------------------------------------------------------------------------------------------------- | -------------------------- | ------- | -------- |
 | client  | [ShewenyClient](../classes/ShewenyClient.md)                                                       | The client.                | None    |          |
 | data    | [ApplicationCommandData](https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandData) | The data of command.       | None    |          |
-| options | [CommandOptions](../typedef/CommandOptions.md)                                          | The options of the command | None    |          |
+| options | [CommandOptions](../typedef/CommandOptions.md)                                                     | The options of the command | None    |          |
 
 ## Properties
 
@@ -57,10 +57,10 @@ Return : [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refer
 
 Reload a command of bot.
 
-Return : [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[ApplicationCommand](./ApplicationCommand.md)> | [null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Null)
+Return : [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[ApplicationCommand](./Command.md)> | [null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Null)
 
 ### [async] register()
 
 Register the command.
 
-Return : [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[ApplicationCommand](./ApplicationCommand.md)> | [null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Null)
+Return : [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[ApplicationCommand](./Command.md)> | [null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Null)

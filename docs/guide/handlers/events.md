@@ -47,24 +47,24 @@ You can also use the class to set up the handler somewhere else :
 ::: code-group-item JS CommonJS
 
 ```js
-const { ShewenyClient, EventsHandler } = require("sheweny");
+const { ShewenyClient, EventsManager } = require("sheweny");
 const client = new ShewenyClient({ intents: ["GUILDS"] });
 
-const eventsHandler = new EventsHandler(client, "./events");
+const EventsManager = new EventsManager(client, "./events");
 
-eventsHandler.loadAll();
+EventsManager.loadAll();
 ```
 
 :::
 ::: code-group-item TS ES Modules
 
 ```ts
-import { ShewenyClient, EventsHandler } = from "sheweny";
+import { ShewenyClient, EventsManager } = from "sheweny";
 const client = new ShewenyClient({ intents: ["GUILDS"] });
 
-const eventsHandler = new EventsHandler(client, "./events");
+const EventsManager = new EventsManager(client, "./events");
 
-eventsHandler.loadAll().then(() => this.registerAll());
+EventsManager.loadAll().then(() => this.registerAll());
 ```
 
 :::

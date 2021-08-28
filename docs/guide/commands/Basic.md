@@ -1,10 +1,10 @@
 # Basic command
 
-With sheweny each command must be a class which extends from the [ApplicationCommand](../../doc/structures/ApplicationCommand.md) for slash-commands and context-menus or [MessageCommand](../../doc/structures/MessageCommand.md) for message commands.class
+With sheweny each command must be a class which extends from the [ApplicationCommand](../../doc/structures/Command.md) for slash-commands and context-menus or [MessageCommand](../../doc/structures/MessageCommand.md) for message commands.class
 
 ## Import Command
 
-Import the [ApplicationCommand](../../doc/structures/ApplicationCommand.md) or [MessageCommand](../../doc/structures/MessageCommand.md) class:
+Import the [ApplicationCommand](../../doc/structures/Command.md) or [MessageCommand](../../doc/structures/MessageCommand.md) class:
 
 :::: code-group
 ::: code-group-item CommonJS

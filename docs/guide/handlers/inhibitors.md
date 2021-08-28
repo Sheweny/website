@@ -47,24 +47,24 @@ You can also use the class to set up the handler somewhere else :
 ::: code-group-item JS CommonJS
 
 ```js
-const { ShewenyClient, InhibitorsHandler } = require("sheweny");
+const { ShewenyClient, InhibitorsManager } = require("sheweny");
 const client = new ShewenyClient({ intents: ["GUILDS"] });
 
-const inhibitorsHandler = new InhibitorsHandler(client, "./inhibitors");
+const InhibitorsManager = new InhibitorsManager(client, "./inhibitors");
 
-inhibitorsHandler.loadAll();
+InhibitorsManager.loadAll();
 ```
 
 :::
 ::: code-group-item TS ES Modules
 
 ```ts
-import { ShewenyClient, InhibitorsHandler } = from "sheweny";
+import { ShewenyClient, InhibitorsManager } = from "sheweny";
 const client = new ShewenyClient({ intents: ["GUILDS"] });
 
-const inhibitorsHandler = new InhibitorsHandler(client, "./inhibitors");
+const InhibitorsManager = new InhibitorsManager(client, "./inhibitors");
 
-inhibitorsHandler.loadAll()
+InhibitorsManager.loadAll()
 ```
 
 :::

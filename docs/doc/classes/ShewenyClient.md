@@ -11,41 +11,31 @@ Parameters :
 
 ## Properties
 
+### util
+
+Functions for resolve data.
+
+Return : [DiscordResolve](../typedef/DiscordResolve.md).
+
 ### handlers
 
 The handlers of the client.
 
 Return : [ClientHandlers](../typedef/ClientHandlers.md).
 
-### commands
+### collections
 
-A collection of commands or undefined if events are not loadeds.
+The collections of commands, events, buttons, select-menus, inhibitors.
 
-Return : [ClientCommandsManager](../typedef/ClientCommandsManager.md)
+Return : [ClientCollections](../typedef/ClientCollections.md)
 
-### events
+## Methods
 
-A collection of events or undefined if events are not loadeds.
+## awaitReady
 
-Return : Collection\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [Event](../structures/Event.md)> or undefined.
+Wait for the client to be ready.
 
-### buttons
-
-A collection of buttons or undefined if buttons are not loadeds.
-
-Return : Collection\<[Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>, [Button](../structures/Button.md)> or undefined.
-
-### selectMenus
-
-A collection of selectMenus or undefined if selectMenus are not loadeds.
-
-Return : Collection\<[Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>, [SelectMenu](../structures/selectMenu.md)> or undefined.
-
-### inhibitors
-
-A collection of inhibitors or undefined if inhibitors are not loadeds.
-
-Return : Collection\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [Inhibitor](../structures/Inhibitor.md)> or undefined.
+Return Promise\<void>
 
 ## Events
 

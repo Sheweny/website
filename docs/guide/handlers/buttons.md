@@ -47,24 +47,24 @@ You can also use the class to set up the handler somewhere else :
 ::: code-group-item JS CommonJS
 
 ```js
-const { ShewenyClient, ButtonsHandler } = require("sheweny");
+const { ShewenyClient, ButtonsManager } = require("sheweny");
 const client = new ShewenyClient({ intents: ["GUILDS"] });
 
-const buttonsHandler = new ButtonsHandler(client, "./interactions/buttons");
+const ButtonsManager = new ButtonsManager(client, "./interactions/buttons");
 
-buttonsHandler.loadAll();
+ButtonsManager.loadAll();
 ```
 
 :::
 ::: code-group-item TS ES Modules
 
 ```ts
-import { ShewenyClient, ButtonsHandler } = from "sheweny";
+import { ShewenyClient, ButtonsManager } = from "sheweny";
 const client = new ShewenyClient({ intents: ["GUILDS"] });
 
-const buttonsHandler = new ButtonsHandler(client, "./interactions/buttons");
+const ButtonsManager = new ButtonsManager(client, "./interactions/buttons");
 
-buttonsHandler.loadAll()
+ButtonsManager.loadAll()
 ```
 
 :::
