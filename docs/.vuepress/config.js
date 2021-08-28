@@ -18,9 +18,9 @@ module.exports = {
    *
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
+  base: "/sheweny-website/",
   themeConfig: {
     repo: "",
-    base: "/sheweny-website",
     editLinks: false,
     editLinkText: "",
     lastUpdated: false,
