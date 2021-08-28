@@ -15,6 +15,7 @@ module.exports = class Ready extends Event {
       once: true,
     });
   }
+  
   execute(client) {
     console.log("The client is logged in");
   }
@@ -25,7 +26,8 @@ module.exports = class Ready extends Event {
 ::: code-group-item TS ES Modules
 
 ```ts
-import { Event, ShewenyClient } from "sheweny";
+import { Event } from "sheweny";
+import type { ShewenyClient } from "sheweny";
 import type { Client } from "discord.js";
 
 export class Ready extends Event {
@@ -35,6 +37,7 @@ export class Ready extends Event {
       once: true,
     });
   }
+
   execute(client: Client) {
     console.log("The client is logged in");
   }

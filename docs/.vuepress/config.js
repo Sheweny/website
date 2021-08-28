@@ -116,6 +116,15 @@ module.exports = {
           ],
         },
         {
+          text: "CLI",
+          path: "/guide/cli",
+          collapsable: false,
+          children: [
+            "/guide/cli/Installation.md",
+            "/guide/cli/Usage.md",
+          ],
+        },
+        {
           text: "Handlers",
           path: "/guide/handlers",
           collapsable: false,

@@ -11,6 +11,7 @@ When setting up the client, it is possible to set the handler as a parameter :
 
 ```js
 const { ShewenyClient } = require("sheweny");
+
 const client = new ShewenyClient({
   intents: ["GUILDS"],
   handlers: {
@@ -26,6 +27,7 @@ const client = new ShewenyClient({
 
 ```ts
 import { ShewenyClient } from "sheweny";
+
 const client = new ShewenyClient({
   intents: ["GUILDS"],
   handlers: {
@@ -59,7 +61,7 @@ ButtonsManager.loadAll();
 ::: code-group-item TS ES Modules
 
 ```ts
-import { ShewenyClient, ButtonsManager } = from "sheweny";
+import { ShewenyClient, ButtonsHandler } = from "sheweny";
 const client = new ShewenyClient({ intents: ["GUILDS"] });
 
 const ButtonsManager = new ButtonsManager(client, "./interactions/buttons");
