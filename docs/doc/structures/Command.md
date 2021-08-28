@@ -1,4 +1,4 @@
-# ApplicationCommand
+# Command
 
 Represents an application command.
 
