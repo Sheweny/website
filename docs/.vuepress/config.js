@@ -1,4 +1,4 @@
-const { description } = require("../../package");
+const { description, production } = require("../../package");
 
 module.exports = {
   title: "Sheweny",
@@ -20,7 +20,7 @@ module.exports = {
    */
   themeConfig: {
     repo: "",
-    base: "/website",
+    base: production ? "/website" : "/sheweny-website",
     editLinks: false,
     editLinkText: "",
     lastUpdated: false,
@@ -119,10 +119,7 @@ module.exports = {
           text: "CLI",
           path: "/guide/cli",
           collapsable: false,
-          children: [
-            "/guide/cli/Installation.md",
-            "/guide/cli/Usage.md",
-          ],
+          children: ["/guide/cli/Installation.md", "/guide/cli/Usage.md"],
         },
         {
           text: "Handlers",
