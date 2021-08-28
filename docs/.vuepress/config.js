@@ -87,7 +87,7 @@ module.exports = {
             "/doc/typedef/CommandMessageArgument.md",
             "/doc/typedef/CommandOptionOnly.md",
             "/doc/typedef/CommandOptions.md",
-            "/doc/typedef/CommandhandlerOptions.md",
+            "/doc/typedef/CommandHandlerOptions.md",
             "/doc/typedef/CommandsHandlerOptions.md",
             "/doc/typedef/DiscordResolve.md",
             "/doc/typedef/EventOptions.md",
