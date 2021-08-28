@@ -31,7 +31,7 @@ Return : [ClientCollections](../typedef/ClientCollections.md)
 
 ## Methods
 
-## awaitReady
+### awaitReady
 
 Wait for the client to be ready.
 
