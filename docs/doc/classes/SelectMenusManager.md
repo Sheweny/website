@@ -1,4 +1,4 @@
-# SelectMenusHandler
+# SelectMenusManager
 
 Create an handler for bot select-menus. The select-menus can be in as many subfolders as desired.
 

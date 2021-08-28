@@ -2,24 +2,28 @@
 
 Represents an application command.
 
-| Name    | Type                                                                                               | Description                | Default | Optional |
-| ------- | -------------------------------------------------------------------------------------------------- | -------------------------- | ------- | -------- |
-| client  | [ShewenyClient](../classes/ShewenyClient.md)                                                       | The client.                | None    |          |
-| data    | [ApplicationCommandData](https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandData) | The data of command.       | None    |          |
-| options | [CommandOptions](../typedef/CommandOptions.md)                                                     | The options of the command | None    |          |
+| Name    | Type                                           | Description                | Default | Optional |
+| ------- | ---------------------------------------------- | -------------------------- | ------- | -------- |
+| client  | [ShewenyClient](../classes/ShewenyClient.md)   | The client.                | None    |          |
+| options | [CommandOptions](../typedef/CommandOptions.md) | The options of the command | None    |          |
 
 ## Properties
 
 - `client` - The client.
 - `path` - The file path of the command.
-- `data` - The data of the command.
+- `name` - The name of the command.
 - `description` - The description of the command.
+- `type` - The type of the command.
+- `options` - The options of the command.
+- `args` - The args of the command.
 - `category` - The category of the command.
-- `only` - The place whre the command should be executed.
+- `channel` - The place whre the command should be executed.
 - `cooldown` - The cooldown of the command.
+- `adminOnly` - If the command is only for admins or not.
 - `userPermissions` - The permissions required to execute the command for users.
 - `clientPermissions` - The permissions required to execute the command for client.
 - `cooldowns` - The actives cooldowns of the command.
+- `aliases` - The aliases of the command.
 
 ## Methods
 
