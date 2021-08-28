@@ -8,7 +8,7 @@
     "name": "Raphael",
     "email": "raphael.veauville@gmail.com"
   },
-  "repository": "https://github.com/Discord-util/website/sheweny-website",
+  "repository": "https://github.com/Sheweny/website",
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",

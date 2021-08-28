@@ -1,4 +1,4 @@
-const { description, production } = require("../../package");
+const { description } = require("../../package");
 
 module.exports = {
   title: "Sheweny",
@@ -20,7 +20,7 @@ module.exports = {
    */
   themeConfig: {
     repo: "",
-    base: production ? "/website" : "/sheweny-website",
+    base: "/sheweny-website",
     editLinks: false,
     editLinkText: "",
     lastUpdated: false,
