@@ -12,25 +12,21 @@ The cooldown value is in seconds and it type is `number`
 ::: code-group-item JS CommonJS
 
 ```js
-const { ApplicationCommand } = require("sheweny");
+const { Command } = require("sheweny");
 
-module.exports = class PingCommand extends ApplicationCommand {
+module.exports = class PingCommand extends Command {
   constructor(client) {
-    super(
-      client,
-      {
-        name: "ping",
-        description: "Ping the bot",
-      },
-      {
-        category: "Misc",
-        cooldown: 5, // cooldown 5 seconds
-      }
-    );
+    super(client, {
+      name: "ping",
+      description: "Ping the bot",
+      type: "SLASH_COMMAND",
+      category: "Misc",
+      cooldown: 5, // cooldown 5 seconds
+    });
   }
 
   execute(interaction) {
-    interaction.reply("Pong !");
+    interaction.reply({ content: "Pong !" });
   }
 };
 ```
@@ -39,27 +35,23 @@ module.exports = class PingCommand extends ApplicationCommand {
 ::: code-group-item TS ES Modules
 
 ```ts
-import { ApplicationCommand } from "sheweny";
+import { Command } from "sheweny";
 import type { ShewenyClient } from "sheweny";
 import type { CommandInteraction } from "discord.js";
 
-export class PingCommand extends ApplicationCommand {
+export class PingCommand extends Command {
   constructor(client: ShewenyClient) {
-    super(
-      client,
-      {
-        name: "ping",
-        description: "Ping the bot",
-      },
-      {
-        category: "Misc",
-        cooldown: 5, // cooldown 5 seconds
-      }
-    );
+    super(client, {
+      name: "ping",
+      description: "Ping the bot",
+      type: "SLASH_COMMAND",
+      category: "Misc",
+      cooldown: 5, // cooldown 5 seconds
+    });
   }
 
   execute(interaction: CommandInteraction) {
-    interaction.reply("Pong !");
+    interaction.reply({ content: "Pong !" });
   }
 }
 ```
@@ -73,12 +65,13 @@ export class PingCommand extends ApplicationCommand {
 ::: code-group-item JS CommonJS
 
 ```js
-const { MessageCommand } = require("sheweny");
+const { Command } = require("sheweny");
 
-module.exports = class PingCommand extends MessageCommand {
+module.exports = class PingCommand extends Command {
   constructor(client) {
     super(client, "ping", {
       description: "Ping the bot",
+      type: "MESSAGE_COMMAND",
       category: "Misc",
       cooldown: 5, // cooldown 5 seconds
     });
@@ -94,19 +87,20 @@ module.exports = class PingCommand extends MessageCommand {
 ::: code-group-item TS ES Modules
 
 ```ts
-import { MessageCommand } from "sheweny";
+import { Command } from "sheweny";
 import type { ShewenyClient } from "sheweny";
 import type { Message } from "discord.js";
 
-export class PingCommand extends MessageCommand {
+export class PingCommand extends Command {
   constructor(client: ShewenyClient) {
     super(client, "ping", {
       description: "Ping the bot",
+      type: "MESSAGE_COMMAND",
       category: "Misc",
       cooldown: 5, // cooldown 5 seconds
     });
   }
-  
+
   execute(message: Message) {
     message.channel.send({ content: "Pong !" });
   }

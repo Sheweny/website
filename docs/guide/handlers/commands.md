@@ -1,4 +1,4 @@
-# ApplicationCommands handler
+# Commands handler
 
 Set up an application commands handler to load and register interactions.
 
@@ -15,9 +15,11 @@ const { ShewenyClient } = require("sheweny");
 const client = new ShewenyClient({
   intents: ["GUILDS"],
   handlers: {
-    applicationCommands: {
+    commands: {
       directory: "./commands",
       guildId: "877090306103840778", // Register commands and context-menus in this guild
+      prefix: "!",
+      applicationPermissions: false,
     },
   },
 });
@@ -32,9 +34,11 @@ import { ShewenyClient } from "sheweny";
 const client = new ShewenyClient({
   intents: ["GUILDS"],
   handlers: {
-    applicationCommands: {
+    commands: {
       directory: "./commands",
       guildId: "877090306103840778", // Register commands and context-menus in this guild
+      prefix: "!",
+      applicationPermissions: false,
     },
   },
 });
@@ -51,18 +55,17 @@ You can also use the class to set up the handler somewhere else :
 ::: code-group-item JS CommonJS
 
 ```js
-const {
-  ShewenyClient,
-  ApplicationCommandHandler,
-} = require("sheweny");
+const { ShewenyClient, CommandsManager } = require("sheweny");
 
 const client = new ShewenyClient({ intents: ["GUILDS"] });
 
-const applicationHandler = new ApplicationCommandHandler(client, "./commands");
+const commandsHandler = new CommandsManager(client, "./commands", {
+  prefix: "!",
+});
 
-applicationHandler.loadAll().then(() => {
-  applicationHandler.registerCommands(
-    client.commands.interaction,
+commandsHandler.loadAll().then(() => {
+  commandsHandler.registerAllApplicationCommands(
+    client.collections.commands,
     "877090306103840778"
   );
 });
@@ -72,14 +75,14 @@ applicationHandler.loadAll().then(() => {
 ::: code-group-item TS ES Modules
 
 ```ts
-import { ShewenyClient, ApplicationCommandHandler } = from "sheweny";
+import { ShewenyClient, CommandsManager } = from "sheweny";
 const client = new ShewenyClient({ intents: ["GUILDS"] });
 
-const applicationHandler = new ApplicationCommandHandler(client, "./commands");
+const commandsHandler = new CommandsManager(client, "./commands", {prefix: "!"});
 
-applicationHandler.loadAll().then(() => {
-  applicationHandler.registerCommands(
-    client.commands.interaction,
+commandsHandler.loadAll().then(() => {
+  commandsHandler.registerAllApplicationCommands(
+    client.collections.commands,
     "877090306103840778"
   );
 });

@@ -14,13 +14,14 @@ module.exports = class PingCommand extends Command {
   constructor(client) {
     super(client, "ping", {
       description: "Ping the bot",
+      type: "SLASH_COMMAND",
       category: "Misc",
       only: "GUILD", // The command cannot be executing in DMs
     });
   }
-  
+
   execute(interaction) {
-    interaction.reply("Pong !");
+    interaction.reply({ content: "Pong !" });
   }
 };
 ```
@@ -37,13 +38,14 @@ export class PingCommand extends Command {
   constructor(client: ShewenyClient) {
     super(client, "ping", {
       description: "Ping the bot",
+      type: "SLASH_COMMAND",
       category: "Misc",
       only: "GUILD", // The command cannot be executing in DMs
     });
   }
 
   execute(interaction: CommandInteraction) {
-    interaction.reply("Pong !");
+    interaction.reply({ content: "Pong !" });
   }
 }
 ```
@@ -63,6 +65,7 @@ module.exports = class PingCommand extends Command {
   constructor(client) {
     super(client, "ping", {
       description: "Ping the bot",
+      type: "MESSAGE_COMMAND",
       category: "Misc",
       only: "DM", // The command cannot be executing in DMs
     });
@@ -85,6 +88,7 @@ export class PingCommand extends Command {
   constructor(client: ShewenyClient) {
     super(client, "ping", {
       description: "Ping the bot",
+      type: "MESSAGE_COMMAND",
       category: "Misc",
       only: "DM", // The command cannot be executing in DMs
     });

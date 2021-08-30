@@ -28,8 +28,8 @@ Register loaded events and register them if no events exist.
 
 Parameters :
 
-| Name   | Type                                                                                                                                             | Description | Default       | Optional |
-| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- | ------------- | -------- |
-| events | Collection\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [Event](../structures/Event.md))> | The events  | client.events | ✓        |
+| Name   | Type                                                                                                                                             | Description | Default                   | Optional |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- | ------------------------- | -------- |
+| events | Collection\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [Event](../structures/Event.md))> | The events  | client.collections.events | ✓        |
 
 Return : [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<void>

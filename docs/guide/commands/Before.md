@@ -1,6 +1,6 @@
 # Before command
 
-## Application command
+## Slash-command
 
 The `before` fuction is executed before all checks like cooldowns, permissions, inhibitors etc.
 
@@ -10,20 +10,16 @@ The `before` fuction is executed before all checks like cooldowns, permissions, 
 ::: code-group-item JS CommonJS
 
 ```js
-const { ApplicationCommand } = require("sheweny");
+const { Command } = require("sheweny");
 
-module.exports = class PingCommand extends ApplicationCommand {
+module.exports = class PingCommand extends Command {
   constructor(client) {
-    super(
-      client,
-      {
-        name: "ping",
-        description: "Ping the bot",
-      },
-      {
-        category: "Misc",
-      }
-    );
+    super(client, {
+      name: "ping",
+      description: "Ping the bot",
+      category: "Misc",
+      type: "SLASH_COMMAND",
+    });
   }
 
   before(interaction) {
@@ -31,7 +27,7 @@ module.exports = class PingCommand extends ApplicationCommand {
   }
 
   execute(interaction) {
-    interaction.reply("Pong !");
+    interaction.reply({ content: "Pong !" });
   }
 };
 ```
@@ -40,22 +36,18 @@ module.exports = class PingCommand extends ApplicationCommand {
 ::: code-group-item TS ES Modules
 
 ```ts
-import { ApplicationCommand } from "sheweny";
+import { Command } from "sheweny";
 import type { ShewenyClient } from "sheweny";
 import type { CommandInteraction } from "discord.js";
 
-export class PingCommand extends ApplicationCommand {
+export class PingCommand extends Command {
   constructor(client: ShewenyClient) {
-    super(
-      client,
-      {
-        name: "ping",
-        description: "Ping the bot",
-      },
-      {
-        category: "Misc",
-      }
-    );
+    super(client, {
+      name: "ping",
+      description: "Ping the bot",
+      category: "Misc",
+      type: "SLASH_COMMAND",
+    });
   }
 
   before(interaction: CommandInteraction) {
@@ -63,7 +55,7 @@ export class PingCommand extends ApplicationCommand {
   }
 
   execute(interaction: CommandInteraction) {
-    interaction.reply("Pong !");
+    interaction.reply({ content: "Pong !" });
   }
 }
 ```
@@ -77,18 +69,19 @@ export class PingCommand extends ApplicationCommand {
 ::: code-group-item JS CommonJS
 
 ```js
-const { MessageCommand } = require("sheweny");
+const { Command } = require("sheweny");
 
-module.exports = class PingCommand extends MessageCommand {
+module.exports = class PingCommand extends Command {
   constructor(client) {
     super(client, "ping", {
       description: "Ping the bot",
       category: "Misc",
+      type: "MESSAGE_COMMAND",
       cooldown: 5, // cooldown 5 seconds
     });
   }
 
-  before(interaction) {
+  before(message) {
     // Action before all checks
   }
 
@@ -102,23 +95,24 @@ module.exports = class PingCommand extends MessageCommand {
 ::: code-group-item TS ES Modules
 
 ```ts
-import { MessageCommand } from "sheweny";
+import { Command } from "sheweny";
 import type { ShewenyClient } from "sheweny";
 import type { Message } from "discord.js";
 
-export class PingCommand extends MessageCommand {
+export class PingCommand extends Command {
   constructor(client: ShewenyClient) {
     super(client, "ping", {
       description: "Ping the bot",
       category: "Misc",
+      type: "MESSAGE_COMMAND",
       cooldown: 5, // cooldown 5 seconds
     });
   }
 
-  before(interaction: CommandInteraction) {
+  before(message: Message) {
     // Action before all checks
   }
-  
+
   execute(message: Message) {
     message.channel.send({ content: "Pong !" });
   }

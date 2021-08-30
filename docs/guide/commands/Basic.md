@@ -1,31 +1,29 @@
 # Basic command
 
-With sheweny each command must be a class which extends from the [ApplicationCommand](../../doc/structures/Command.md) for slash-commands and context-menus or [MessageCommand](../../doc/structures/MessageCommand.md) for message commands.class
+With sheweny each command must be a class which extends from the [Command](../../doc/structures/Command.md) for commands ans context-menus.
 
 ## Import Command
 
-Import the [ApplicationCommand](../../doc/structures/Command.md) or [MessageCommand](../../doc/structures/MessageCommand.md) class:
+Import the [Command](../../doc/structures/Command.md)
 
 :::: code-group
 ::: code-group-item CommonJS
 
 ```js
-const { ApplicationCommand, MessageCommand } = require("sheweny");
+const { ApplicationCommand } = require("sheweny");
 ```
 
 :::
 ::: code-group-item ESM
 
 ```js
-import { ApplicationCommand, MessageCommand } from "sheweny";
+import { ApplicationCommand } from "sheweny";
 ```
 
 :::
 ::::
 
-## Application Command
-
-### Slash-command
+## Slash-command
 
 ::: tip
 Command applications can be: slash-commands or context-menus.
@@ -35,23 +33,19 @@ Command applications can be: slash-commands or context-menus.
 ::: code-group-item JS CommonJS
 
 ```js
-const { ApplicationCommand } = require("sheweny");
+const { Command } = require("sheweny");
 
-module.exports = class PingCommand extends ApplicationCommand {
+module.exports = class PingCommand extends Command {
   constructor(client) {
-    super(
-      client,
-      {
-        name: "ping",
-        description: "Ping the bot",
-      },
-      {
-        category: "Misc",
-      }
-    );
+    super(client, {
+      name: "ping",
+      type: "SLASH_COMMAND",
+      description: "Ping the bot",
+      category: "Misc",
+    });
   }
   execute(interaction) {
-    interaction.reply("Pong !");
+    interaction.reply({ content: "Pong !" });
   }
 };
 ```
@@ -60,25 +54,21 @@ module.exports = class PingCommand extends ApplicationCommand {
 ::: code-group-item TS ES Modules
 
 ```ts
-import { ApplicationCommand } from "sheweny";
+import { Command } from "sheweny";
 import type { ShewenyClient } from "sheweny";
 import type { CommandInteraction } from "discord.js";
 
-export class PingCommand extends ApplicationCommand {
+export class PingCommand extends Command {
   constructor(client: ShewenyClient) {
-    super(
-      client,
-      {
-        name: "ping",
-        description: "Ping the bot",
-      },
-      {
-        category: "Misc",
-      }
-    );
+    super(client, {
+      name: "ping",
+      description: "Ping the bot",
+      type: "SLASH_COMMAND",
+      category: "Misc",
+    });
   }
   execute(interaction: CommandInteraction) {
-    interaction.reply("Pong !");
+    interaction.reply({ content: "Pong !" });
   }
 }
 ```
@@ -92,23 +82,20 @@ export class PingCommand extends ApplicationCommand {
 ::: code-group-item JS CommonJS
 
 ```js
-const { ApplicationCommand } = require("sheweny");
+const { Command } = require("sheweny");
 
-module.exports = class PingUserCommand extends ApplicationCommand {
+module.exports = class PingUserCommand extends Command {
   constructor(client) {
-    super(
-      client,
-      {
-        name: "ping-user",
-        description: "Send ping to a user",
-        type: "USER",
-      },
-      { category: "Misc" }
-    );
+    super(client, {
+      name: "ping-user",
+      description: "Send ping to a user",
+      type: "CONTEXT_MENU_USER",
+      category: "Misc",
+    });
   }
 
   execute(interaction) {
-    message.channel.send({ content: `Pong <@${interaction.targetId}> !` });
+    interaction.reply({ content: `Pong <@${interaction.targetId}> !` });
   }
 };
 ```
@@ -117,25 +104,22 @@ module.exports = class PingUserCommand extends ApplicationCommand {
 ::: code-group-item TS ES Modules
 
 ```ts
-import { ApplicationCommand } from "sheweny";
+import { Command } from "sheweny";
 import type { ShewenyClient } from "sheweny";
 import type { ContextMenuInteraction } from "discord.js";
 
-export class PingUserCommand extends ApplicationCommand {
+export class PingUserCommand extends Command {
   constructor(client: ShewenyClient) {
-    super(
-      client,
-      {
-        name: "ping-user",
-        description: "Send ping to a user",
-        type: "USER",
-      },
-      { category: "Misc" }
-    );
+    super(client, {
+      name: "ping-user",
+      description: "Send ping to a user",
+      type: "CONTEXT_MENU_USER",
+      category: "Misc",
+    });
   }
 
   execute(interaction: ContextMenuInteraction) {
-    message.channel.send({ content: `Pong <@${interaction.targetId}> !` });
+    interaction.reply({ content: `Pong <@${interaction.targetId}> !` });
   }
 }
 ```
@@ -149,18 +133,27 @@ export class PingUserCommand extends ApplicationCommand {
 ::: code-group-item JS CommonJS
 
 ```js
-const { MessageCommand } = require("sheweny");
+const { Command } = require("sheweny");
 
-module.exports = class PingCommand extends MessageCommand {
+module.exports = class PingUserCommand extends Command {
   constructor(client) {
     super(client, "ping", {
-      description: "Ping the bot",
+      description: "Ping a user",
       category: "Misc",
+      args: [
+        {
+          name: "userToPing",
+          type: "USER",
+          default: null,
+        },
+      ],
     });
   }
 
-  execute(message) {
-    message.channel.send({ content: "Pong !" });
+  execute(message, args) {
+    message.channel.send({
+      content: `Pong ! ${args.userToPing ? userToPing : ""}`,
+    });
   }
 };
 ```
@@ -169,19 +162,27 @@ module.exports = class PingCommand extends MessageCommand {
 ::: code-group-item TS ES Modules
 
 ```ts
-import { MessageCommand, ShewenyClient } from "sheweny";
+import { Command } from "sheweny";
+import type { ShewenyClient, MessageCommandOptionData  } from "sheweny";
 import type { Message } from "discord.js";
 
-export class PingCommand extends MessageCommand {
+export class PingUserCommand extends Command {
   constructor(client: ShewenyClient) {
     super(client, "ping", {
-      description: "Ping the bot",
+      description: "Ping a user",
       category: "Misc",
+            args: [
+        {
+          name: "userToPing",
+          type: "USER",
+          default: null,
+        },
+      ],
     });
   }
-  
-  execute(message: Message) {
-    message.channel.send({ content: "Pong !" });
+
+  execute(message: Message, args:any) {
+      content: `Pong ! ${args.userToPing ? userToPing : ""}`,
   }
 }
 ```

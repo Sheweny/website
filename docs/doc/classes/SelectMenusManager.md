@@ -2,11 +2,11 @@
 
 Create an handler for bot select-menus. The select-menus can be in as many subfolders as desired.
 
-| Name      | Type                                                                                                | Description                        | Default | Optional |
-| --------- | --------------------------------------------------------------------------------------------------- | ---------------------------------- | ------- | -------- |
-| directory | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The directory of select-menus      | None    |          |
-| client    | [ShewenyClient](./ShewenyClient.md)                                                                 | The client                         | None    | ✓        |
-| loadAll   | [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | If handler load all in constructor | None    | ✓        |
+| Name    | Type                                                                                                | Description                        | Default | Optional |
+| ------- | --------------------------------------------------------------------------------------------------- | ---------------------------------- | ------- | -------- |
+| client  | [ShewenyClient](./ShewenyClient.md)                                                                 | The client                         | None    | ✓        |
+| client  | [ShewenyClient](./ShewenyClient.md)                                                                 | The client                         | None    | ✓        |
+| loadAll | [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | If handler load all in constructor | None    | ✓        |
 
 ## Properties
 

@@ -60,6 +60,8 @@ module.exports = {
             "/doc/classes/InhibitorsManager.md",
             "/doc/classes/SelectMenusManager.md",
             "/doc/classes/ShewenyClient.md",
+            "/doc/classes/ShewenyError.md",
+            "/doc/classes/ShewenyWarning.md",
           ],
         },
         {
@@ -113,6 +115,7 @@ module.exports = {
             "/guide/getting-started/Start.md",
             "/guide/getting-started/ProjectStructure.md",
             "/guide/getting-started/Client.md",
+            "/guide/getting-started/BestPratices.md",
           ],
         },
         {
@@ -126,11 +129,10 @@ module.exports = {
           path: "/guide/handlers",
           collapsable: false,
           children: [
-            "/guide/handlers/applicationCommands.md",
-            "/guide/handlers/buttons.md",
+            "/guide/handlers/commands.md",
             "/guide/handlers/events.md",
+            "/guide/handlers/buttons.md",
             "/guide/handlers/inhibitors.md",
-            "/guide/handlers/messageCommands.md",
             "/guide/handlers/selectMenus.md",
           ],
         },

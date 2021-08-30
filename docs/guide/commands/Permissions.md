@@ -32,13 +32,14 @@ module.exports = class PingCommand extends Command {
   constructor(client) {
     super(client, "ping", {
       description: "Ping the bot",
+      type: "SLASH_COMMAND",
       category: "Misc",
       userPermissions: ["BAN_MEMBERS", "BOT_ADMIN"],
     });
   }
-  
+
   execute(interaction) {
-    interaction.reply("Pong !");
+    interaction.reply({ content: "Pong !" });
   }
 };
 ```
@@ -55,13 +56,14 @@ export class PingCommand extends Command {
   constructor(client: ShewenyClient) {
     super(client, "ping", {
       description: "Ping the bot",
+      type: "SLASH_COMMAND",
       category: "Misc",
       userPermissions: ["BAN_MEMBERS", "BOT_ADMIN"],
     });
   }
 
   execute(interaction: CommandInteraction) {
-    interaction.reply("Pong !");
+    interaction.reply({ content: "Pong !" });
   }
 }
 ```
@@ -81,6 +83,7 @@ module.exports = class PingCommand extends Command {
   constructor(client) {
     super(client, "ping", {
       description: "Ping the bot",
+      type: "MESSAGE_COMMAND",
       category: "Misc",
       userPermissions: ["BAN_MEMBERS", "BOT_ADMIN"],
     });
@@ -104,6 +107,7 @@ export class PingCommand extends Command {
   constructor(client: ShewenyClient) {
     super(client, "ping", {
       description: "Ping the bot",
+      type: "MESSAGE_COMMAND",
       category: "Misc",
       userPermissions: ["BAN_MEMBERS", "BOT_ADMIN"],
     });
