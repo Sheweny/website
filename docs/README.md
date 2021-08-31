@@ -20,6 +20,10 @@ features:
 footer: MIT Licensed | Copyright © 2021-sheweny
 ---
 
+# Version 2 (development)
+
+[Click here](https://smaug6739.github.io/sheweny-website) for read v2 Documentation
+
 # As easy as that
 
 ```shell-session
