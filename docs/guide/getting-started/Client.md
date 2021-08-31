@@ -33,7 +33,7 @@ const client = new ShewenyClient({
 ```
 
 ::: warning
-The applications commands handler is for slash-commands and context-menus.
+The applicationsCommands handler is for slash-commands and context-menus.
 For use message commands use messageCommands handler instead.
 :::
 
