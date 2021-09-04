@@ -36,3 +36,7 @@ sheweny create
 
 npm start
 ```
+
+# Version 2 (development)
+
+[Click here](https://smaug6739.github.io/sheweny-website) for read v2 Documentation
