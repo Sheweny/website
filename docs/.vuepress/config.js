@@ -18,7 +18,7 @@ module.exports = {
    *
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
-  base: "/website/",
+  // base: "/website/",
   themeConfig: {
     repo: "",
     editLinks: false,
