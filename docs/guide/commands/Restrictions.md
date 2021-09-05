@@ -2,7 +2,7 @@
 
 You can add restrictions to prevent a command from being executed on a guild or in DMs
 
-## Guild only with slash-commands
+## Guild channel with slash-commands
 
 :::: code-group
 ::: code-group-item JS CommonJS
@@ -16,7 +16,7 @@ module.exports = class PingCommand extends Command {
       description: "Ping the bot",
       type: "SLASH_COMMAND",
       category: "Misc",
-      only: "GUILD", // The command cannot be executing in DMs
+      channel: "GUILD", // The command cannot be executing in DMs
     });
   }
 
@@ -40,7 +40,7 @@ export class PingCommand extends Command {
       description: "Ping the bot",
       type: "SLASH_COMMAND",
       category: "Misc",
-      only: "GUILD", // The command cannot be executing in DMs
+      channel: "GUILD", // The command cannot be executing in DMs
     });
   }
 
@@ -53,7 +53,7 @@ export class PingCommand extends Command {
 :::
 ::::
 
-## DMs only with message-commands
+## DMs channel with message-commands
 
 :::: code-group
 ::: code-group-item JS CommonJS
@@ -67,7 +67,7 @@ module.exports = class PingCommand extends Command {
       description: "Ping the bot",
       type: "MESSAGE_COMMAND",
       category: "Misc",
-      only: "DM", // The command cannot be executing in DMs
+      channel: "DM", // The command cannot be executing in DMs
     });
   }
   execute(message) {
@@ -90,7 +90,7 @@ export class PingCommand extends Command {
       description: "Ping the bot",
       type: "MESSAGE_COMMAND",
       category: "Misc",
-      only: "DM", // The command cannot be executing in DMs
+      channel: "DM", // The command cannot be executing in DMs
     });
   }
   execute(message: Message) {
