@@ -25,7 +25,7 @@ const client = new ShewenyClient({
   intents: ["GUILDS", "GUILDS_MESSAGES"],
   admins: ["611468402263064577"], // Admins permissions for the bot
   handlers: {
-    applicationCommands: {
+    commands: {
       directory: "./commands",
     },
   },
