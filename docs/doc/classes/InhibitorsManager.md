@@ -4,7 +4,7 @@ Create an handler for bot inhibitors. The inhibitors can be in as many subfolder
 
 | Name      | Type                                                                                                | Description                        | Default | Optional |
 | --------- | --------------------------------------------------------------------------------------------------- | ---------------------------------- | ------- | -------- |
-| client    | [ShewenyClient](./ShewenyClient.md)                                                                 | The client                         | None    | ✓        |
+| client    | [ShewenyClient](./ShewenyClient.md)                                                                 | The client                         | None    |          |
 | directory | [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)   | The directory of inhibitors        | None    |          |
 | loadAll   | [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | If handler load all in constructor | None    | ✓        |
 
