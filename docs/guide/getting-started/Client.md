@@ -33,10 +33,5 @@ const client = new ShewenyClient({
 ```
 
 ::: warning
-The applicationsCommands handler is for slash-commands and context-menus.
-For use message commands use messageCommands handler instead.
-:::
-
-::: warning
 The `intents` options is required with discord.js V13.0.0 or higher.
 :::
