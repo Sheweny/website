@@ -38,7 +38,7 @@ module.exports = {
       },
       {
         text: "Github",
-        link: "https://github.com/Sheweny",
+        link: "https://github.com/Sheweny/framework",
       },
       {
         text: "Discord",
