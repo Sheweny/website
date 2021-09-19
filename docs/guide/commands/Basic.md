@@ -152,7 +152,7 @@ module.exports = class PingUserCommand extends Command {
 
   execute(message, args) {
     message.channel.send({
-      content: `Pong ! ${args.userToPing ? userToPing : ""}`,
+      content: `Pong ! ${args.userToPing ? args.userToPing : ""}`,
     });
   }
 };
@@ -182,7 +182,7 @@ export class PingUserCommand extends Command {
   }
 
   execute(message: Message, args:any) {
-      content: `Pong ! ${args.userToPing ? userToPing : ""}`,
+      content: `Pong ! ${args.userToPing ? args.userToPing : ""}`,
   }
 }
 ```
