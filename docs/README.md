@@ -11,12 +11,18 @@ actions:
     link: https://www.npmjs.com/package/sheweny
     type: secondary
 features:
-  - title: Simplicity First
-    details: A minimal setup thanks to the simplicity of the CLI.
-  - title: Progressive
-    details: Sheweny is a progressive framework. This means that you don't have to use it in all of your bot.
-  - title: Performant
-    details: Sheweny is efficient thanks to an optimized code and an error management.
+  - title: Modular
+    details: Modular and reloadable commands, inhibitors, and events. 
+  - title: Flexible
+    details: Flexible command handling and creation.
+  - title: Interactions
+    details: Interactions support like slash-commands, buttons, select-menus. 
+  - title: Powerful
+    details: Powerful and thorough command arguments parsing.
+  - title: Development
+    details: Development mode for limit errors.
+  - title: JS and TS
+    details: Full javascript and typescript support.
 footer: MIT Licensed | Copyright © 2021-sheweny
 ---
 
