@@ -1,7 +1,7 @@
 ---
 home: true
 heroText: Sheweny
-tagline: "The powerful framework for create discord bots"
+tagline: "The powerful framework to create discord bots"
 
 actions:
   - text: Get Started
