@@ -27,6 +27,8 @@ module.exports = {
     docsDir: "doc",
     displayAllHeaders: true,
     sidebarDepth: 1,
+    search: true,
+    searchMaxSuggestions: 5,
     navbar: [
       {
         text: "Documentation",
