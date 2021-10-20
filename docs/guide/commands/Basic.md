@@ -10,14 +10,14 @@ Import the [Command](../../doc/structures/Command.md)
 ::: code-group-item CommonJS
 
 ```js
-const { ApplicationCommand } = require("sheweny");
+const { Command } = require("sheweny");
 ```
 
 :::
 ::: code-group-item ESM
 
 ```js
-import { ApplicationCommand } from "sheweny";
+import { Command } from "sheweny";
 ```
 
 :::
