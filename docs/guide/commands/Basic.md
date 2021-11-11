@@ -137,7 +137,8 @@ const { Command } = require("sheweny");
 
 module.exports = class PingUserCommand extends Command {
   constructor(client) {
-    super(client, "ping", {
+    super(client, {
+      name: "ping",
       description: "Ping a user",
       category: "Misc",
       args: [
@@ -168,7 +169,8 @@ import type { Message } from "discord.js";
 
 export class PingUserCommand extends Command {
   constructor(client: ShewenyClient) {
-    super(client, "ping", {
+    super(client, {
+      name: "ping",
       description: "Ping a user",
       category: "Misc",
             args: [
