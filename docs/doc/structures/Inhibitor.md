@@ -17,6 +17,7 @@ new Inhibitor(client, options);
 :::details Properties
 
 - [client](#client)
+- [manager](#manager)
 - [path](#path)
 - [name](#name)
 - [type](#type)
@@ -47,6 +48,12 @@ new Inhibitor(client, options);
 The framework client.
 
 Return : [ShewenyClient](../client/ShewenyClient.md)
+
+### manager
+
+The manager of this structure.
+
+Return : [InhibitorsManager](../managers/InhibitorsManager.md)
 
 ### path
 
@@ -80,9 +87,10 @@ The execution of inhibitor.
 
 Parameters :
 
-| Name    | Type                                                                                                      | Description     |
-| ------- | --------------------------------------------------------------------------------------------------------- | --------------- |
-| ...args | [args Events](https://discord.js.org/#/docs/main/stable/class/Client?scrollTo=e-applicationCommandCreate) | Args for events |
+| Name   | Type                                                                                                                                             | Description          |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------- |
+| client | [ShewenyClient](../client/ShewenyClient.md)                                                                                                      | The client framework |
+| ctx    | [Interaction](https://discord.js.org/#/docs/main/stable/class/Interaction) or [Message](https://discord.js.org/#/docs/main/stable/class/Message) | The context          |
 
 Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<any> | any
 
@@ -92,9 +100,10 @@ The execution if inhibitor has failed.
 
 Parameters :
 
-| Name    | Type                                                                                                      | Description     |
-| ------- | --------------------------------------------------------------------------------------------------------- | --------------- |
-| ...args | [args Events](https://discord.js.org/#/docs/main/stable/class/Client?scrollTo=e-applicationCommandCreate) | Args for events |
+| Name   | Type                                                                                                                                             | Description          |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------- |
+| client | [ShewenyClient](../client/ShewenyClient.md)                                                                                                      | The client framework |
+| ctx    | [Interaction](https://discord.js.org/#/docs/main/stable/class/Interaction) or [Message](https://discord.js.org/#/docs/main/stable/class/Message) | The context          |
 
 Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<any> | any
 

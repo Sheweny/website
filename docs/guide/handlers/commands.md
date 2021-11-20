@@ -64,7 +64,7 @@ const commandsHandler = new CommandsManager(client, "./commands", {
 });
 
 commandsHandler.loadAll().then(() => {
-  commandsHandler.registerAllApplicationCommands(
+  commandsHandler.registerApplicationCommands(
     client.collections.commands,
     "877090306103840778"
   );
@@ -81,7 +81,7 @@ const client = new ShewenyClient({ intents: ["GUILDS"] });
 const commandsHandler = new CommandsManager(client, "./commands", {prefix: "!"});
 
 commandsHandler.loadAll().then(() => {
-  commandsHandler.registerAllApplicationCommands(
+  commandsHandler.registerApplicationCommands(
     client.collections.commands,
     "877090306103840778"
   );

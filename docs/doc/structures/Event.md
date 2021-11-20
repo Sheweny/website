@@ -17,6 +17,7 @@ new Event(client, "ready", options);
 :::details Properties
 
 - [client](#client)
+- [manager](#manager)
 - [path](#path)
 - [name](#name)
 - [description](#description)
@@ -42,6 +43,12 @@ new Event(client, "ready", options);
 The framework client.
 
 Return : [ShewenyClient](../client/ShewenyClient.md)
+
+### manager
+
+The manager of this structure.
+
+Return : [EventsManager](../managers/EventsManager.md)
 
 ### path
 

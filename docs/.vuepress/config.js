@@ -2,7 +2,6 @@ const { description } = require("../../package");
 
 module.exports = {
   title: "Sheweny",
-
   description: description,
   head: [
     ["meta", { name: "theme-color", content: "#3eaf7c" }],
@@ -21,7 +20,7 @@ module.exports = {
   base: "/sheweny-website/",
   themeConfig: {
     repo: "https://github.com/Sheweny/website",
-
+    contributors: false,
     editLinks: false,
     editLinkText: "",
     lastUpdated: true,

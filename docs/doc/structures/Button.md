@@ -16,6 +16,7 @@ new Button(client, options);
 :::details Properties
 
 - [client](#client)
+- [manager](#manager)
 - [path](#path)
 - [customId](#customid)
 
@@ -38,6 +39,12 @@ new Button(client, options);
 The framework client.
 
 Return : [ShewenyClient](../client/ShewenyClient.md)
+
+### manager
+
+The manager of this structure.
+
+Return : [ButtonsManager](../managers/ButtonsManager.md)
 
 ### path
 

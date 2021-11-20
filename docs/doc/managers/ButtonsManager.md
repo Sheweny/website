@@ -5,7 +5,7 @@ Create an handler for bot buttons. The buttons can be in as many subfolders as d
 ## Constructor
 
 ```js
-new ButtonsManager(options);
+new ButtonsManager(client, options);
 ```
 
 | Name    | Type                                                   | Description                | Default | Optional |
@@ -58,6 +58,6 @@ Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/G
 
 ### unloadAll()
 
-Unload all events.
+Unload all buttons.
 
 Return : void

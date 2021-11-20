@@ -58,6 +58,6 @@ Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/G
 
 ### unloadAll()
 
-Unload all events.
+Unload all inhibitors.
 
 Return : void

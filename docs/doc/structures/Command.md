@@ -16,6 +16,7 @@ new Command(client, options);
 :::details Properties
 
 - [client](#client)
+- [manager](#manager)
 - [path](#path)
 - [name](#name)
 - [description](#description)
@@ -50,6 +51,12 @@ new Command(client, options);
 The framework client.
 
 Return : [ShewenyClient](../client/ShewenyClient.md)
+
+### manager
+
+The manager of this structure.
+
+Return : [CommandsManager](../managers/CommandsManager.md)
 
 ### path
 

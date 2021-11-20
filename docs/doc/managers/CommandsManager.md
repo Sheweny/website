@@ -30,7 +30,7 @@ new CommandsManager(client, options);
 - [loadAll](#async-loadall)
 - [loadAndRegisterAll](#async-loadandregisterall)
 - [getApplicationCommandData](#getapplicationcommanddata)
-- [registerAllApplicationCommands](#async-registerallapplicationcommands-commands-guildid)
+- [registerApplicationCommands](#async-registerApplicationCommands-commands-guildid)
 - [registerPermissions](#async-registerpermissions-commands-guildid)
 - [createCommand](#async-createcommand-command-guildid)
 - [editCommand](#async-editcommand-oldcommand-newcommand-guildid)
@@ -112,7 +112,7 @@ Create an array with all commands data for register it.
 
 Return : [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)\<[ApplicationCommandData](https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandData)>| [ApplicationCommandData](https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandData) | undefined
 
-### [async] registerAllApplicationCommands(commands, guildId)
+### [async] registerApplicationCommands(commands, guildId)
 
 Register application commands.
 
@@ -193,7 +193,7 @@ Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/G
 
 ### unloadAll()
 
-Unload all events.
+Unload all commands.
 
 Return : void
 
@@ -208,7 +208,7 @@ Parameters :
 | Name        | Type                                                                                                                                                                                     | Description                    |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
 | interaction | [CommandInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction) or [ContextMenuInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction) | The interaction                |
-| missing     | [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                              | The name of missing permission |
+| missing     | [Permission](https://discord.js.org/#/docs/main/stable/class/Permissions?scrollTo=s-FLAGS) or BOT_ADMIN                                                                                  | The name of missing permission |
 
 ### clientMissingPermissions
 
@@ -219,7 +219,7 @@ Parameters :
 | Name        | Type                                                                                                                                                                                     | Description                    |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
 | interaction | [CommandInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction) or [ContextMenuInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction) | The interaction                |
-| missing     | [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)                                                                                              | The name of missing permission |
+| missing     | [Permission](https://discord.js.org/#/docs/main/stable/class/Permissions?scrollTo=s-FLAGS)                                                                                               | The name of missing permission |
 
 ### cooldownLimit
 

@@ -16,6 +16,7 @@ new SelectMenu(client, options);
 :::details Properties
 
 - [client](#client)
+- [manager](#manager)
 - [path](#path)
 - [customId](#customid)
 
@@ -38,6 +39,12 @@ new SelectMenu(client, options);
 The framework client.
 
 Return : [ShewenyClient](../client/ShewenyClient.md)
+
+### manager
+
+The manager of this structure.
+
+Return : [SelectMenus](../managers/SelectMenusManager.md)
 
 ### path
 
