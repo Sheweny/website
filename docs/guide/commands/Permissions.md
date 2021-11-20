@@ -11,14 +11,14 @@ If user missing permissions the command `userMissingPermissions` :
 Parameters :
 
 - interaction or message (if bot use slash-commands or not) (type : [Interaction](https://discord.js.org/#/docs/main/stable/class/Interaction) or [Message](https://discord.js.org/#/docs/main/stable/class/Message))
-- missing (type : Array\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>)
+- missing (type : Array\<[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)>)
 
 If bot missing permissions the command `botMissingPermissions` :
 
 Parameters :
 
 - interaction or message (if bot use slash-commands or not) (type : [Interaction](https://discord.js.org/#/docs/main/stable/class/Interaction) or [Message](https://discord.js.org/#/docs/main/stable/class/Message))
-- missing (type : Array\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>)
+- missing (type : Array\<[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)>)
 
 ## Slash-command
 

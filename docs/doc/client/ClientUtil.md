@@ -1,4 +1,61 @@
-# DiscordResolve
+# Client Util
+
+Useful methods for the client.
+
+## Constructor
+
+```js
+new ClientUtil(client);
+```
+
+| Name   | Type                                         | Description                  | Optional |
+| ------ | -------------------------------------------- | ---------------------------- | -------- |
+| client | [ShewenyClient](../structures/ShewenyClient) | The sheweny client framework | No       |
+
+:::details Methods
+
+- [getButtons](#getbuttons)
+- [getCommands](#getcommands)
+- [getEvents](#getevents)
+- [getInhibitors](#getinhibitors)
+- [getSelectMenus](#getselectmenus)
+- [resolveUser](#async-resolveuser-arg)
+- [resolveGuild](#resolveguild-arg)
+- [resolveMember](#async-resolvemember-guild-arg)
+- [resolveChannel](#resolvechannel-guild-arg)
+- [resolveRole](#resolverole-guild-arg)
+- [resolveGuildEmoji](#resolveguildemoji-guild-arg)
+  :::
+
+## getButtons()
+
+Get the loaded buttons of the bot.
+
+Return : Iterable\<[Button](../structures/Button.md)>
+
+## getCommands()
+
+Get the loaded commands of the bot.
+
+Return : Iterable\<[Command](../structures/Command.md)>
+
+## getEvents()
+
+Get the loaded events of the bot.
+
+Return : Iterable\<[Event](../structures/Event.md)>
+
+## getInhibitors()
+
+Get the loaded inhibitors of the bot.
+
+Return : Iterable\<[Inhibitor](../structures/Inhibitor.md)>
+
+## getSelectMenu()
+
+Get the loaded select menu of the bot.
+
+Return : Iterable\<[SelectMenu](../structures/SelectMenu.md)>
 
 ## [async] resolveUser(arg)
 
@@ -68,4 +125,4 @@ Parameters :
 
 - member : [GuildMember](https://discord.js.org/#/docs/main/stable/class/GuildMember)
 
-Return : [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+Return : [Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)

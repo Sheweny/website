@@ -1,4 +1,4 @@
-# ClientHandlers
+# ShewenyClientManagers
 
 | Name        | Type                                                   | Description                      |
 | ----------- | ------------------------------------------------------ | -------------------------------- |

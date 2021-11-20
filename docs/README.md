@@ -12,11 +12,11 @@ actions:
     type: secondary
 features:
   - title: Modular
-    details: Modular and reloadable commands, inhibitors, and events. 
+    details: Modular and reloadable commands, inhibitors, and events.
   - title: Flexible
     details: Flexible command handling and creation.
   - title: Interactions
-    details: Interactions support like slash-commands, buttons, select-menus. 
+    details: Interactions support like slash-commands, buttons, select-menus.
   - title: Powerful
     details: Powerful and thorough command arguments parsing.
   - title: Development
@@ -42,3 +42,5 @@ sheweny create
 
 npm start
 ```
+
+_Note : Your are on the V3.0.0 documentation, for the V2.0.0 documentation please go to [this website](https://sheweny.github.io/V2-website/)_

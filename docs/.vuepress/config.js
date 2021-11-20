@@ -20,15 +20,19 @@ module.exports = {
    */
   // base: "/website/",
   themeConfig: {
-    repo: "",
+    repo: "https://github.com/Sheweny/website",
+
     editLinks: false,
     editLinkText: "",
-    lastUpdated: false,
+    lastUpdated: true,
     docsDir: "doc",
     displayAllHeaders: true,
     sidebarDepth: 1,
     search: true,
     searchMaxSuggestions: 5,
+    themePlugins: {
+      mediumZoom: false,
+    },
     navbar: [
       {
         text: "Documentation",
@@ -38,10 +42,7 @@ module.exports = {
         text: "Guide",
         link: "/guide/",
       },
-      {
-        text: "Github",
-        link: "https://github.com/Sheweny/framework",
-      },
+
       {
         text: "Discord",
         link: "https://discord.gg/qgd85nEf5a",
@@ -56,18 +57,24 @@ module.exports = {
           children: ["/doc/README.md"],
         },
         {
-          text: "Classes",
-          path: "/doc/classes",
+          text: "Client",
+          path: "/doc/client",
           collapsable: false,
           children: [
-            "/doc/classes/ShewenyClient.md",
-            "/doc/classes/ShewenyError.md",
-            "/doc/classes/ShewenyWarning.md",
-            "/doc/classes/InhibitorsManager.md",
-            "/doc/classes/CommandsManager.md",
-            "/doc/classes/EventsManager.md",
-            "/doc/classes/ButtonsManager.md",
-            "/doc/classes/SelectMenusManager.md",
+            "/doc/client/ShewenyClient.md",
+            "/doc/client/ClientUtil.md",
+          ],
+        },
+        {
+          text: "Managers",
+          path: "/doc/managers",
+          collapsable: false,
+          children: [
+            "/doc/managers/ButtonsManager.md",
+            "/doc/managers/CommandsManager.md",
+            "/doc/managers/InhibitorsManager.md",
+            "/doc/managers/EventsManager.md",
+            "/doc/managers/SelectMenusManager.md",
           ],
         },
         {
@@ -75,11 +82,21 @@ module.exports = {
           path: "/doc/structures",
           collapsable: false,
           children: [
-            "/doc/structures/Inhibitor.md",
+            "/doc/structures/Button.md",
             "/doc/structures/Command.md",
             "/doc/structures/Event.md",
-            "/doc/structures/Button.md",
+            "/doc/structures/Inhibitor.md",
             "/doc/structures/SelectMenu.md",
+          ],
+        },
+        {
+          text: "Other",
+          path: "/doc/other",
+          collapsable: false,
+          children: [
+            "/doc/other/ShewenyError.md",
+            "/doc/other/ShewenyInformation.md",
+            "/doc/other/ShewenyWarning.md",
           ],
         },
         {
@@ -87,20 +104,13 @@ module.exports = {
           path: "/doc/typedef",
           collapsable: false,
           children: [
-            "/doc/typedef/BaseHandlerOptions.md",
-            "/doc/typedef/ClientCollections.md",
-            "/doc/typedef/ClientCommandsManager.md",
-            "/doc/typedef/ClientHandlers.md",
-            "/doc/typedef/ClientHandlersOptions.md",
-            "/doc/typedef/CommandMessageArgument.md",
-            "/doc/typedef/CommandOptionOnly.md",
+            "/doc/typedef/BaseManagerOptions.md",
             "/doc/typedef/CommandOptions.md",
-            "/doc/typedef/CommandsHandlerOptions.md",
-            "/doc/typedef/DiscordResolve.md",
+            "/doc/typedef/CommandsManagerOptions.md",
             "/doc/typedef/EventOptions.md",
-            "/doc/typedef/InhibitorOptions.md",
-            "/doc/typedef/InhibitorTypeResolvable.md",
-            "/doc/typedef/CommandMessageArgTypes.md",
+            "/doc/typedef/InhibitorOptions.md", //
+            "/doc/typedef/ShewenyClientCollections.md",
+            "/doc/typedef/ShewenyClientManagers.md", //
             "/doc/typedef/ShewenyClientOptions.md",
           ],
         },
@@ -199,5 +209,9 @@ module.exports = {
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
-  plugins: ["@vuepress/plugin-back-to-top", "@vuepress/plugin-medium-zoom", "@vuepress/plugin-search"],
+  plugins: [
+    "@vuepress/plugin-back-to-top",
+    "@vuepress/plugin-medium-zoom",
+    "@vuepress/plugin-search",
+  ],
 };
