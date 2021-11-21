@@ -2,23 +2,9 @@
 
 With sheweny you can defined permissions of bot and user.
 
-::: tip
-You can use `BOT_ADMIN` permissions for check if user is admin of bot.
-:::
+If user missing permissions for the command, the `userMissingPermissions` will be emitted by [CommandManager](../../doc/managers/CommandsManager.md#usermissingpermissions) :
 
-If user missing permissions the command `userMissingPermissions` :
-
-Parameters :
-
-- interaction or message (if bot use slash-commands or not) (type : [Interaction](https://discord.js.org/#/docs/main/stable/class/Interaction) or [Message](https://discord.js.org/#/docs/main/stable/class/Message))
-- missing (type : Array\<[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)>)
-
-If bot missing permissions the command `botMissingPermissions` :
-
-Parameters :
-
-- interaction or message (if bot use slash-commands or not) (type : [Interaction](https://discord.js.org/#/docs/main/stable/class/Interaction) or [Message](https://discord.js.org/#/docs/main/stable/class/Message))
-- missing (type : Array\<[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)>)
+If bot missing permissions the command, the `clientMissingPermissions` will be emitted by [CommandManager](../../doc/managers/CommandsManager.md#clientmissingpermissions) :
 
 ## Slash-command
 
@@ -34,7 +20,7 @@ module.exports = class PingCommand extends Command {
       description: "Ping the bot",
       type: "SLASH_COMMAND",
       category: "Misc",
-      userPermissions: ["BAN_MEMBERS", "BOT_ADMIN"],
+      userPermissions: ["BAN_MEMBERS", "MANAGE_MESSAGES"],
     });
   }
 
@@ -58,7 +44,7 @@ export class PingCommand extends Command {
       description: "Ping the bot",
       type: "SLASH_COMMAND",
       category: "Misc",
-      userPermissions: ["BAN_MEMBERS", "BOT_ADMIN"],
+      userPermissions: ["BAN_MEMBERS", "MANAGE_MESSAGES"],
     });
   }
 
@@ -85,7 +71,7 @@ module.exports = class PingCommand extends Command {
       description: "Ping the bot",
       type: "MESSAGE_COMMAND",
       category: "Misc",
-      userPermissions: ["BAN_MEMBERS", "BOT_ADMIN"],
+      userPermissions: ["BAN_MEMBERS", "MANAGE_MESSAGES"],
     });
   }
 
@@ -109,7 +95,7 @@ export class PingCommand extends Command {
       description: "Ping the bot",
       type: "MESSAGE_COMMAND",
       category: "Misc",
-      userPermissions: ["BAN_MEMBERS", "BOT_ADMIN"],
+      userPermissions: ["BAN_MEMBERS", "MANAGE_MESSAGES"],
     });
   }
 

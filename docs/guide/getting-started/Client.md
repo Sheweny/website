@@ -2,7 +2,7 @@
 
 ## Import ShewenyClient
 
-Import the [ShewenyClient](../../doc/classes/ShewenyClient.md) class from library.
+Import the [ShewenyClient](../../doc/client/ShewenyClient.md) class from library.
 
 ### Using CommonJS syntax
 
@@ -18,15 +18,22 @@ import { ShewenyClient } from "sheweny";
 
 ## Create new instance of client
 
-Create a new instance of [ShewenyClient](../../doc/classes/ShewenyClient.md) with [ShewenyClientOptions](../../doc/typedef/ShewenyClientOptions.md)
+Create a new instance of [ShewenyClient](../../doc/client/ShewenyClient.md) with [ShewenyClientOptions](../../doc/typedef/ShewenyClientOptions.md)
 
 ```js
 const client = new ShewenyClient({
   intents: ["GUILDS", "GUILDS_MESSAGES"],
   admins: ["611468402263064577"], // Admins permissions for the bot
-  handlers: {
+  managers: {
     commands: {
-      directory: "./commands",
+      directory: "./commands", // Directory where commands are stored
+      prefix: "!", // Prefix for commands-message
+      loadAll: true, // Load all commands
+      autoRegisterApplicationCommands: true, // Register application commands
+    },
+    events: {
+      directory: "./events",
+      loadAll: true,
     },
   },
 });

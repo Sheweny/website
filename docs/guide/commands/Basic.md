@@ -25,10 +25,6 @@ import { Command } from "sheweny";
 
 ## Slash-command
 
-::: tip
-Command applications can be: slash-commands or context-menus.
-:::
-
 :::: code-group
 ::: code-group-item JS CommonJS
 

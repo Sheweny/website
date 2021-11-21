@@ -12,17 +12,9 @@ In source directory create `index.js` file in which will be the client's declara
 
 Create directory for the commands (usually called `commands`).
 
-::: tip
-This directory can have the desired number of sub-directory
-:::
-
 ## Events
 
 Create directory for the events (usually called `events` or `listners`).
-
-::: tip
-This directory can have the desired number of sub-directory
-:::
 
 ## Interactions
 
@@ -36,11 +28,17 @@ Create directory for the buttons (usually called `buttons`).
 
 Create directory for the select-menus (usually called `select-menus`).
 
+---
+
+::: tip
+Folders can contain as many sub-folders as desired
+:::
+
 ## Final structure
 
 The final structure of the bot :
 
-```
+```text
 bot
    │   config.json
    │   package-lock.json

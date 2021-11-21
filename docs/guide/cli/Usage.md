@@ -9,7 +9,7 @@ The help command is also at your disposal if you are too lazy to come to the gui
 sheweny --help
 ```
 
-## Create command
+## `Create` command
 
 To create a project, you just need to run the following command.
 
@@ -22,12 +22,12 @@ Depending on what you have answered, you will have access from the start, the cr
 
 For more information, you can run the help command: `sheweny --help create`
 
-## Add command
+## `Add` command
 
 To add a template in your project with the sheweny framework, you just need to run the following command.
 
 ```sh
-sheweny add <add_type>
+sheweny add
 ```
 
 You have several types of template addition depending on what you want to add
@@ -40,6 +40,32 @@ You have several types of template addition depending on what you want to add
 
 After choosing the type of addition, you can answer the questions that are offered to once again refine the result of adding a template.
 
-For more information, you can run the help command: `sheweny --help add`
+For more information, you can run the help command: `sheweny --help add`.
+
+## `Init` command
+
+This command is used to initialize the Command Line Interface (CLI) with **an existing project** .
+
+## `Version` command
+
+This command return the version of the CLI (not the framework).
+
+---
 
 After having done all this, you can of course edit the project code as you wish with an editor, using the rest of the Guide or with the Documentation.
+
+## Common errors
+
+### Execution Policy
+
+If you have an error :
+
+```sh
+File cannot be loaded because the execution of scripts is disabled on this system. Please see "get-help about_signing" for more details
+```
+
+Changed script execution parameter. On an administrator powershell, you can do this by running the following command:
+
+```sh
+Set-ExecutionPolicy Unrestricted
+```
