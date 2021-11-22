@@ -55,7 +55,7 @@ Return : [ShewenyClientManagers](../typedef/ShewenyClientManagers.md).
 
 The collections of commands, events, buttons, select-menus, inhibitors.
 
-Return : [ClientCollections](../typedef/ClientCollections.md)
+Return : [ShewenyClientCollections](../typedef/ShewenyClientCollections.md)
 
 ## Methods
 
