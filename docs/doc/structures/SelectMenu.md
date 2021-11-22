@@ -44,7 +44,7 @@ Return : [ShewenyClient](../client/ShewenyClient.md)
 
 The manager of this structure.
 
-Return : [SelectMenus](../managers/SelectMenusManager.md)
+Return : [SelectMenusManager](../managers/SelectMenusManager.md)
 
 ### path
 
