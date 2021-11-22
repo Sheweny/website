@@ -1,4 +1,4 @@
-# Commands handler
+# Commands manager
 
 Set up an application commands handler to load and register interactions.
 
