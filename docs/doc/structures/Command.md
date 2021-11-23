@@ -98,7 +98,7 @@ Return : [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Glo
 
 The args of the command.
 
-Return : [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)\<[CommandMessageArgument](../typedef/ommandOptions.md#commandmessageargument)>
+Return : [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)\<[CommandOptions](../typedef/CommandOptions.md#commandmessageargument)>
 
 ### aliases
 
