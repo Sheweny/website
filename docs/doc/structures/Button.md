@@ -8,10 +8,10 @@ Represents a button.
 new Button(client, options);
 ```
 
-| Name     | Type                                                                                                                                                                                    | Description             | Default | Optional |
-| -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- | ------- | -------- |
-| client   | [ShewenyClient](./ShewenyClient.md)                                                                                                                                                     | The client.             | None    | No       |
-| customId | [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)\<[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)> | The list of buttons ids | None    | No       |
+| Name     | Type                                                                                                                                                                                                                                                                                   | Description            | Default | Optional |
+| -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- | ------- | -------- |
+| client   | [ShewenyClient](./ShewenyClient.md)                                                                                                                                                                                                                                                    | The client.            | None    | No       |
+| customId | [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)\<[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Regexp](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Regexp)> | The list of butons ids | None    | ✓        |
 
 :::details Properties
 
@@ -56,7 +56,7 @@ Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refere
 
 The custom id(s) of the button.
 
-Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+Return : [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)\<[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) | [Regexp](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Regexp)>
 
 ## Methods
 
