@@ -3,7 +3,7 @@
 The auto-complete commands are used to provide auto-complete suggestions for the arguments in application commands.
 
 :::warning
-For use auto-complete you must have discord.js V13.0.0 or higher and sheweny V3.0.0 or higher.
+For use auto-complete you must have discord.js V13.3.0 or higher and sheweny V3.0.0 or higher.
 :::
 
 :::: code-group

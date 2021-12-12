@@ -3,7 +3,7 @@
 Welcome to the official documentation of sheweny framework.
 
 :::tip NOTE
-Your are on the V3.0.0 documentation, for the V2.0.0 documentation please go to [this website](https://sheweny.github.io/V2-website/)
+Your are on the V3.0.0 documentation, for the V2 documentation please go to [this website](https://sheweny.github.io/V2-website/)
 :::
 Here you will find all of the framework documentation. To access the guide [click here](../guide/README.md)
 
