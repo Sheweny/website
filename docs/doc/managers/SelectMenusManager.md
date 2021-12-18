@@ -11,7 +11,7 @@ new SelectMenusManager(client, options);
 | Name    | Type                                                                  | Description                         | Default | Optional |
 | ------- | --------------------------------------------------------------------- | ----------------------------------- | ------- | -------- |
 | client  | [ShewenyClient](./ShewenyClient.md)                                   | The client                          | None    | No       |
-| options | [BaseManagerOptions](../typedef/ManagerOptions.md#BaseManagerOptions) | Options of the select-menus manager | None    | No       |
+| options | [BaseManagerOptions](../typedef/ManagerOptions.md#basemanageroptions) | Options of the select-menus manager | None    | No       |
 
 :::details Properties
 

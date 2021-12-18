@@ -11,10 +11,10 @@ Extends ClientOptions (discord.js type)
 
 ## ClientManagersOptions
 
-| Name        | Type                                                 | Description                 |
-| ----------- | ---------------------------------------------------- | --------------------------- |
-| commands    | [CommandManagerOptions](./CommandsManagerOptions.md) | The options for the manager |
-| events      | [BaseManagerOptions](./BaseManagerOptions.md)        | The options for the manager |
-| buttons     | [BaseManagerOptions](./BaseManagerOptions.md)        | The options for the manager |
-| selectMenus | [BaseManagerOptions](./BaseManagerOptions.md)        | The options for the manager |
-| inhibitors  | [BaseManagerOptions](./BaseManagerOptions.md)        | The options for the manager |
+| Name        | Type                                                                | Description                 |
+| ----------- | ------------------------------------------------------------------- | --------------------------- |
+| commands    | [CommandManagerOptions](./ManagerOptions.md#commandsmanageroptions) | The options for the manager |
+| events      | [BaseManagerOptions](./BaseManagerOptions.md)                       | The options for the manager |
+| buttons     | [BaseManagerOptions](./BaseManagerOptions.md)                       | The options for the manager |
+| selectMenus | [BaseManagerOptions](./BaseManagerOptions.md)                       | The options for the manager |
+| inhibitors  | [BaseManagerOptions](./BaseManagerOptions.md)                       | The options for the manager |

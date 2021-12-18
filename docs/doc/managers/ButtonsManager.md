@@ -11,7 +11,7 @@ new ButtonsManager(client, options);
 | Name    | Type                                                                  | Description                | Default | Optional |
 | ------- | --------------------------------------------------------------------- | -------------------------- | ------- | -------- |
 | client  | [ShewenyClient](../client/ShewenyClient.md)                           | The client                 | None    | No       |
-| options | [BaseManagerOptions](../typedef/ManagerOptions.md#BaseManagerOptions) | The options of the manager | None    | No       |
+| options | [BaseManagerOptions](../typedef/ManagerOptions.md#basemanageroptions) | The options of the manager | None    | No       |
 
 :::details Properties
 

@@ -8,10 +8,10 @@ Create an handler for bot commands. The commands can be in as many subfolders as
 new CommandsManager(client, options);
 ```
 
-| Name    | Type                                                           | Description                     | Default | Optional |
-| ------- | -------------------------------------------------------------- | ------------------------------- | ------- | -------- |
-| client  | [ShewenyClient](./ShewenyClient.md)                            | The client                      | None    | No       |
-| options | [CommandsManagerOptions](../typedef/CommandsManagerOptions.md) | Options of the commands manager | None    | No       |
+| Name    | Type                                                                          | Description                     | Default | Optional |
+| ------- | ----------------------------------------------------------------------------- | ------------------------------- | ------- | -------- |
+| client  | [ShewenyClient](./ShewenyClient.md)                                           | The client                      | None    | No       |
+| options | [CommandsManagerOptions](../typedef/ManagerOptions.md#commandsmanageroptions) | Options of the commands manager | None    | No       |
 
 :::details Properties
 
