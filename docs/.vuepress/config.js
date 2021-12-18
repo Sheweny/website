@@ -103,13 +103,13 @@ module.exports = {
           path: "/doc/typedef",
           collapsable: false,
           children: [
-            "/doc/typedef/BaseManagerOptions.md",
             "/doc/typedef/CommandOptions.md",
             "/doc/typedef/CommandsManagerOptions.md",
             "/doc/typedef/EventOptions.md",
-            "/doc/typedef/InhibitorOptions.md", //
+            "/doc/typedef/InhibitorOptions.md",
+            "/doc/typedef/ManagerOptions.md",
             "/doc/typedef/ShewenyClientCollections.md",
-            "/doc/typedef/ShewenyClientManagers.md", //
+            "/doc/typedef/ShewenyClientManagers.md",
             "/doc/typedef/ShewenyClientOptions.md",
           ],
         },

@@ -8,10 +8,10 @@ Create an handler for bot inhibitors. The inhibitors can be in as many subfolder
 new InhibitorsManager(client, options);
 ```
 
-| Name    | Type                                                   | Description                       | Default | Optional |
-| ------- | ------------------------------------------------------ | --------------------------------- | ------- | -------- |
-| client  | [ShewenyClient](./ShewenyClient.md)                    | The client                        | None    | No       |
-| options | [BaseManagerOptions](../typedef/BaseManagerOptions.md) | Options of the inhibitors manager | None    | No       |
+| Name    | Type                                                                  | Description                       | Default | Optional |
+| ------- | --------------------------------------------------------------------- | --------------------------------- | ------- | -------- |
+| client  | [ShewenyClient](./ShewenyClient.md)                                   | The client                        | None    | No       |
+| options | [BaseManagerOptions](../typedef/ManagerOptions.md#BaseManagerOptions) | Options of the inhibitors manager | None    | No       |
 
 :::details Properties
 

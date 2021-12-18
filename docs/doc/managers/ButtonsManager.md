@@ -8,10 +8,10 @@ Create an handler for bot buttons. The buttons can be in as many subfolders as d
 new ButtonsManager(client, options);
 ```
 
-| Name    | Type                                                   | Description                | Default | Optional |
-| ------- | ------------------------------------------------------ | -------------------------- | ------- | -------- |
-| client  | [ShewenyClient](../client/ShewenyClient.md)            | The client                 | None    | No       |
-| options | [BaseManagerOptions](../typedef/BaseManagerOptions.md) | The options of the manager | None    | No       |
+| Name    | Type                                                                  | Description                | Default | Optional |
+| ------- | --------------------------------------------------------------------- | -------------------------- | ------- | -------- |
+| client  | [ShewenyClient](../client/ShewenyClient.md)                           | The client                 | None    | No       |
+| options | [BaseManagerOptions](../typedef/ManagerOptions.md#BaseManagerOptions) | The options of the manager | None    | No       |
 
 :::details Properties
 
