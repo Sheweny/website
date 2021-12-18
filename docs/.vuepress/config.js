@@ -105,7 +105,6 @@ module.exports = {
           collapsable: false,
           children: [
             "/doc/typedef/CommandOptions.md",
-            "/doc/typedef/ManagerOptions.md#commandsmanageroptions",
             "/doc/typedef/EventOptions.md",
             "/doc/typedef/InhibitorOptions.md",
             "/doc/typedef/ManagerOptions.md",
