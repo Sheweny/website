@@ -19,12 +19,13 @@ module.exports = {
    */
   //base: "/sheweny-website/",
   themeConfig: {
-    repo: "https://github.com/Sheweny/website",
-    contributors: false,
+    repo: "https://github.com/Sheweny/website/",
+    contributors: true,
     editLinks: true,
     editLinkText: "Edit this page",
     lastUpdated: "Last Updated",
-    docsDir: "doc",
+    docsDir: "docs",
+    docsBranch: "master",
     displayAllHeaders: true,
     sidebarDepth: 1,
     search: true,
@@ -217,5 +218,6 @@ module.exports = {
     "@vuepress/plugin-back-to-top",
     "@vuepress/plugin-medium-zoom",
     "@vuepress/plugin-search",
+    "@vuepress/plugin-git",
   ],
 };
