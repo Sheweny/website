@@ -12,27 +12,20 @@ module.exports = {
     ],
   ],
 
-  /**
-   * Theme configuration, here is the default theme configuration for VuePress.
-   *
-   * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
-   */
   //base: "/sheweny-website/",
   themeConfig: {
-    repo: "https://github.com/Sheweny/website/",
-    contributors: true,
-    editLinks: true,
-    editLinkText: "Edit this page",
-    lastUpdated: "Last Updated",
-    docsDir: "docs",
-    docsBranch: "master",
-    displayAllHeaders: true,
-    sidebarDepth: 1,
-    search: true,
-    searchMaxSuggestions: 5,
-    themePlugins: {
-      mediumZoom: false,
-    },
+    // repo: "https://github.com/Sheweny/website/",
+    // contributors: true,
+    // editLinks: true,
+    // editLinkText: "Edit this page",
+    // lastUpdated: "Last Updated",
+    // docsDir: "docs",
+    // docsBranch: "master",
+    // displayAllHeaders: true,
+    // sidebarDepth: 1,
+    // search: true,
+    // searchMaxSuggestions: 5,
+
     navbar: [
       {
         text: "Documentation",
@@ -209,14 +202,5 @@ module.exports = {
       ],
     },
   },
-
-  /**
-   * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
-   */
-  plugins: [
-    "@vuepress/plugin-back-to-top",
-    "@vuepress/plugin-medium-zoom",
-    "@vuepress/plugin-search",
-    "@vuepress/plugin-git",
-  ],
+  plugins: ["@vuepress/plugin-search"],
 };
