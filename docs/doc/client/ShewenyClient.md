@@ -15,6 +15,7 @@ new ShewenyClient(options);
 
 :::details Properties
 
+- [connected](#connected)
 - [util](#util)
 - [managers](#managers)
 - [collections](#collections)
@@ -38,6 +39,12 @@ new ShewenyClient(options);
 :::
 
 ## Properties
+
+### connected
+
+Indicate when the client is connected to the Discord API.
+
+Return : [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
 
 ### util
 
@@ -63,7 +70,7 @@ Return : [ShewenyClientCollections](../typedef/ShewenyClientCollections.md)
 
 Wait for the client to be ready.
 
-Return Promise\<void>
+Return Promise\<true>
 
 ## Events
 

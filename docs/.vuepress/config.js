@@ -14,17 +14,17 @@ module.exports = {
 
   //base: "/sheweny-website/",
   themeConfig: {
-    // repo: "https://github.com/Sheweny/website/",
-    // contributors: true,
-    // editLinks: true,
-    // editLinkText: "Edit this page",
-    // lastUpdated: "Last Updated",
-    // docsDir: "docs",
-    // docsBranch: "master",
-    // displayAllHeaders: true,
-    // sidebarDepth: 1,
-    // search: true,
-    // searchMaxSuggestions: 5,
+    repo: "https://github.com/Sheweny/website/",
+    contributors: true,
+    editLinks: true,
+    editLinkText: "Edit this page",
+    lastUpdated: "Last Updated",
+    docsDir: "docs",
+    docsBranch: "master",
+    displayAllHeaders: true,
+    sidebarDepth: 2,
+    search: true,
+    searchMaxSuggestions: 5,
 
     navbar: [
       {

@@ -21,6 +21,8 @@ new Command(client, options);
 - [name](#name)
 - [description](#description)
 - [category](#category)
+- [usage](#usage)
+- [examples](#examples)
 - [type](#type)
 - [options](#options)
 - [args](#args)
@@ -81,6 +83,18 @@ Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refere
 The category of the command.
 
 Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+
+### usage
+
+The usage of the command.
+
+Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) or [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>
+
+### examples
+
+The examples of the command.
+
+Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) or [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>
 
 ### type
 
