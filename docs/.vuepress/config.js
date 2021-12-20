@@ -40,6 +40,10 @@ module.exports = {
         text: "Discord",
         link: "https://discord.gg/qgd85nEf5a",
       },
+      {
+        text: "Example",
+        link: "https://github.com/Sheweny/sheweny-bot",
+      },
     ],
     sidebar: {
       "/doc/": [
