@@ -12,7 +12,8 @@ const { Command } = require("sheweny");
 
 module.exports = class PingCommand extends Command {
   constructor(client) {
-    super(client, "ping", {
+    super(client {
+      name: "ping",
       description: "Ping the bot",
       type: "SLASH_COMMAND",
       category: "Misc",
@@ -36,7 +37,8 @@ import type { CommandInteraction } from "discord.js";
 
 export class PingCommand extends Command {
   constructor(client: ShewenyClient) {
-    super(client, "ping", {
+    super(client {
+      name: "ping",
       description: "Ping the bot",
       type: "SLASH_COMMAND",
       category: "Misc",
@@ -63,7 +65,8 @@ const { Command } = require("sheweny");
 
 module.exports = class PingCommand extends Command {
   constructor(client) {
-    super(client, "ping", {
+    super(client {
+      name: "ping",
       description: "Ping the bot",
       type: "MESSAGE_COMMAND",
       category: "Misc",
@@ -86,7 +89,8 @@ import type { Message } from "discord.js";
 
 export class PingCommand extends Command {
   constructor(client: ShewenyClient) {
-    super(client, "ping", {
+    super(client {
+      name: "ping",
       description: "Ping the bot",
       type: "MESSAGE_COMMAND",
       category: "Misc",
