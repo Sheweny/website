@@ -38,6 +38,28 @@ module.exports = class PingCommand extends Command {
   execute(interaction) {
     interaction.reply({ content: "Pong !" });
   }
+
+  onAutocomplete(interaction) {
+    const focusedOption = interaction.options.getFocused(true);
+
+    let choices;
+
+    if (focusedOption.name === "name") {
+      choices = ["faq", "install", "collection", "promise", "debug"];
+    }
+
+    if (focusedOption.name === "theme") {
+      choices = ["halloween", "christmas", "summer"];
+    }
+
+    const filtered = choices.filter((choice: any) =>
+      choice.startsWith(focusedOption.value)
+    );
+    interaction
+      .respond(filtered.map((choice) => ({ name: choice, value: choice })))
+      .then(console.log)
+      .catch(console.error);
+  }
 };
 ```
 
