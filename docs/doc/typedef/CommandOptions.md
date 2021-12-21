@@ -30,7 +30,7 @@ Type : [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Glob
 | Name         | Type                                                                                        | Description                   | Default | Optional |
 | ------------ | ------------------------------------------------------------------------------------------- | ----------------------------- | ------- | -------- |
 | name         | [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) | The name of the command       |         |          |
-| defaultValue | \*                                                                                          | The default value of argument |         | ✓        |
+| default      | \*                                                                                          | The default value of argument |         | ✓        |
 | type         | [CommandMessageArgsType](#commandmessageargtype)                                            | The type of the command       | STRING  | ✓        |
 
 ## CommandMessageArgType
