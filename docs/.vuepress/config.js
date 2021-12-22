@@ -105,6 +105,7 @@ module.exports = {
             "/doc/typedef/EventOptions.md",
             "/doc/typedef/InhibitorOptions.md",
             "/doc/typedef/ManagerOptions.md",
+            "/doc/typedef/ManagersDefaultOptions.md",
             "/doc/typedef/ShewenyClientCollections.md",
             "/doc/typedef/ShewenyClientManagers.md",
             "/doc/typedef/ShewenyClientOptions.md",
