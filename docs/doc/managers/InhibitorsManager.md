@@ -16,6 +16,7 @@ new InhibitorsManager(client, options);
 :::details Properties
 
 - [client](#client)
+- [default](#default)
 - [directory](#directory)
 - [inhibitors](#inhibitors)
 
@@ -35,6 +36,12 @@ new InhibitorsManager(client, options);
 The framework client.
 
 Return : [ShewenyClient](../client/ShewenyClient.md)
+
+### default
+
+The default data of the inhibitors.
+
+Return : [InhibitorsManagerDefaultOption](../typedef/ManagersDefaultOptions.md#inhibitorsmanagerdefaultoptions)
 
 ### directory
 

@@ -5,7 +5,7 @@ Create an handler for bot events. The events can be in as many subfolders as des
 ## Constructor
 
 ```js
-new CommandsManager(client, options);
+new EventsManager(client, options);
 ```
 
 | Name    | Type                                                                  | Description                   | Default | Optional |
@@ -16,6 +16,7 @@ new CommandsManager(client, options);
 :::details Properties
 
 - [client](#client)
+- [default](#default)
 - [directory](#directory)
 - [events](#events)
 
@@ -37,6 +38,12 @@ new CommandsManager(client, options);
 The framework client.
 
 Return : [ShewenyClient](../client/ShewenyClient.md)
+
+### default
+
+The default data of the events.
+
+Return : [EventsManagerDefaultOption](../typedef/ManagersDefaultOptions.md#eventsmanagerdefaultoptions)
 
 ### directory
 

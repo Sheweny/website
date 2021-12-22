@@ -16,6 +16,7 @@ new CommandsManager(client, options);
 :::details Properties
 
 - [client](#client)
+- [default](#default)
 - [directory](#directory)
 - [guildId](#guildid)
 - [prefix](#prefix)
@@ -55,6 +56,12 @@ new CommandsManager(client, options);
 The framework client.
 
 Return : [ShewenyClient](../client/ShewenyClient.md)
+
+### default
+
+The default data of the commands.
+
+Return : [CommandsManagerDefaultOption](../typedef/ManagersDefaultOptions.md#commandsmanagerdefaultoptions)
 
 ### directory
 
