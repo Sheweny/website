@@ -7,7 +7,7 @@ In this guide you will find :
 - How to install the framework and his dependencies
 - What project structure creates
 - How to instantiate and configure the client
-- How to set up the handlers
+- How to set up the managers
 - How to create commands, context-menus, buttons, select-menus, events...
 - How to deal with errors
 

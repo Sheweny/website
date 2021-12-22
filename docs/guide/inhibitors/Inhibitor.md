@@ -5,9 +5,9 @@ Inhibitors allow you to limit the use of a command, an event, or an interaction.
 ## Getting started
 
 Inhibitors are a way to monitor or block messages or interactions.
-Because inhibitors are another kind of module, we need another kind of handler.
-To set it up, simply import and instantiate the InhibitorHandler, just like with the command handler.
-Please see [inhibitors handler](../handlers/inhibitors) for setup the handler
+Because inhibitors are another kind of module, we need another kind of manager.
+To set it up, simply import and instantiate the InhibitorManager, just like with the command manager.
+Please see [inhibitors manager](../managers/inhibitors) for setup the manager
 
 ## Inhibitor class
 
@@ -29,7 +29,7 @@ module.exports =  class BlackListInhibitor extends Inhibitor {
   execute(client, interaction) {
     return !["877090306103840778"].includes(interaction.guildId!);
   }
-  
+
   onFailure(client, interaction) {
     interaction.reply("Your guild is blacklisted.");
   }

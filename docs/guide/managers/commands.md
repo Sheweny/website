@@ -1,10 +1,10 @@
 # Commands manager
 
-Set up an application commands handler to load and register interactions.
+Set up an application commands manager to load and register interactions.
 
 ## Setup in client
 
-When setting up the client, it is possible to set the handler as a parameter :
+When setting up the client, it is possible to set the manager as a parameter :
 
 :::: code-group
 ::: code-group-item JS CommonJS
@@ -14,7 +14,7 @@ const { ShewenyClient } = require("sheweny");
 
 const client = new ShewenyClient({
   intents: ["GUILDS"],
-  handlers: {
+  managers: {
     commands: {
       directory: "./commands", // Directory where the commands are stored
       guildId: ["877090306103840778"], // Register commands and context-menus in this guild
@@ -34,7 +34,7 @@ import { ShewenyClient } from "sheweny";
 
 const client = new ShewenyClient({
   intents: ["GUILDS"],
-  handlers: {
+  managers: {
     commands: {
       directory: "./commands", // Directory where the commands are stored
       guildId: "877090306103840778", // Register commands and context-menus in this guild
@@ -51,7 +51,7 @@ const client = new ShewenyClient({
 
 ## Setup with class
 
-You can also use the class to set up the handler somewhere else :
+You can also use the class to set up the manager somewhere else :
 
 :::: code-group
 ::: code-group-item JS CommonJS
