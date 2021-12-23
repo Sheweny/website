@@ -17,12 +17,12 @@ new Event(client, "ready", options);
 :::details Properties
 
 - [client](#client)
-- [manager](#manager)
-- [path](#path)
-- [name](#name)
 - [description](#description)
-- [once](#once)
 - [emitter](#emitter)
+- [manager](#manager)
+- [name](#name)
+- [once](#once)
+- [path](#path)
 
 :::
 
@@ -30,9 +30,9 @@ new Event(client, "ready", options);
 
 - [before](#before)
 - [execute](#abstract-execute)
-- [unregister](#unregister)
-- [reload](#async-reload)
 - [register](#async-register)
+- [reload](#async-reload)
+- [unregister](#unregister)
 
 :::
 
@@ -44,27 +44,27 @@ The framework client.
 
 Return : [ShewenyClient](../client/ShewenyClient.md)
 
+### description
+
+The description of the event.
+
+Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+
+### emitter
+
+If the event is emitted juste once or not.
+
+Return : [EventEmitter](https://nodejs.org/api/events.html#class-eventemitter)
+
 ### manager
 
 The manager of this structure.
 
 Return : [EventsManager](../managers/EventsManager.md)
 
-### path
-
-The path of the file.
-
-Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
-
 ### name
 
 The name of the event.
-
-Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
-
-### description
-
-The description of the event.
 
 Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 
@@ -74,13 +74,56 @@ If the event is emitted juste once or not.
 
 Return : [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
 
+### path
+
+The path of the file.
+
+Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+
+## Methods
+
+### client
+
+The framework client.
+
+Return : [ShewenyClient](../client/ShewenyClient.md)
+
+### description
+
+The description of the event.
+
+Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+
 ### emitter
 
 If the event is emitted juste once or not.
 
 Return : [EventEmitter](https://nodejs.org/api/events.html#class-eventemitter)
 
-## Methods
+### manager
+
+The manager of this structure.
+
+Return : [EventsManager](../managers/EventsManager.md)
+
+### name
+
+The name of the event.
+
+Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+
+### once
+
+If the event is emitted juste once or not.
+
+Return : [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+
+### path
+
+The path of the file.
+
+Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+PS D:\Development\Projects\Sheweny\website> node .\sort-content.js
 
 ### before()
 
@@ -106,11 +149,11 @@ Parameters :
 
 Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<any> | any
 
-### unregister()
+### [async] register()
 
-Unregister a event from the bot.
+Register the event.
 
-Return : [Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[Event](./Event.md)> | [null](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Null)
 
 ### [async] reload()
 
@@ -118,8 +161,8 @@ Reload a event of bot.
 
 Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[Event](./Event.md)> | [null](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Null)
 
-### [async] register()
+### unregister()
 
-Register the event.
+Unregister a event from the bot.
 
-Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[Event](./Event.md)> | [null](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Null)
+Return : [Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)

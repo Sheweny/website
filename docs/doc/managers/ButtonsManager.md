@@ -15,9 +15,9 @@ new ButtonsManager(client, options);
 
 :::details Properties
 
+- [buttons](#buttons)
 - [client](#client)
 - [directory](#directory)
-- [buttons](#buttons)
 
 :::
 
@@ -30,6 +30,12 @@ new ButtonsManager(client, options);
 
 ## Properties
 
+### buttons
+
+The collection of loaded buttons.
+
+Return : Collection<[Button](../structures/Button.md)>
+
 ### client
 
 The framework client.
@@ -41,12 +47,6 @@ Return : [ShewenyClient](../client/ShewenyClient.md)
 The directory of buttons.
 
 Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
-
-### buttons
-
-The collection of loaded buttons.
-
-Return : Collection<[Button](../structures/Button.md)>
 
 ## Methods
 

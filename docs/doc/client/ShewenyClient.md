@@ -15,10 +15,10 @@ new ShewenyClient(options);
 
 :::details Properties
 
-- [connected](#connected)
-- [util](#util)
-- [managers](#managers)
 - [collections](#collections)
+- [connected](#connected)
+- [managers](#managers)
+- [util](#util)
 
 :::
 
@@ -33,30 +33,12 @@ new ShewenyClient(options);
 - [interactionButtonCreate](#interactionbuttoncreate)
 - [interactionCommandCreate](#interactioncommandcreate)
 - [interactionContextMenuCreate](#interactioncontextmenucreate)
-- [interactionSelectMenuCreate](#interactionselectmenucreate)
 - [interactionMessageComponentCreate](#interactionmessagecomponentcreate)
+- [interactionSelectMenuCreate](#interactionselectmenucreate)
 
 :::
 
 ## Properties
-
-### connected
-
-Indicate when the client is connected to the Discord API.
-
-Return : [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
-
-### util
-
-Useful functions for your bot.
-
-Return : [ClientUtil](../client/ClientUtil.md).
-
-### managers
-
-The managers of the client.
-
-Return : [ShewenyClientManagers](../typedef/ShewenyClientManagers.md).
 
 ### collections
 
@@ -64,13 +46,31 @@ The collections of commands, events, buttons, select-menus, inhibitors.
 
 Return : [ShewenyClientCollections](../typedef/ShewenyClientCollections.md)
 
+### connected
+
+Indicate when the client is connected to the Discord API.
+
+Return : [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+
+### managers
+
+The managers of the client.
+
+Return : [ShewenyClientManagers](../typedef/ShewenyClientManagers.md).
+
+### util
+
+Useful functions for your bot.
+
+Return : [ClientUtil](../client/ClientUtil.md).
+
 ## Methods
 
 ### awaitReady
 
 Wait for the client to be ready.
 
-Return Promise\<true>
+Return [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<true>
 
 ## Events
 
@@ -98,14 +98,6 @@ Parameters :
 
 - interaction (type : [ContextMenuInteraction](https://discord.js.org/#/docs/main/stable/class/ContextMenuInteraction))
 
-### interactionSelectMenuCreate
-
-Emitted when an Select Menu interaction is created.
-
-Parameters :
-
-- interaction (type : [SelectMenuInteraction](https://discord.js.org/#/docs/main/stable/class/SelectMenuInteraction))
-
 ### interactionMessageComponentCreate
 
 Emitted when an Message Component interaction is created.
@@ -113,3 +105,11 @@ Emitted when an Message Component interaction is created.
 Parameters :
 
 - interaction (type : [MessageComponentInteraction](https://discord.js.org/#/docs/main/stable/class/MessageComponentInteraction))
+
+### interactionSelectMenuCreate
+
+Emitted when an Select Menu interaction is created.
+
+Parameters :
+
+- interaction (type : [SelectMenuInteraction](https://discord.js.org/#/docs/main/stable/class/SelectMenuInteraction))

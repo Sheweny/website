@@ -18,10 +18,10 @@ new Inhibitor(client, options);
 
 - [client](#client)
 - [manager](#manager)
-- [path](#path)
 - [name](#name)
-- [type](#type)
+- [path](#path)
 - [priority](#priority)
+- [type](#type)
 
 :::
 
@@ -29,9 +29,9 @@ new Inhibitor(client, options);
 
 - [before](#before)
 - [execute](#abstract-execute)
-- [unregister](#unregister)
-- [reload](#async-reload)
 - [register](#async-register)
+- [reload](#async-reload)
+- [unregister](#unregister)
 
 :::
 
@@ -55,29 +55,29 @@ The manager of this structure.
 
 Return : [InhibitorsManager](../managers/InhibitorsManager.md)
 
-### path
-
-The path of the file.
-
-Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
-
 ### name
 
 The name of the inhibitor.
 
 Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 
-### type
+### path
 
-The type of the inhibitor.
+The path of the file.
 
-Return : [InhibitorTypeResolvable](../typedef/InhibitorOptions.md#inhibitortyperesolvable)
+Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 
 ### priority
 
 The priority of the inhibitor.
 
 Return : [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
+
+### type
+
+The type of the inhibitor.
+
+Return : [InhibitorTypeResolvable](../typedef/InhibitorOptions.md#inhibitortyperesolvable)
 
 ## Methods
 
@@ -107,11 +107,11 @@ Parameters :
 
 Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<any> | any
 
-### unregister()
+### [async] register()
 
-Unregister a inhibitor from the bot.
+Register the inhibotor.
 
-Return : [Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[Inhibitor](./Inhibitor.md)> | [null](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Null)
 
 ### [async] reload()
 
@@ -119,8 +119,8 @@ Reload a inhibotor.
 
 Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[Inhibitor](./Inhibitor.md)> | [null](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Null)
 
-### [async] register()
+### unregister()
 
-Register the inhibotor.
+Unregister a inhibitor from the bot.
 
-Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[Inhibitor](./Inhibitor.md)> | [null](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Null)
+Return : [Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)

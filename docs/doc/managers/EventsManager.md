@@ -25,8 +25,8 @@ new EventsManager(client, options);
 :::details Methods
 
 - [loadAll](#loadall)
-- [registerAll](#registerAll)
 - [loadAndRegisterAll](#loadandregisterall)
+- [registerAll](#registerAll)
 - [unloadAll](#unloadall)
 
 :::

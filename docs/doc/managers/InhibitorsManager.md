@@ -53,7 +53,7 @@ Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refere
 
 The collection of loaded inhibitors.
 
-Return : Collection<[Button](../structures/Button.md)>
+Return : Collection<[Inhibitor](../structures/Inhibitor.md)>
 
 ## Methods
 

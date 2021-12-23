@@ -14,17 +14,16 @@ module.exports = {
 
   //base: "/sheweny-website/",
   themeConfig: {
-    repo: "https://github.com/Sheweny/website/",
-    contributors: true,
+    repo: "https://github.com/Sheweny/framework/",
+    docsRepo: "https://github.com/Sheweny/website/",
+    docsBranch: "master",
+    docsDir: "docs",
+    contributors: false,
     editLinks: true,
     editLinkText: "Edit this page",
     lastUpdated: "Last Updated",
-    docsDir: "docs",
-    docsBranch: "master",
     displayAllHeaders: true,
     sidebarDepth: 2,
-    search: true,
-    searchMaxSuggestions: 5,
 
     navbar: [
       {
@@ -43,6 +42,10 @@ module.exports = {
       {
         text: "Example",
         link: "https://github.com/Sheweny/sheweny-bot",
+      },
+      {
+        text: "Changelog",
+        link: "https://github.com/Sheweny/framework/blob/master/CHANGELOG.md",
       },
     ],
     sidebar: {
@@ -205,6 +208,10 @@ module.exports = {
           ],
         },
       ],
+    },
+    themePlugins: {
+      backToTop: true,
+      mediumZoom: false,
     },
   },
   plugins: ["@vuepress/plugin-search"],

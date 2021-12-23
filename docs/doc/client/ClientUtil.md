@@ -19,74 +19,43 @@ new ClientUtil(client);
 - [getEvents](#getevents)
 - [getInhibitors](#getinhibitors)
 - [getSelectMenus](#getselectmenus)
-- [resolveUser](#async-resolveuser-arg)
+- [resolveChannel](#resolvechannel-guild-arg)
+- [resolveGuildEmoji](#resolveguildemoji-guild-arg)
 - [resolveGuild](#resolveguild-arg)
 - [resolveMember](#async-resolvemember-guild-arg)
-- [resolveChannel](#resolvechannel-guild-arg)
 - [resolveRole](#resolverole-guild-arg)
-- [resolveGuildEmoji](#resolveguildemoji-guild-arg)
+- [resolveUser](#async-resolveuser-arg)
   :::
 
 ## getButtons()
 
 Get the loaded buttons of the bot.
 
-Return : Iterable\<[Button](../structures/Button.md)>
+Return : Iterable<[Button](../structures/Button.md)>
 
 ## getCommands()
 
 Get the loaded commands of the bot.
 
-Return : Iterable\<[Command](../structures/Command.md)>
+Return : Iterable<[Command](../structures/Command.md)>
 
 ## getEvents()
 
 Get the loaded events of the bot.
 
-Return : Iterable\<[Event](../structures/Event.md)>
+Return : Iterable<[Event](../structures/Event.md)>
 
 ## getInhibitors()
 
 Get the loaded inhibitors of the bot.
 
-Return : Iterable\<[Inhibitor](../structures/Inhibitor.md)>
+Return : Iterable<[Inhibitor](../structures/Inhibitor.md)>
 
 ## getSelectMenu()
 
 Get the loaded select menu of the bot.
 
-Return : Iterable\<[SelectMenu](../structures/SelectMenu.md)>
-
-## [async] resolveUser(arg)
-
-Get a user and fetch discord if it is not in the cache.
-
-Parameters :
-
-- arg : Id, mention, name, start of name, name + discriminator. (string)
-
-Return : [User](https://discord.js.org/#/docs/main/stable/class/User) or undefined
-
-## resolveGuild(arg)
-
-Get a guild in common with the bot.
-
-Parameters :
-
-- arg : Name or id of guild. (string)
-
-Return : [Guild](https://discord.js.org/#/docs/main/stable/class/Guild) or undefined
-
-## [async] resolveMember(guild, arg)
-
-Get a guild member and fetch discord if it is not in the cache.
-
-Parameters :
-
-- guild : The guild where is the member (Guild)
-- arg : Id, mention, username, start of username. (string)
-
-Return : [GuildMember](https://discord.js.org/#/docs/main/stable/class/GuildMember) or undefined
+Return : Iterable<[SelectMenu](../structures/SelectMenu.md)>
 
 ## resolveChannel(guild, arg)
 
@@ -99,16 +68,15 @@ Parameters :
 
 Return : [GuildChannel](https://discord.js.org/#/docs/main/stable/class/GuildChannel) or undefined
 
-## resolveRole(guild, arg)
+## resolveGuild(arg)
 
-Get a guild role.
+Get a guild in common with the bot.
 
 Parameters :
 
-- guild : The guild (Guild)
-- arg : Id, mention, name, start of name. (string)
+- arg : Name or id of guild. (string)
 
-Return : [Role](https://discord.js.org/#/docs/main/stable/class/Role) or undefined
+Return : [Guild](https://discord.js.org/#/docs/main/stable/class/Guild) or undefined
 
 ## resolveGuildEmoji(guild, arg)
 
@@ -121,8 +89,34 @@ Parameters :
 
 Return : [GuildEmoji](https://discord.js.org/#/docs/main/stable/class/GuildEmoji) or undefined
 
+## [async] resolveMember(guild, arg)
+
+Get a guild member and fetch discord if it is not in the cache.
+
 Parameters :
 
-- member : [GuildMember](https://discord.js.org/#/docs/main/stable/class/GuildMember)
+- guild : The guild where is the member (Guild)
+- arg : Id, mention, username, start of username. (string)
 
-Return : [Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+Return : [GuildMember](https://discord.js.org/#/docs/main/stable/class/GuildMember) or undefined
+
+## resolveRole(guild, arg)
+
+Get a guild role.
+
+Parameters :
+
+- guild : The guild (Guild)
+- arg : Id, mention, name, start of name. (string)
+
+Return : [Role](https://discord.js.org/#/docs/main/stable/class/Role) or undefined
+
+## [async] resolveUser(arg)
+
+Get a user and fetch discord if it is not in the cache.
+
+Parameters :
+
+- arg : Id, mention, name, start of name, name + discriminator. (string)
+
+Return : [User](https://discord.js.org/#/docs/main/stable/class/User) or undefined

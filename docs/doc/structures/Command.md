@@ -15,23 +15,23 @@ new Command(client, options);
 
 :::details Properties
 
-- [client](#client)
-- [manager](#manager)
-- [path](#path)
-- [name](#name)
-- [description](#description)
-- [category](#category)
-- [usage](#usage)
-- [examples](#examples)
-- [type](#type)
-- [options](#options)
-- [args](#args)
-- [aliases](#aliases)
-- [channel](#channel)
-- [cooldown](#cooldown)
 - [adminOnly](#adminonly)
-- [userPermissions](#userpermissions)
+- [aliases](#aliases)
+- [args](#args)
+- [category](#category)
+- [channel](#channel)
 - [clientPermissions](#clientpermissions)
+- [client](#client)
+- [cooldown](#cooldown)
+- [description](#description)
+- [examples](#examples)
+- [manager](#manager)
+- [name](#name)
+- [options](#options)
+- [path](#path)
+- [type](#type)
+- [usage](#usage)
+- [userPermissions](#userpermissions)
 
 :::
 
@@ -40,43 +40,31 @@ new Command(client, options);
 - [before](#before)
 - [execute](#abstract-execute)
 - [onAutocomplete](#onautocomplete)
-- [unregister](#unregister)
-- [reload](#async-reload)
 - [register](#async-register)
+- [reload](#async-reload)
+- [unregister](#unregister)
 
 :::
 
 ## Properties
 
-### client
+### adminOnly
 
-The framework client.
+If the command is only for admins or not.
 
-Return : [ShewenyClient](../client/ShewenyClient.md)
+Return : [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
 
-### manager
+### aliases
 
-The manager of this structure.
+The args of the command.
 
-Return : [CommandsManager](../managers/CommandsManager.md)
+Return : [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>
 
-### path
+### args
 
-The path of the file.
+The args of the command.
 
-Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
-
-### name
-
-The name of the command.
-
-Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
-
-### description
-
-The description of the command.
-
-Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+Return : [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)\<[CommandOptions](../typedef/CommandOptions.md#commandmessageargument)>
 
 ### category
 
@@ -84,21 +72,51 @@ The category of the command.
 
 Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 
-### usage
+### channel
 
-The usage of the command.
+The channel of the command.
 
-Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) or [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>
+Return : [CommandOptionOnly](../typedef/CommandOptions#commandoptiononly)
+
+### client
+
+The framework client.
+
+Return : [ShewenyClient](../client/ShewenyClient.md)
+
+### clientPermissions
+
+The name of the command.
+
+Return : [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>
+
+### cooldown
+
+The cooldown of the command.
+
+Return : [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
+
+### description
+
+The description of the command.
+
+Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 
 ### examples
 
 The examples of the command.
 
-Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) or [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>
+Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) or [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>
 
-### type
+### manager
 
-The type of the command.
+The manager of this structure.
+
+Return : [CommandsManager](../managers/CommandsManager.md)
+
+### name
+
+The name of the command.
 
 Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 
@@ -108,45 +126,27 @@ The options of the command.
 
 Return : [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)\<[ApplicationCommandOptionData](https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandOptionData)>
 
-### args
+### path
 
-The args of the command.
+The path of the file.
 
-Return : [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)\<[CommandOptions](../typedef/CommandOptions.md#commandmessageargument)>
+Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 
-### aliases
+### type
 
-The args of the command.
+The type of the command.
 
-Return : [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>
+Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 
-### channel
+### usage
 
-The channel of the command.
+The usage of the command.
 
-Return : [CommandOptionOnly](../typedef/CommandOptions#commandoptiononly)
-
-### cooldown
-
-The cooldown of the command.
-
-Return : [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
-
-### adminOnly
-
-If the command is only for admins or not.
-
-Return : [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) or [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>
 
 ### userPermissions
 
 The userPermissions of the command.
-
-Return : [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>
-
-### clientPermissions
-
-The name of the command.
 
 Return : [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)\<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>
 
@@ -189,11 +189,11 @@ Parameters :
 
 Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<any> | any
 
-### unregister()
+### [async] register()
 
-Unregister a command from the bot.
+Register the command.
 
-Return : [Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[ApplicationCommand](./Command.md)> | [null](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Null)
 
 ### [async] reload()
 
@@ -201,8 +201,8 @@ Reload a command of bot.
 
 Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[ApplicationCommand](./Command.md)> | [null](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Null)
 
-### [async] register()
+### unregister()
 
-Register the command.
+Unregister a command from the bot.
 
-Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[ApplicationCommand](./Command.md)> | [null](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Null)
+Return : [Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)

@@ -16,9 +16,9 @@ new SelectMenu(client, options);
 :::details Properties
 
 - [client](#client)
+- [customId](#customid)
 - [manager](#manager)
 - [path](#path)
-- [customId](#customid)
 
 :::
 
@@ -26,9 +26,9 @@ new SelectMenu(client, options);
 
 - [before](#before)
 - [execute](#abstract-execute)
-- [unregister](#unregister)
-- [reload](#async-reload)
 - [register](#async-register)
+- [reload](#async-reload)
+- [unregister](#unregister)
 
 :::
 
@@ -84,11 +84,11 @@ Parameters :
 
 Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<any> | any
 
-### unregister()
+### [async] register()
 
-Unregister a select-menus group from the bot.
+Register the select-menu.
 
-Return : [Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[SelectMenu](./SelectMenu.md)> | [null](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Null)
 
 ### [async] reload()
 
@@ -96,8 +96,8 @@ Reload a select-menus group.
 
 Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[SelectMenu](./SelectMenu.md)> | [null](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Null)
 
-### [async] register()
+### unregister()
 
-Register the select-menu.
+Unregister a select-menus group from the bot.
 
-Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[SelectMenu](./SelectMenu.md)> | [null](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Null)
+Return : [Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)

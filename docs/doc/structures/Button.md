@@ -16,9 +16,9 @@ new Button(client, options);
 :::details Properties
 
 - [client](#client)
+- [customId](#customid)
 - [manager](#manager)
 - [path](#path)
-- [customId](#customid)
 
 :::
 
@@ -26,9 +26,9 @@ new Button(client, options);
 
 - [before](#before)
 - [execute](#abstract-execute)
-- [unregister](#unregister)
-- [reload](#async-reload)
 - [register](#async-register)
+- [reload](#async-reload)
+- [unregister](#unregister)
 
 :::
 
@@ -39,6 +39,12 @@ new Button(client, options);
 The framework client.
 
 Return : [ShewenyClient](../client/ShewenyClient.md)
+
+### customId
+
+The custom id(s) of the button.
+
+Return : [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)\<[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) | [Regexp](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Regexp)>
 
 ### manager
 
@@ -51,12 +57,6 @@ Return : [ButtonsManager](../managers/ButtonsManager.md)
 The path of the file.
 
 Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
-
-### customId
-
-The custom id(s) of the button.
-
-Return : [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)\<[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) | [Regexp](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Regexp)>
 
 ## Methods
 
@@ -84,11 +84,11 @@ Parameters :
 
 Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<any> | any
 
-### unregister()
+### [async] register()
 
-Unregister a button from the bot.
+Register the button.
 
-Return : [Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[Button](./Button.md)> | [null](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Null)
 
 ### [async] reload()
 
@@ -96,8 +96,8 @@ Reload a button of bot.
 
 Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[Button](./Button.md)> | [null](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Null)
 
-### [async] register()
+### unregister()
 
-Register the button.
+Unregister a button from the bot.
 
-Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[Button](./Button.md)> | [null](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Null)
+Return : [Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
