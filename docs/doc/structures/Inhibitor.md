@@ -27,8 +27,8 @@ new Inhibitor(client, options);
 
 :::details Methods
 
-- [before](#before)
 - [execute](#abstract-execute)
+- [onFailure](#abstract-onfailure)
 - [register](#async-register)
 - [reload](#async-reload)
 - [unregister](#unregister)

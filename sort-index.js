@@ -1,9 +1,10 @@
 const list = `
-- [before](#before)
+- [onFailure](#onfailure)
 - [execute](#abstract-execute)
-- [unregister](#unregister)
-- [reload](#async-reload)
 - [register](#async-register)
+- [reload](#async-reload)
+- [unregister](#unregister)
+
 `;
 
 // Sort the list alphabetically

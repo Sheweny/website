@@ -15,9 +15,12 @@ new ShewenyClient(options);
 
 :::details Properties
 
+- [admins](#admins)
 - [collections](#collections)
 - [connected](#connected)
+- [joinThreadsOnCreate](#jointhreadsoncreate)
 - [managers](#managers)
+- [mode](#mode)
 - [util](#util)
 
 :::
@@ -40,6 +43,12 @@ new ShewenyClient(options);
 
 ## Properties
 
+### admins
+
+The admins of the bot (no affected by cooldown and have adminOnly permission).
+
+Return : [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)<[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)>
+
 ### collections
 
 The collections of commands, events, buttons, select-menus, inhibitors.
@@ -52,11 +61,23 @@ Indicate when the client is connected to the Discord API.
 
 Return : [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
 
+### joinThreadsOnCreate
+
+If the bot should join threads on create.
+
+Return : [Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+
 ### managers
 
 The managers of the client.
 
 Return : [ShewenyClientManagers](../typedef/ShewenyClientManagers.md).
+
+### mode
+
+The mode for run application (development or production).
+
+Return : [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)
 
 ### util
 

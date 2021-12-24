@@ -72,8 +72,8 @@ module.exports = {
           children: [
             "/doc/managers/ButtonsManager.md",
             "/doc/managers/CommandsManager.md",
-            "/doc/managers/InhibitorsManager.md",
             "/doc/managers/EventsManager.md",
+            "/doc/managers/InhibitorsManager.md",
             "/doc/managers/SelectMenusManager.md",
           ],
         },

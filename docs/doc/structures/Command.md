@@ -23,6 +23,8 @@ new Command(client, options);
 - [clientPermissions](#clientpermissions)
 - [client](#client)
 - [cooldown](#cooldown)
+- [cooldowns](#cooldowns)
+- [defaultPermission](#defaultpermission)
 - [description](#description)
 - [examples](#examples)
 - [manager](#manager)
@@ -95,6 +97,18 @@ Return : [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Glo
 The cooldown of the command.
 
 Return : [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
+
+### cooldowns
+
+Actives cooldowns for the command.
+
+Return : Collection<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), Collection<[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String), [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)>>;
+
+### defaultPermission
+
+If the ccommand can be used by default or not.
+
+Return : [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
 
 ### description
 

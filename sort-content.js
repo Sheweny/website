@@ -1,45 +1,46 @@
 const str = `
-### before()
+### collections
 
-Executed before select menu(s) checks.
+The collections of commands, events, buttons, select-menus, inhibitors.
 
-Parameters :
+Return : [ShewenyClientCollections](../typedef/ShewenyClientCollections.md)
 
-| Name        | Type                                                                                           | Description     |
-| ----------- | ---------------------------------------------------------------------------------------------- | --------------- |
-| interaction | [SelectMenuInteraction](https://discord.js.org/#/docs/main/stable/class/SelectMenuInteraction) | The interaction |
+### joinThreadsOnCreate
 
-Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<any> | any
-
-### [abstract] execute()
-
-The execution of select menu(s).
-
-Parameters :
-
-| Name        | Type                                                                                           | Description     |
-| ----------- | ---------------------------------------------------------------------------------------------- | --------------- |
-| interaction | [SelectMenuInteraction](https://discord.js.org/#/docs/main/stable/class/SelectMenuInteraction) | The interaction |
-
-Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<any> | any
-
-### unregister()
-
-Unregister a select-menus group from the bot.
+If the bot should join threads on create.
 
 Return : [Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
 
-### [async] reload()
+### mode
 
-Reload a select-menus group.
+The mode for run application (development or production).
 
-Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[SelectMenu](./SelectMenu.md)> | [null](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Null)
+Return : [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)
 
-### [async] register()
+### admins
 
-Register the select-menu.
+The admins of the bot (no affected by cooldown and have adminOnly permission).
 
-Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<[SelectMenu](./SelectMenu.md)> | [null](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Null)
+Return : [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)<[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)>
+
+### connected
+
+Indicate when the client is connected to the Discord API.
+
+Return : [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+
+### managers
+
+The managers of the client.
+
+Return : [ShewenyClientManagers](../typedef/ShewenyClientManagers.md).
+
+### util
+
+Useful functions for your bot.
+
+Return : [ClientUtil](../client/ClientUtil.md).
+
 
 `;
 
