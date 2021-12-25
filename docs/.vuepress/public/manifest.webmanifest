@@ -1,0 +1,21 @@
+{
+  "name": "Sheweny",
+  "short_name": "Sheweny",
+  "description": "Documentation and guide of Sheweny. ",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#3eaf7c",
+  "icons": [
+    {
+      "src": "/images/icons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/icons/android-chrome-512*512.png",
+      "sizes": "512*512",
+      "type": "image/png"
+    }
+  ]
+}

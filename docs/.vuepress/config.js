@@ -4,6 +4,7 @@ module.exports = {
   title: "Sheweny",
   description: description,
   head: [
+    ["link", { rel: "manifest", href: "/manifest.webmanifest" }],
     ["meta", { name: "theme-color", content: "#3eaf7c" }],
     ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
     [
@@ -214,5 +215,5 @@ module.exports = {
       mediumZoom: false,
     },
   },
-  plugins: ["@vuepress/plugin-search"],
+  plugins: ["@vuepress/plugin-search", "@vuepress/pwa"],
 };
