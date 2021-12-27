@@ -7,5 +7,5 @@ This repository is the documentation of Sheweny project
 ## Getting started
 
 1. Clone the repo
-2. Install the dependencies: `npm install`
-3. Start the website : `npm run dev`
+2. Install the dependencies: `yarn`
+3. Start the website : `yarn dev`
