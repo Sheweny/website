@@ -52,7 +52,7 @@ Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refere
 
 ### emitter
 
-If the event is emitted juste once or not.
+The emitter of the event.
 
 Return : [EventEmitter](https://nodejs.org/api/events.html#class-eventemitter)
 
