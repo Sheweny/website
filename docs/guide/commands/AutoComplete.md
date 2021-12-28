@@ -52,13 +52,10 @@ module.exports = class PingCommand extends Command {
       choices = ["halloween", "christmas", "summer"];
     }
 
-    const filtered = choices.filter((choice: any) =>
+    const filtered = choices.filter((choice) =>
       choice.startsWith(focusedOption.value)
     );
-    interaction
-      .respond(filtered.map((choice) => ({ name: choice, value: choice })))
-      .then(console.log)
-      .catch(console.error);
+    interaction.respond(filtered.map((choice) => ({ name: choice, value: choice })))
   }
 };
 ```
@@ -113,10 +110,7 @@ export class PingCommand extends Command {
     const filtered = choices!.filter((choice: any) =>
       choice.startsWith(focusedOption.value)
     );
-    interaction
-      .respond(filtered.map((choice: any) => ({ name: choice, value: choice })))
-      .then(console.log)
-      .catch(console.error);
+    interaction.respond(filtered.map((choice: any) => ({ name: choice, value: choice })))
   }
 }
 ```
