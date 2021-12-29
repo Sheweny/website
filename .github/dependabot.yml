@@ -5,9 +5,10 @@
 
 version: 2
 updates:
-  - package-ecosystem: "npm" # See documentation for possible values
+# Fetch and update latest `npm` packages
+- package-ecosystem: npm
   directory: '/'
-  target-branch: "dev"
+  target-branch: "master"
   schedule:
     interval: daily
   reviewers:
