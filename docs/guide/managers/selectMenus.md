@@ -16,7 +16,7 @@ const client = new ShewenyClient({
   intents: ["GUILDS"],
   managers: {
     selectMenus: {
-      directory: "./interactions/selectmenus", // Directory where the select-menus are stored
+      directory: "./interactions/select-menus", // Directory where the select-menus are stored
       loadAll: true, // Load all select-menus (default: true)
     },
   },
@@ -33,7 +33,7 @@ const client = new ShewenyClient({
   intents: ["GUILDS"],
   managers: {
     selectMenus: {
-      directory: "./interactions/selectmenus", // Directory where the select-menus are stored
+      directory: "./interactions/select-menus", // Directory where the select-menus are stored
       loadAll: true, // Load all select-menus (default: true)
     },
   },
@@ -56,7 +56,7 @@ const { ShewenyClient, SelectMenusManager } = require("sheweny");
 const client = new ShewenyClient({ intents: ["GUILDS"] });
 
 const selectManager = new SelectMenusManager(client, {
-  directory: "./interactions/selectmenus", // Directory where the select-menus are stored
+  directory: "./interactions/select-menus", // Directory where the select-menus are stored
   loadAll: true, // Load all select-menus (default: true)
 });
 
@@ -72,7 +72,7 @@ import { ShewenyClient, SelectMenusManager } = from "sheweny";
 const client = new ShewenyClient({ intents: ["GUILDS"] });
 
 const selectManager = new SelectMenusManager(client, {
-  directory: "./interactions/selectmenus", // Directory where the select-menus are stored
+  directory: "./interactions/select-menus", // Directory where the select-menus are stored
   loadAll: true, // Load all select-menus (default: true)
 });
 
