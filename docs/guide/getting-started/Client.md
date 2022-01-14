@@ -22,7 +22,7 @@ Create a new instance of [ShewenyClient](../../doc/client/ShewenyClient.md) with
 
 ```js
 const client = new ShewenyClient({
-  intents: ["GUILDS", "GUILDS_MESSAGES"],
+  intents: ["GUILDS", "GUILD_MESSAGES"],
   admins: ["611468402263064577"], // Admins permissions for the bot
   managers: {
     commands: {
