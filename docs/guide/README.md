@@ -4,7 +4,7 @@ Welcome to the sheweny guide, this part of the site gives explanations and examp
 
 In this guide you will find :
 
-- How to install the framework and his dependencies
+- How to install the framework and its dependencies
 - What project structure creates
 - How to instantiate and configure the client
 - How to set up the managers
