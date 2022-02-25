@@ -22,7 +22,7 @@ If you do not define any parameters you will be in development mode by default.
 ## Gateway intents
 
 Gateway intents introduced in version 6 of the discord API and made mandatory in version 8 allow you to choose the events that your bot will receive. For best performance it is important to only put the **strict minimum** of what your bot needs. If you define intents that you don't need your bot will have more traffic with discord and will cache information that you probably don't need.  
-Note that some intents are privileged. You must therefore activate them on the panel of your bot on [https://discord.dev](https//discord.dev)
+Note that some intents are privileged. You must therefore activate them on the panel of your bot on [https://discord.dev](https://discord.dev)
 Privileged intents require additional verification if your bot exceeds 100 servers. So try to use them as little as possible.
 
 ## Events

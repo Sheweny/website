@@ -5,7 +5,13 @@
 
 version: 2
 updates:
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/" # Location of package manifests
-    schedule:
-      interval: "daily"
+# Fetch and update latest `npm` packages
+- package-ecosystem: npm
+  directory: '/'
+  target-branch: "master"
+  schedule:
+    interval: daily
+  reviewers:
+    - Smaug6739
+  assignees:
+    - Smaug6739
