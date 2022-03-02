@@ -1383,13 +1383,13 @@
     vue "^3.2.28"
     workbox-build "^6.4.2"
 
-"@vuepress/plugin-search@^2.0.0-beta.35":
-  version "2.0.0-beta.35"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-search/-/plugin-search-2.0.0-beta.35.tgz#390a7b448335e004025b29065b902e6d26cd640d"
-  integrity sha512-Z2c26zaRDfoRcJiHbmOLeReqKTLUQufmCwol7pvRMGzDUi2bJ8/+6tDNRs62Cuavpao7mnqIW2kPuzIaLP2S7g==
+"@vuepress/plugin-search@^2.0.0-beta.36":
+  version "2.0.0-beta.36"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-search/-/plugin-search-2.0.0-beta.36.tgz#4b8219514ae704919cc31d227d571dc06eefa9fd"
+  integrity sha512-UMtWH5h9wXiZgram2w5m/4Ni5R/8w+G/r22pBdBuqB1KMOUO473EmgOWgxqAsT3DLvOgevfmxQvp/OcEQv9Esw==
   dependencies:
     "@vuepress/client" "2.0.0-beta.35"
-    "@vuepress/core" "2.0.0-beta.35"
+    "@vuepress/core" "2.0.0-beta.36"
     "@vuepress/shared" "2.0.0-beta.35"
     "@vuepress/utils" "2.0.0-beta.35"
     chokidar "^3.5.3"
