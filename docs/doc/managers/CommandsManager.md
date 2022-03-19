@@ -10,7 +10,7 @@ new CommandsManager(client, options);
 
 | Name    | Type                                                                          | Description                     | Default | Optional |
 | ------- | ----------------------------------------------------------------------------- | ------------------------------- | ------- | -------- |
-| client  | [ShewenyClient](./ShewenyClient.md)                                           | The client                      | None    | No       |
+| client  | [ShewenyClient](../client/ShewenyClient.md)                                   | The client                      | None    | No       |
 | options | [CommandsManagerOptions](../typedef/ManagerOptions.md#commandsmanageroptions) | Options of the commands manager | None    | No       |
 
 :::details Properties
