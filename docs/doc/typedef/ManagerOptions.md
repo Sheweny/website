@@ -6,6 +6,13 @@
 | --------- | --------------------------------------------------------------------------------------------- | ---------------------------------- |
 | directory | [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)   | The main directory of the commands |
 | loadAll   | [Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | If the framework will load all     |
+| default   | [Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)   | The default cooldown               |
+
+## ButtonsManagerOptions
+
+| Name     | Type                                                                                        | Description          |
+| -------- | ------------------------------------------------------------------------------------------- | -------------------- |
+| cooldown | [Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number) | The default cooldown |
 
 ## CommandsManagerOptions
 
@@ -34,3 +41,9 @@
 | default   | [InhibitorsManagerDefaultOption](./ManagersDefaultOptions.md#inhibitorsmanagerdefaultoptions) | If the application commands must be registered |
 | directory | [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)   | The main directory of the commands             |
 | loadAll   | [Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | If the framework will load all                 |
+
+## SelectMenuOptions
+
+| Name     | Type                                                                                        | Description          |
+| -------- | ------------------------------------------------------------------------------------------- | -------------------- |
+| cooldown | [Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number) | The default cooldown |

@@ -8,10 +8,10 @@ Create an handler for bot buttons. The buttons can be in as many subfolders as d
 new ButtonsManager(client, options);
 ```
 
-| Name    | Type                                                                  | Description                | Default | Optional |
-| ------- | --------------------------------------------------------------------- | -------------------------- | ------- | -------- |
-| client  | [ShewenyClient](../client/ShewenyClient.md)                           | The client                 | None    | No       |
-| options | [BaseManagerOptions](../typedef/ManagerOptions.md#basemanageroptions) | The options of the manager | None    | No       |
+| Name    | Type                                                                        | Description                | Default | Optional |
+| ------- | --------------------------------------------------------------------------- | -------------------------- | ------- | -------- |
+| client  | [ShewenyClient](../client/ShewenyClient.md)                                 | The client                 | None    | No       |
+| options | [ButtonsManagerOptions](../typedef/ManagerOptions.md#buttonsmanageroptions) | The options of the manager | None    | No       |
 
 :::details Properties
 
@@ -25,6 +25,14 @@ new ButtonsManager(client, options);
 
 - [loadAll](#loadall)
 - [unloadAll](#unloadall)
+
+:::
+
+:::
+
+:::details Events
+
+- [cooldownLimit](#cooldownlimit)
 
 :::
 
@@ -61,3 +69,16 @@ Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/G
 Unload all buttons.
 
 Return : void
+
+## Events
+
+### cooldownLimit
+
+Emitted when user hit the cooldown limit.
+
+Parameters :
+
+| Name        | Type                                                                                        | Description               |
+| ----------- | ------------------------------------------------------------------------------------------- | ------------------------- |
+| interaction | [CommandInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction)    | The interaction           |
+| time        | [Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number) | The time before run again |
