@@ -10,7 +10,7 @@ new SelectMenusManager(client, options);
 
 | Name    | Type                                                                | Description                         | Default | Optional |
 | ------- | ------------------------------------------------------------------- | ----------------------------------- | ------- | -------- |
-| client  | [ShewenyClient](./ShewenyClient.md)                                 | The client                          | None    | No       |
+| client  | [ShewenyClient](../client//ShewenyClient.md)                        | The client                          | None    | No       |
 | options | [SelectMenuOptions](../typedef/ManagerOptions.md#selectmenuoptions) | Options of the select-menus manager | None    | No       |
 
 :::details Properties

@@ -10,7 +10,7 @@ new ClientUtil(client);
 
 | Name   | Type                                         | Description                  | Optional |
 | ------ | -------------------------------------------- | ---------------------------- | -------- |
-| client | [ShewenyClient](../structures/ShewenyClient) | The sheweny client framework | No       |
+| client | [ShewenyClient](../client/ShewenyClient) | The sheweny client framework | No       |
 
 :::details Methods
 
