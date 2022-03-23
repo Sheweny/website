@@ -28,8 +28,6 @@ new ButtonsManager(client, options);
 
 :::
 
-:::
-
 :::details Events
 
 - [cooldownLimit](#cooldownlimit)
