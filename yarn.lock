@@ -1274,7 +1274,7 @@
     vue "^3.2.31"
     vue-router "^4.0.14"
 
-"@vuepress/plugin-back-to-top@2.0.0-beta.37":
+"@vuepress/plugin-back-to-top@2.0.0-beta.37", "@vuepress/plugin-back-to-top@^2.0.0-beta.37":
   version "2.0.0-beta.37"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-back-to-top/-/plugin-back-to-top-2.0.0-beta.37.tgz#0423444226102d0c7558bb17d67de2779926db78"
   integrity sha512-4CKomH4WgfNC5+tvI7zM+dhHLkqiHUfjE6R+jRI98xIsYCKz+7EooiLl2rIO2ywgzDJi2i+U+MyqvH6DADTEbg==
@@ -1283,16 +1283,6 @@
     "@vuepress/utils" "2.0.0-beta.37"
     ts-debounce "^4.0.0"
     vue "^3.2.31"
-
-"@vuepress/plugin-back-to-top@^2.0.0-beta.36":
-  version "2.0.0-beta.36"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-back-to-top/-/plugin-back-to-top-2.0.0-beta.36.tgz#33b310e0b73e281aa0afcb16e261c180f2761f0a"
-  integrity sha512-BwWa/EeKvboG22m4HmnCEfs/RcPtQ5pL5uVss8+POLgDSICKDGhuHrQiH/DtgqbceXZCryNlJhLkNXQ6TxcR+A==
-  dependencies:
-    "@vuepress/core" "2.0.0-beta.36"
-    "@vuepress/utils" "2.0.0-beta.35"
-    ts-debounce "^4.0.0"
-    vue "^3.2.28"
 
 "@vuepress/plugin-container@2.0.0-beta.37":
   version "2.0.0-beta.37"
