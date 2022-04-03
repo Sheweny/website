@@ -1334,7 +1334,7 @@
     "@vuepress/core" "2.0.0-beta.36"
     execa "^5.1.1"
 
-"@vuepress/plugin-medium-zoom@2.0.0-beta.37":
+"@vuepress/plugin-medium-zoom@2.0.0-beta.37", "@vuepress/plugin-medium-zoom@^2.0.0-beta.37":
   version "2.0.0-beta.37"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-medium-zoom/-/plugin-medium-zoom-2.0.0-beta.37.tgz#468b143f6a2ecebeafa078d6461dbee3bae2b622"
   integrity sha512-cdKELBnxbUt4chFZcGU8Qou9/q7QMCWttFBCDlHpnQPaGRvOHrrG8ivHGbX0dFrfGn7ul1O2cNTGB28cGSa5Cw==
@@ -1344,17 +1344,6 @@
     "@vuepress/utils" "2.0.0-beta.37"
     medium-zoom "^1.0.6"
     vue "^3.2.31"
-
-"@vuepress/plugin-medium-zoom@^2.0.0-beta.36":
-  version "2.0.0-beta.36"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-medium-zoom/-/plugin-medium-zoom-2.0.0-beta.36.tgz#534760a5c794d9b60768b6d5ae5bcf190aad8889"
-  integrity sha512-5qarMKNvypwYgo/ojOGSAKqug9mlmkzzaHGqX9w2rObYB0kCyV1CuqFOqd0Eg/3vif3B0fDOVgEIomjvgc8rQw==
-  dependencies:
-    "@vuepress/client" "2.0.0-beta.35"
-    "@vuepress/core" "2.0.0-beta.36"
-    "@vuepress/utils" "2.0.0-beta.35"
-    medium-zoom "^1.0.6"
-    vue "^3.2.28"
 
 "@vuepress/plugin-nprogress@2.0.0-beta.37":
   version "2.0.0-beta.37"
