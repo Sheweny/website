@@ -1313,20 +1313,12 @@
     "@vuepress/utils" "2.0.0-beta.38"
     vue "^3.2.31"
 
-"@vuepress/plugin-git@2.0.0-beta.38":
+"@vuepress/plugin-git@2.0.0-beta.38", "@vuepress/plugin-git@^2.0.0-beta.38":
   version "2.0.0-beta.38"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-git/-/plugin-git-2.0.0-beta.38.tgz#92a162edb5d209bf84af383890d44d85c2278798"
   integrity sha512-3pWsTdo87JakN0j3ztAT/eSrdF+y1zTd4ASeA4feGnRyt4cobzy1DHoScb5QwI9AfEHKMBAomDJhNLXIk4QzNg==
   dependencies:
     "@vuepress/core" "2.0.0-beta.38"
-    execa "^5.1.1"
-
-"@vuepress/plugin-git@^2.0.0-beta.37":
-  version "2.0.0-beta.37"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-git/-/plugin-git-2.0.0-beta.37.tgz#42fef789b0e0f24ae51cad1d630bd13fd9852309"
-  integrity sha512-jRd1xMHmz7LNGmRKqHYz8MWnLupWnW50OFrLY9ue8tOrlduU8jE3M0R1dCqM21l5B/xdfrvgUCaQrSdftB06/w==
-  dependencies:
-    "@vuepress/core" "2.0.0-beta.37"
     execa "^5.1.1"
 
 "@vuepress/plugin-medium-zoom@2.0.0-beta.38", "@vuepress/plugin-medium-zoom@^2.0.0-beta.38":
