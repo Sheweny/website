@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: sheweny.js.org
-Token: 3b7f0c5c34b0f2ab967ec88f66d8e4598744b7ebfdda99f45f401d858abdb078
