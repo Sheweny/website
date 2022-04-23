@@ -14,7 +14,7 @@ Create directory for the commands (usually called `commands`).
 
 ## Events
 
-Create directory for the events (usually called `events` or `listners`).
+Create directory for the events (usually called `events` or `listeners`).
 
 ## Interactions
 
