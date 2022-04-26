@@ -1387,17 +1387,17 @@
     vue "^3.2.33"
     workbox-build "^6.5.2"
 
-"@vuepress/plugin-search@^2.0.0-beta.38":
-  version "2.0.0-beta.38"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-search/-/plugin-search-2.0.0-beta.38.tgz#aecbd09cf228f6f0552c1ee94d9abebb238dd6a8"
-  integrity sha512-bv5rDpXFjssYiP6wDdskObcKm9cEevKXVThx/F+0rwN0mVACqbEET0RvLeoU3uE5PYWJYB6lmh7xdn/74fPkWg==
+"@vuepress/plugin-search@^2.0.0-beta.41":
+  version "2.0.0-beta.41"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-search/-/plugin-search-2.0.0-beta.41.tgz#9f4b5decea206ccc89ecbe6efa88ef9f8476cb1b"
+  integrity sha512-jI5jKIgo6LzNlzjb6NNXcXoJVg3B+Lgc05gNQtcG/l7RaJgpijNJ+MrF07ZJRdqhmVEMUMXRTsUQhhT3OqxOXQ==
   dependencies:
-    "@vuepress/client" "2.0.0-beta.38"
-    "@vuepress/core" "2.0.0-beta.38"
-    "@vuepress/shared" "2.0.0-beta.38"
-    "@vuepress/utils" "2.0.0-beta.38"
+    "@vuepress/client" "2.0.0-beta.41"
+    "@vuepress/core" "2.0.0-beta.41"
+    "@vuepress/shared" "2.0.0-beta.41"
+    "@vuepress/utils" "2.0.0-beta.41"
     chokidar "^3.5.3"
-    vue "^3.2.31"
+    vue "^3.2.33"
     vue-router "^4.0.14"
 
 "@vuepress/plugin-theme-data@2.0.0-beta.41":
