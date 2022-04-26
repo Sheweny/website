@@ -1,4 +1,5 @@
 const { description } = require("../../package");
+const { defaultTheme } = require("vuepress");
 
 module.exports = {
   title: "Sheweny",
@@ -14,7 +15,7 @@ module.exports = {
   ],
 
   //base: "/sheweny-website/",
-  themeConfig: {
+  theme: defaultTheme({
     repo: "https://github.com/Sheweny/framework/",
     docsRepo: "https://github.com/Sheweny/website/",
     docsBranch: "master",
@@ -214,6 +215,6 @@ module.exports = {
       backToTop: true,
       mediumZoom: false,
     },
-  },
+  }),
   plugins: ["@vuepress/plugin-search", "@vuepress/pwa"],
 };
