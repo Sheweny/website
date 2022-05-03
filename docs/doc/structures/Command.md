@@ -106,7 +106,7 @@ Return : Collection<[String](https://developer.mozilla.org/en-US/docs/Web/JavaSc
 
 ### defaultPermission
 
-If the ccommand can be used by default or not.
+If the command can be used by default or not.
 
 Return : [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
 
