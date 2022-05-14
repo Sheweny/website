@@ -67,7 +67,7 @@ BtnsManager.loadAll();
 ::: code-group-item TS ES Modules
 
 ```ts
-import { ShewenyClient, ButtonsManager } = from "sheweny";
+import { ShewenyClient, ButtonsManager } from "sheweny";
 
 const client = new ShewenyClient({ intents: ["GUILDS"] });
 
