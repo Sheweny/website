@@ -1375,17 +1375,17 @@
     "@vuepress/core" "2.0.0-beta.48"
     prismjs "^1.28.0"
 
-"@vuepress/plugin-pwa@^2.0.0-beta.46":
-  version "2.0.0-beta.46"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-pwa/-/plugin-pwa-2.0.0-beta.46.tgz#56355efb4c420c1d33e769ce13fbb43901632b45"
-  integrity sha512-jo7DNI0JTosF5QFRNhS03S3kgcijXxb4xoTx7r3bJEgD5HCva0tRYi6u4Dm+EcWx/mAA+A9u3tHsy1PzMDYKYQ==
+"@vuepress/plugin-pwa@^2.0.0-beta.48":
+  version "2.0.0-beta.48"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-pwa/-/plugin-pwa-2.0.0-beta.48.tgz#0b7439f0260c49f8c049685da3569e3b6665f413"
+  integrity sha512-UUGfuZHIgQTOS2ZDdwFwhr8LD3Mo4OjtpV7dIhrrwn2nGd3dsHTNuM4U6Rk3F4mO+uuUmZ/K+qWOnUzg23kSmA==
   dependencies:
-    "@vuepress/client" "2.0.0-beta.46"
-    "@vuepress/core" "2.0.0-beta.46"
-    "@vuepress/utils" "2.0.0-beta.46"
+    "@vuepress/client" "2.0.0-beta.48"
+    "@vuepress/core" "2.0.0-beta.48"
+    "@vuepress/utils" "2.0.0-beta.48"
     mitt "^3.0.0"
     register-service-worker "^1.7.2"
-    vue "^3.2.35"
+    vue "^3.2.36"
     workbox-build "^6.5.3"
 
 "@vuepress/plugin-search@^2.0.0-beta.48":
