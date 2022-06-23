@@ -17,7 +17,7 @@ module.exports = class PingCommand extends Command {
       description: "Ping the bot",
       type: "SLASH_COMMAND",
       category: "Misc",
-      channel: "GUILD", // The command cannot be executing in DMs
+      channel: "GUILD", // The command cannot be executed in DMs
     });
   }
 
@@ -42,7 +42,7 @@ export class PingCommand extends Command {
       description: "Ping the bot",
       type: "SLASH_COMMAND",
       category: "Misc",
-      channel: "GUILD", // The command cannot be executing in DMs
+      channel: "GUILD", // The command cannot be executed in DMs
     });
   }
 
@@ -70,7 +70,7 @@ module.exports = class PingCommand extends Command {
       description: "Ping the bot",
       type: "MESSAGE_COMMAND",
       category: "Misc",
-      channel: "DM", // The command cannot be executing in DMs
+      channel: "DM", // The command can only be executed in DMs
     });
   }
   execute(message) {
@@ -94,7 +94,7 @@ export class PingCommand extends Command {
       description: "Ping the bot",
       type: "MESSAGE_COMMAND",
       category: "Misc",
-      channel: "DM", // The command cannot be executing in DMs
+      channel: "DM", // The command can only be executed in DMs
     });
   }
   execute(message: Message) {
