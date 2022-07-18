@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-95cf84b4","path":"/guide/events/CustomEmitter.html","title":"Custom emitter","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1637495152000},"filePathRelative":"guide/events/CustomEmitter.md"}');export{t as data};

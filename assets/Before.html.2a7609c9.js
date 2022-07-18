@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2323caa0","path":"/guide/buttons/Before.html","title":"Before button listener","lang":"en-US","frontmatter":{},"excerpt":"","headers":[{"level":2,"title":"Create the button listner","slug":"create-the-button-listner","children":[]}],"git":{"updatedTime":1629805953000},"filePathRelative":"guide/buttons/Before.md"}');export{e as data};

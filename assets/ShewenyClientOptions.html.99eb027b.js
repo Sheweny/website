@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-739de8fb","path":"/doc/typedef/ShewenyClientOptions.html","title":"ShewenyClientOptions","lang":"en-US","frontmatter":{},"excerpt":"","headers":[{"level":2,"title":"ClientManagersOptions","slug":"clientmanagersoptions","children":[]}],"git":{"updatedTime":1640290546000},"filePathRelative":"doc/typedef/ShewenyClientOptions.md"}');export{e as data};

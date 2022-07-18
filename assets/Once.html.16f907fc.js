@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-f74c3364","path":"/guide/events/Once.html","title":"Once events","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1629805953000},"filePathRelative":"guide/events/Once.md"}');export{e as data};

@@ -1,0 +1,15 @@
+import{_ as e,o as n,c as a,d as t}from"./app.9eb7259b.js";const s={},r=t(`<h1 id="project-structure" tabindex="-1"><a class="header-anchor" href="#project-structure" aria-hidden="true">#</a> Project structure</h1><p>Create a directory in which the bot will be.</p><p>Install dependencies and create configuration file (usually called <code>config.json</code>)</p><p>Create a folder with the code of the bot (usualy called <code>src</code>)</p><p>In source directory create <code>index.js</code> file in which will be the client&#39;s declaration.</p><h2 id="commands" tabindex="-1"><a class="header-anchor" href="#commands" aria-hidden="true">#</a> Commands</h2><p>Create directory for the commands (usually called <code>commands</code>).</p><h2 id="events" tabindex="-1"><a class="header-anchor" href="#events" aria-hidden="true">#</a> Events</h2><p>Create directory for the events (usually called <code>events</code> or <code>listeners</code>).</p><h2 id="interactions" tabindex="-1"><a class="header-anchor" href="#interactions" aria-hidden="true">#</a> Interactions</h2><p>Create directory for the buttons and select-menus (usually called <code>interactions</code>).</p><h3 id="buttons" tabindex="-1"><a class="header-anchor" href="#buttons" aria-hidden="true">#</a> Buttons</h3><p>Create directory for the buttons (usually called <code>buttons</code>).</p><h3 id="select-menus" tabindex="-1"><a class="header-anchor" href="#select-menus" aria-hidden="true">#</a> Select-menus</h3><p>Create directory for the select-menus (usually called <code>select-menus</code>).</p><hr><div class="custom-container tip"><p class="custom-container-title">TIP</p><p>Folders can contain as many sub-folders as desired</p></div><h2 id="final-structure" tabindex="-1"><a class="header-anchor" href="#final-structure" aria-hidden="true">#</a> Final structure</h2><p>The final structure of the bot :</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>bot
+   \u2502   config.json
+   \u2502   package-lock.json
+   \u2502   package.json
+   \u2502
+   \u251C\u2500\u2500\u2500node_modules
+   \u2514\u2500\u2500\u2500src
+       \u2502   index.js
+       \u2502
+       \u251C\u2500\u2500\u2500commands
+       \u251C\u2500\u2500\u2500events
+       \u2514\u2500\u2500\u2500interactions
+           \u251C\u2500\u2500\u2500buttons
+           \u2514\u2500\u2500\u2500select-menus
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,20),c=[r];function d(i,l){return n(),a("div",null,c)}var u=e(s,[["render",d],["__file","ProjectStructure.html.vue"]]);export{u as default};
