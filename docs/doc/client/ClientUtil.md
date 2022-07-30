@@ -1,4 +1,4 @@
-# Client Util
+# ClientUtil
 
 Useful methods for the client.
 
@@ -8,8 +8,8 @@ Useful methods for the client.
 new ClientUtil(client);
 ```
 
-| Name   | Type                                         | Description                  | Optional |
-| ------ | -------------------------------------------- | ---------------------------- | -------- |
+| Name   | Type                                     | Description                  | Optional |
+| ------ | ---------------------------------------- | ---------------------------- | -------- |
 | client | [ShewenyClient](../client/ShewenyClient) | The sheweny client framework | No       |
 
 :::details Methods
@@ -67,6 +67,16 @@ Parameters :
 - arg : Id, mention, name, start of name. (string)
 
 Return : [GuildChannel](https://discord.js.org/#/docs/main/stable/class/GuildChannel) or undefined
+
+## resolveCommand(arg)
+
+Get a command from the client.
+
+Parameters :
+
+- arg : Name or aliases. (string)
+
+Return : [Command](../structures/Command.md) or undefined
 
 ## resolveGuild(arg)
 
