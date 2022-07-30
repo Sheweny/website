@@ -1,6 +1,6 @@
 # SelectMenusManager
 
-Create an handler for bot select-menus. The select-menus can be in as many subfolders as desired.
+Create an handler for bot select-menus. The select-menus can be in as many subfolders as desired and there may be other files exporting something else.
 
 ## Constructor
 

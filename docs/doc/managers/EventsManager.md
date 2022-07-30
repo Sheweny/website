@@ -1,6 +1,6 @@
 # EventsManager
 
-Create an handler for bot events. The events can be in as many subfolders as desired.
+Create an handler for bot events. The events can be in as many subfolders as desired and there may be other files exporting something else.
 
 ## Constructor
 
