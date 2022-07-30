@@ -49,6 +49,12 @@ The admins of the bot (no affected by cooldown and have adminOnly permission).
 
 Return : [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)<[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)>
 
+### cooldowns
+
+The cooldowns of the bot.
+
+Return : [ShewenyClientCooldowns](../typedef/ShewenyClientCooldowns.md)
+
 ### collections
 
 The collections of commands, events, buttons, select-menus, inhibitors.

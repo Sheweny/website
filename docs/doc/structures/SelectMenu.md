@@ -18,6 +18,7 @@ new SelectMenu(client, options);
 
 - [client](#client)
 - [customId](#customid)
+- [enabled](#enabled)
 - [manager](#manager)
 - [path](#path)
 
@@ -40,6 +41,10 @@ new SelectMenu(client, options);
 The framework client.
 
 Return : [ShewenyClient](../client/ShewenyClient.md)
+
+### enabled
+
+If this structure is enabled or not.
 
 ### manager
 

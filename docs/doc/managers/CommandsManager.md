@@ -34,7 +34,6 @@ new CommandsManager(client, options);
 - [editCommand](#async-editcommand-oldcommand-newcommand-guildid)
 - [getApplicationCommandData](#getapplicationcommanddata)
 - [loadAll](#async-loadall)
-- [loadAndRegisterAll](#async-loadandregisterall)
 - [registerApplicationCommands](#async-registerApplicationCommands-commands-guildid)
 - [registerPermissions](#async-registerpermissions-commands-guildid)
 - [unloadAll](#unloadall)
@@ -45,6 +44,7 @@ new CommandsManager(client, options);
 
 - [clientMissingPermissions](#clientmissingpermissions)
 - [cooldownLimit](#cooldownlimit)
+- [invalidChannel](#invalidchannel)
 - [userMissingPermissions](#usermissingpermissions)
 
 :::
@@ -165,12 +165,6 @@ Load all commands in collection.
 
 Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<Collection<[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String), [ApplicationCommand](../structures/Command.md)>>
 
-### [async] loadAndRegisterAll()
-
-Load all commands in collection and register interactions.
-
-Return : Promise\<void>
-
 ### [async] registerApplicationCommands(commands, guildId)
 
 Register application commands.
@@ -212,10 +206,11 @@ Emitted when client missing permissions.
 
 Parameters :
 
-| Name        | Type                                                                                                                                                                                     | Description                    |
-| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
-| interaction | [CommandInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction) or [ContextMenuInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction) | The interaction                |
-| missing     | [Permission](https://discord.js.org/#/docs/main/stable/class/Permissions?scrollTo=s-FLAGS)                                                                                               | The name of missing permission |
+| Name        | Type                                                                                                                                                                                        | Description                    |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
+| interaction | [CommandInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction) or [ContextMenuInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction)    | The interaction                |
+| missing     | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)<[Permission](https://discord.js.org/#/docs/main/stable/class/Permissions?scrollTo=s-FLAGS)> | The name of missing permission |
+| command     | [Command](../structures/Command.md)                                                                                                                                                         | The command                    |
 
 ### cooldownLimit
 
@@ -228,13 +223,25 @@ Parameters :
 | interaction | [CommandInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction) or [ContextMenuInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction) | The interaction           |
 | time        | [Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)                                                                                              | The time before run again |
 
+### invalidChannel
+
+Emitted when user try to use command in invalid channel.
+
+Parameters :
+
+| Name        | Type                                                                                                                                                                                     | Description     |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
+| command     | [Command](../structures/Command.md)                                                                                                                                                      | The command     |
+| interaction | [CommandInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction) or [ContextMenuInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction) | The interaction |
+
 ### userMissingPermissions
 
 Emitted when user missing permissions.
 
 Parameters :
 
-| Name        | Type                                                                                                                                                                                     | Description                    |
-| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
-| interaction | [CommandInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction) or [ContextMenuInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction) | The interaction                |
-| missing     | [Permission](https://discord.js.org/#/docs/main/stable/class/Permissions?scrollTo=s-FLAGS) or BOT_ADMIN                                                                                  | The name of missing permission |
+| Name        | Type                                                                                                                                                                                                     | Description                    |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------ |
+| interaction | [CommandInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction) or [ContextMenuInteraction](https://discord.js.org/#/docs/main/stable/class/CommandInteraction)                 | The interaction                |
+| missing     | [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)<[Permission](https://discord.js.org/#/docs/main/stable/class/Permissions?scrollTo=s-FLAGS)> or BOT_ADMIN | The name of missing permission |
+| command     | [Command](../structures/Command.md)                                                                                                                                                                      | The command                    |

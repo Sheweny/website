@@ -26,9 +26,12 @@ new Command(client, options);
 - [cooldowns](#cooldowns)
 - [defaultPermission](#defaultpermission)
 - [description](#description)
+- [descriptionLocalizations](#descriptionlocalizations)
+- [enabled](#enabled)
 - [examples](#examples)
 - [manager](#manager)
 - [name](#name)
+- [nameLocalizations](#namelocalizations)
 - [options](#options)
 - [path](#path)
 - [type](#type)
@@ -116,6 +119,16 @@ The description of the command.
 
 Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 
+### descriptionLocalizations
+
+The description of the command in other languages.
+
+Return : [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)\<[Locale](https://discord.js.org/#/docs/discord.js/stable/typedef/Locale), [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>
+
+### enabled
+
+If this structure is enabled or not.
+
 ### examples
 
 The examples of the command.
@@ -133,6 +146,12 @@ Return : [CommandsManager](../managers/CommandsManager.md)
 The name of the command.
 
 Return : [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+
+### nameLocalizations
+
+The name of the command in other languages.
+
+Return : [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)\<[Locale](https://discord.js.org/#/docs/discord.js/stable/typedef/Locale), [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>
 
 ### options
 

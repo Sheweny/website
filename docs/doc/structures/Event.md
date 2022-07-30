@@ -19,6 +19,7 @@ new Event(client, "ready", options);
 - [client](#client)
 - [description](#description)
 - [emitter](#emitter)
+- [enabled](#enabled)
 - [manager](#manager)
 - [name](#name)
 - [once](#once)

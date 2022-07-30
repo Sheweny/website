@@ -42,6 +42,12 @@
 | directory | [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)   | The main directory of the commands             |
 | loadAll   | [Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean) | If the framework will load all                 |
 
+## ModalsManagerOptions
+
+| Name     | Type                                                                                        | Description          |
+| -------- | ------------------------------------------------------------------------------------------- | -------------------- |
+| cooldown | [Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number) | The default cooldown |
+
 ## SelectMenuOptions
 
 | Name     | Type                                                                                        | Description          |

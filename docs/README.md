@@ -43,4 +43,4 @@ sheweny create
 npm start
 ```
 
-_Note : Your are on the V3.0.0 documentation, for the V2.0.0 documentation please go to [this website](https://sheweny.github.io/V2-website/)_
+_Note : Your are on the V4.0.0 documentation, for the V2.0.0 documentation please go to [this website](https://sheweny.github.io/V2-website/)_

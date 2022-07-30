@@ -19,6 +19,7 @@ new Button(client, options);
 - [client](#client)
 - [cooldown](#cooldown)
 - [customId](#customid)
+- [enabled](#enabled)
 - [manager](#manager)
 - [path](#path)
 
@@ -51,6 +52,10 @@ The cooldown of the button (in seconds).
 The custom id(s) of the button.
 
 Return : [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)\<[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) | [Regexp](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Regexp)>
+
+### enabled
+
+If this structure is enabled or not.
 
 ### manager
 

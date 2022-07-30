@@ -31,31 +31,31 @@ new ClientUtil(client);
 
 Get the loaded buttons of the bot.
 
-Return : Iterable<[Button](../structures/Button.md)>
+Return : [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)<[Button](../structures/Button.md)>
 
 ## getCommands()
 
 Get the loaded commands of the bot.
 
-Return : Iterable<[Command](../structures/Command.md)>
+Return : [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)<[Command](../structures/Command.md)>
 
 ## getEvents()
 
 Get the loaded events of the bot.
 
-Return : Iterable<[Event](../structures/Event.md)>
+Return : [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)<[Event](../structures/Event.md)>
 
 ## getInhibitors()
 
 Get the loaded inhibitors of the bot.
 
-Return : Iterable<[Inhibitor](../structures/Inhibitor.md)>
+Return : [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)<[Inhibitor](../structures/Inhibitor.md)>
 
 ## getSelectMenu()
 
 Get the loaded select menu of the bot.
 
-Return : Iterable<[SelectMenu](../structures/SelectMenu.md)>
+Return : [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)<[SelectMenu](../structures/SelectMenu.md)>
 
 ## resolveChannel(guild, arg)
 

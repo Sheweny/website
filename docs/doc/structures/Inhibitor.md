@@ -17,6 +17,7 @@ new Inhibitor(client, options);
 :::details Properties
 
 - [client](#client)
+- [enabled](#enabled)
 - [manager](#manager)
 - [name](#name)
 - [path](#path)
@@ -48,6 +49,10 @@ new Inhibitor(client, options);
 The framework client.
 
 Return : [ShewenyClient](../client/ShewenyClient.md)
+
+### enabled
+
+If this structure is enabled or not.
 
 ### manager
 
@@ -87,10 +92,10 @@ The execution of inhibitor.
 
 Parameters :
 
-| Name   | Type                                                                                                                                             | Description          |
-| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------- |
-| client | [ShewenyClient](../client/ShewenyClient.md)                                                                                                      | The client framework |
-| ctx    | [Interaction](https://discord.js.org/#/docs/main/stable/class/Interaction) or [Message](https://discord.js.org/#/docs/main/stable/class/Message) | The context          |
+| Name      | Type                                                                                                                                                                                                                          | Description |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| structure | [Button](../structures/Button.md), [Command](../structures/Command.md), [Event](../structures/Event.md), [Inhibitor](../structures/Inhibitor.md), [Modal](../structures/Modal.md), [SelectMenu](../structures/SelectMenu.md), | The context |
+| ctx       | [Interaction](https://discord.js.org/#/docs/main/stable/class/Interaction) or [Message](https://discord.js.org/#/docs/main/stable/class/Message)                                                                              | The context |
 
 Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<any> | any
 
@@ -100,10 +105,10 @@ The execution if inhibitor has failed.
 
 Parameters :
 
-| Name   | Type                                                                                                                                             | Description          |
-| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------- |
-| client | [ShewenyClient](../client/ShewenyClient.md)                                                                                                      | The client framework |
-| ctx    | [Interaction](https://discord.js.org/#/docs/main/stable/class/Interaction) or [Message](https://discord.js.org/#/docs/main/stable/class/Message) | The context          |
+| Name      | Type                                                                                                                                                                                                                          | Description |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| structure | [Button](../structures/Button.md), [Command](../structures/Command.md), [Event](../structures/Event.md), [Inhibitor](../structures/Inhibitor.md), [Modal](../structures/Modal.md), [SelectMenu](../structures/SelectMenu.md), | The context |
+| ctx       | [Interaction](https://discord.js.org/#/docs/main/stable/class/Interaction) or [Message](https://discord.js.org/#/docs/main/stable/class/Message)                                                                              | The context |
 
 Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<any> | any
 
