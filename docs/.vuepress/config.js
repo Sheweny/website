@@ -211,6 +211,12 @@ module.exports = {
             "/guide/topics/V2-V3.md",
           ],
         },
+        {
+          text: "Changelogs",
+          path: "/guide/changelogs/",
+          collapsable: false,
+          children: ["/guide/changelogs/Changelog3-4.md"],
+        },
       ],
     },
     themePlugins: {
