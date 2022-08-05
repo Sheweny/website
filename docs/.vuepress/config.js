@@ -155,60 +155,16 @@ module.exports = {
           ],
         },
         {
-          text: "Commands",
-          path: "/guide/commands",
+          text: "Structures",
+          path: "/guide/structures",
           collapsable: false,
           children: [
-            "/guide/commands/Basic.md",
-            "/guide/commands/Cooldown.md",
-            "/guide/commands/Permissions.md",
-            "/guide/commands/Restrictions.md",
-            "/guide/commands/Autocomplete.md",
-          ],
-        },
-        {
-          text: "Events",
-          path: "/guide/events",
-          collapsable: false,
-          children: [
-            "/guide/events/Basic.md",
-            "/guide/events/Once.md",
-            "/guide/events/CustomEmitter.md",
-          ],
-        },
-        {
-          text: "Buttons",
-          path: "/guide/buttons",
-          collapsable: false,
-          children: ["/guide/buttons/Basic.md", "/guide/buttons/Before.md"],
-        },
-        {
-          text: "SelectMenus",
-          path: "/guide/select-menus",
-          collapsable: false,
-          children: [
-            "/guide/select-menus/Basic.md",
-            "/guide/select-menus/Before.md",
-          ],
-        },
-        {
-          text: "Inhibitors",
-          path: "/guide/inhibitors",
-          collapsable: false,
-          children: [
-            "/guide/inhibitors/Inhibitor.md",
-            "/guide/inhibitors/InhibitorType.md",
-            "/guide/inhibitors/InhibitorPriority.md",
-          ],
-        },
-        {
-          text: "Topics",
-          path: "/guide/topics/",
-          collapsable: false,
-          children: [
-            "/guide/topics/BestPratices.md",
-            "/guide/topics/V1-V2.md",
-            "/guide/topics/V2-V3.md",
+            "/guide/structures/Button.md",
+            "/guide/structures/Command.md",
+            "/guide/structures/Event.md",
+            "/guide/structures/Inhibitor.md",
+            "/guide/structures/Modal.md",
+            "/guide/structures/SelectMenu.md",
           ],
         },
         {
