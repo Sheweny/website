@@ -13,7 +13,7 @@ When setting up the client, it is possible to set the manager as a parameter :
 const { ShewenyClient } = require("sheweny");
 
 const client = new ShewenyClient({
-  intents: ["GUILDS"],
+  intents: ["Guilds"],
   managers: {
     commands: {
       directory: "./commands", // Directory where the commands are stored
@@ -33,7 +33,7 @@ const client = new ShewenyClient({
 import { ShewenyClient } from "sheweny";
 
 const client = new ShewenyClient({
-  intents: ["GUILDS"],
+  intents: ["Guilds"],
   managers: {
     commands: {
       directory: "./commands", // Directory where the commands are stored

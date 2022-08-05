@@ -13,7 +13,7 @@ When setting up the client, it is possible to set the manager as a parameter :
 const { ShewenyClient } = require("sheweny");
 
 const client = new ShewenyClient({
-  intents: ["GUILDS"],
+  intents: ["Guilds"],
   managers: {
     selectMenus: {
       directory: "./interactions/select-menus", // Directory where the select-menus are stored
@@ -30,7 +30,7 @@ const client = new ShewenyClient({
 import { ShewenyClient } from "sheweny";
 
 const client = new ShewenyClient({
-  intents: ["GUILDS"],
+  intents: ["Guilds"],
   managers: {
     selectMenus: {
       directory: "./interactions/select-menus", // Directory where the select-menus are stored

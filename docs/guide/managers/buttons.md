@@ -13,7 +13,7 @@ When setting up the client, it is possible to set the manager as a parameter :
 const { ShewenyClient } = require("sheweny");
 
 const client = new ShewenyClient({
-  intents: ["GUILDS"],
+  intents: ["Guilds"],
   managers: {
     buttons: {
       directory: "./interactions/buttons", // Directory where buttons interactions are stored
@@ -30,7 +30,7 @@ const client = new ShewenyClient({
 import { ShewenyClient } from "sheweny";
 
 const client = new ShewenyClient({
-  intents: ["GUILDS"],
+  intents: ["Guilds"],
   managers: {
     buttons: {
       directory: "./interactions/buttons", // Directory where buttons interactions are stored
@@ -76,7 +76,7 @@ const BtnsManager = new ButtonsManager(client, {
   loadAll: true, // Load all buttons (default: true)
 });
 
-BtnsManager.loadAll()
+BtnsManager.loadAll();
 ```
 
 :::
