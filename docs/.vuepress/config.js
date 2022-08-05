@@ -171,7 +171,12 @@ module.exports = {
           text: "Changelogs",
           path: "/guide/changelogs/",
           collapsable: false,
-          children: ["/guide/changelogs/Changelog3-4.md"],
+          children: [
+            "/guide/changelogs/Changelog-1.md",
+            "/guide/changelogs/Changelog-2.md",
+            "/guide/changelogs/Changelog-3.md",
+            "/guide/changelogs/Changelog-4.md",
+          ],
         },
       ],
     },

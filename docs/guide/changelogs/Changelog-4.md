@@ -1,5 +1,20 @@
 # Changelog of V4 🚀
 
+## [[4.0.2]](https://github.com/Sheweny/framework/compare/4.0.1...4.0.2) - August 1, 2022
+
+### Typings
+
+- Fix typings: Add typings
+
+## [[4.0.1]](https://github.com/Sheweny/framework/compare/4.0.0...4.0.1) - August 1, 2022
+
+### Fixes
+
+- Fix adminsOnly permission on commands (slash-commands AND message-commands) ([cff7c76](https://github.com/Sheweny/framework/commit/cff7c764c2d2973bfddba2b16d7d09022a2ab4b6))
+- Fix `ClientUtil#getX` return an array of structures instedof an array of arrays ([05aaacb](https://github.com/Sheweny/framework/commit/05aaacba82c6a6e12989571cd5410d6235581996))
+
+## [[4.0.0]](https://github.com/Sheweny/framework/compare/3.3.5...4.0.0) - July 30, 2022
+
 ## General
 
 - Improve typings in general ([caeb29c](https://github.com/Sheweny/framework/commit/448f55e1d69061397e559e005e687f8cd91f6112))
