@@ -161,7 +161,7 @@ module.exports = class PingUserCommand extends Command {
 
 ```ts
 import { Command } from "sheweny";
-import type { ShewenyClient, MessageCommandOptionData  } from "sheweny";
+import type { ShewenyClient  } from "sheweny";
 import type { Message } from "discord.js";
 
 export class PingUserCommand extends Command {
@@ -542,6 +542,7 @@ For use auto-complete you must have discord.js V13.3.0 or higher and sheweny V3.
 
 ```js
 const { Command } = require("sheweny");
+const { ApplicationCommandOptionType } = require("discord.js");
 
 module.exports = class PingCommand extends Command {
   constructor(client) {
@@ -554,13 +555,13 @@ module.exports = class PingCommand extends Command {
         {
           name: "name",
           description: "description",
-          type: "STRING",
+          type: ApplicationCommandOptionType.String,
           autocomplete: true,
         },
         {
           name: "theme",
           description: "description",
-          type: "STRING",
+          type: ApplicationCommandOptionType.String,
           autocomplete: true,
         },
       ],
@@ -599,7 +600,10 @@ module.exports = class PingCommand extends Command {
 ```ts
 import { Command } from "sheweny";
 import type { ShewenyClient } from "sheweny";
-import type { CommandInteraction } from "discord.js";
+import type {
+  CommandInteraction,
+  ApplicationCommandOptionType,
+} from "discord.js";
 
 export class PingCommand extends Command {
   constructor(client: ShewenyClient) {
@@ -612,13 +616,13 @@ export class PingCommand extends Command {
         {
           name: "name",
           description: "description",
-          type: "STRING",
+          type: ApplicationCommandOptionType.String,
           autocomplete: true,
         },
         {
           name: "theme",
           description: "description",
-          type: "STRING",
+          type: ApplicationCommandOptionType.String,
           autocomplete: true,
         },
       ],
