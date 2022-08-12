@@ -94,7 +94,7 @@ Parameters :
 
 | Name      | Type                                                                                                                                                                                                                          | Description |
 | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| structure | [Button](../structures/Button.md), [Command](../structures/Command.md), [Event](../structures/Event.md), [Inhibitor](../structures/Inhibitor.md), [Modal](../structures/Modal.md), [SelectMenu](../structures/SelectMenu.md), | The context |
+| structure | [Button](../structures/Button.md), [Command](../structures/Command.md), [Event](../structures/Event.md), [Inhibitor](../structures/Inhibitor.md), [Modal](../structures/Modal.md), [SelectMenu](../structures/SelectMenu.md) | The context |
 | ctx       | [Interaction](https://discord.js.org/#/docs/main/stable/class/Interaction) or [Message](https://discord.js.org/#/docs/main/stable/class/Message)                                                                              | The context |
 
 Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<any> | any
@@ -107,7 +107,7 @@ Parameters :
 
 | Name      | Type                                                                                                                                                                                                                          | Description |
 | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| structure | [Button](../structures/Button.md), [Command](../structures/Command.md), [Event](../structures/Event.md), [Inhibitor](../structures/Inhibitor.md), [Modal](../structures/Modal.md), [SelectMenu](../structures/SelectMenu.md), | The context |
+| structure | [Button](../structures/Button.md), [Command](../structures/Command.md), [Event](../structures/Event.md), [Inhibitor](../structures/Inhibitor.md), [Modal](../structures/Modal.md), [SelectMenu](../structures/SelectMenu.md) | The context |
 | ctx       | [Interaction](https://discord.js.org/#/docs/main/stable/class/Interaction) or [Message](https://discord.js.org/#/docs/main/stable/class/Message)                                                                              | The context |
 
 Return : [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise)\<any> | any
