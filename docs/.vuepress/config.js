@@ -1,5 +1,7 @@
 const { description } = require("../../package");
 const { defaultTheme } = require("vuepress");
+const { searchPlugin } = require('@vuepress/plugin-search')
+const { pwaPlugin } = require('@vuepress/plugin-pwa')
 
 module.exports = {
   title: "Sheweny",
@@ -185,5 +187,5 @@ module.exports = {
       mediumZoom: false,
     },
   }),
-  plugins: ["@vuepress/plugin-search", "@vuepress/pwa"],
+  plugins: [ searchPlugin(),  pwaPlugin()],
 };
