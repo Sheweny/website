@@ -1,7 +1,7 @@
-const { description } = require("../../package");
-const { defaultTheme } = require("vuepress");
+import { description } from "../../package";
+import { defaultTheme } from "vuepress";
 
-module.exports = {
+export default {
   title: "Sheweny",
   description: description,
   head: [
