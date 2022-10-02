@@ -1,7 +1,9 @@
 import { description } from "../../package";
 import { defaultTheme } from "vuepress";
+import { searchPlugin } from "@vuepress/plugin-search";
+import { pwaPlugin } from "@vuepress/plugin-pwa";
 
-export default {
+module.exports = {
   title: "Sheweny",
   description: description,
   head: [
@@ -168,9 +170,15 @@ export default {
           ],
         },
         {
+          text: "Topics",
+          path: "/guide/topics/",
+          collapsable: false,
+          children: ["/guide/topics/BestPratices.md"],
+        },
+        {
           text: "Changelogs",
           path: "/guide/changelogs/",
-          collapsable: false,
+          collapsable: true,
           children: [
             "/guide/changelogs/Changelog-1.md",
             "/guide/changelogs/Changelog-2.md",
@@ -185,5 +193,5 @@ export default {
       mediumZoom: false,
     },
   }),
-  plugins: ["@vuepress/plugin-search", "@vuepress/pwa"],
+  plugins: [searchPlugin(), pwaPlugin()],
 };
