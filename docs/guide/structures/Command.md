@@ -554,13 +554,13 @@ module.exports = class PingCommand extends Command {
         {
           name: "name",
           description: "description",
-          type: "STRING",
+          type: 3,
           autocomplete: true,
         },
         {
           name: "theme",
           description: "description",
-          type: "STRING",
+          type: 3,
           autocomplete: true,
         },
       ],
@@ -612,13 +612,13 @@ export class PingCommand extends Command {
         {
           name: "name",
           description: "description",
-          type: "STRING",
+          type: 3,
           autocomplete: true,
         },
         {
           name: "theme",
           description: "description",
-          type: "STRING",
+          type: 3,
           autocomplete: true,
         },
       ],
