@@ -12,7 +12,7 @@ new Button(client, options);
 | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- | ------- | -------- |
 | client   | [ShewenyClient](./ShewenyClient.md)                                                                                                                                                                                                                                                    | The client.            | None    | No       |
 | customId | [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)\<[String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) \| [Regexp](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Regexp)> | The list of butons ids | None    | ✓        |
-| options  | [ButtonOptions](../typedef/SelectMenuOptions.md)                                                                                                                                                                                                                                       | The options.           | None    | ✓        |
+| options  | [ButtonOptions](../typedef/ButtonOptions.md)                                                                                                                                                                                                                                       | The options.           | None    | ✓        |
 
 :::details Properties
 
