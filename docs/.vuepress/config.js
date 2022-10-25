@@ -3,7 +3,7 @@ import { defaultTheme } from "vuepress";
 import { searchPlugin } from "@vuepress/plugin-search";
 import { pwaPlugin } from "@vuepress/plugin-pwa";
 
-module.exports = {
+export default {
   title: "Sheweny",
   description: description,
   head: [
