@@ -1,5 +1,12 @@
 # Changelog of V4 🚀
 
+## [[4.0.3]](https://github.com/Sheweny/framework/compare/4.0.2...4.0.3) - September 3, 2022
+
+### Fixes
+
+- Fix `ClientUtil#getX` return an array of structures instedof an array of arrays ([d588c3f](https://github.com/Sheweny/framework/commit/d588c3f99b0dea3a7f972fd420e8f5364a009520))
+- Fix `Structures#enabled` use the default values ([ab16444](https://github.com/Sheweny/framework/commit/ab164449803b3f1964125716e651f46d930b77c4))
+
 ## [[4.0.2]](https://github.com/Sheweny/framework/compare/4.0.1...4.0.2) - August 1, 2022
 
 ### Typings
