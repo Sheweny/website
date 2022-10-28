@@ -1,4 +1,4 @@
-# ModalOptions options : The options
+# ModalOptions
 
 | Name     | Type                                                                                        | Description                  | Default | Optional |
 | -------- | ------------------------------------------------------------------------------------------- | ---------------------------- | ------- | -------- |
