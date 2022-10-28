@@ -76,7 +76,7 @@ Emitted when user hit the cooldown limit.
 
 Parameters :
 
-| Name        | Type                                                                                                                                                                                                     | Description               |
-| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| interaction | [https://discord.js.org/#/docs/discord.js/main/class/ModalSubmitInteraction](https://discord.js.org/#/docs/main/stable/class/https://discord.js.org/#/docs/discord.js/main/class/ModalSubmitInteraction) | The interaction           |
-| time        | [Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)                                                                                                              | The time before run again |
+| Name        | Type                                                                                                                                                 | Description               |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| interaction | [ModalSubmitInteraction](https://discord.js.org/#/docs/main/stable/class/https://discord.js.org/#/docs/discord.js/main/class/ModalSubmitInteraction) | The interaction           |
+| time        | [Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)                                                          | The time before run again |
