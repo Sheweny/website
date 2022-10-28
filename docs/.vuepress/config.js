@@ -2,6 +2,7 @@ import { description } from "../../package";
 import { defaultTheme } from "vuepress";
 import { searchPlugin } from "@vuepress/plugin-search";
 import { pwaPlugin } from "@vuepress/plugin-pwa";
+
 export default {
   title: "Sheweny",
   description: description,
