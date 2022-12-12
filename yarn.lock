@@ -1350,16 +1350,16 @@
     "@vuepress/core" "2.0.0-beta.53"
     prismjs "^1.29.0"
 
-"@vuepress/plugin-pwa@^2.0.0-beta.53":
-  version "2.0.0-beta.53"
-  resolved "https://registry.npmjs.org/@vuepress/plugin-pwa/-/plugin-pwa-2.0.0-beta.53.tgz"
+"@vuepress/plugin-pwa@^2.0.0-beta.58":
+  version "2.0.0-beta.58"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-pwa/-/plugin-pwa-2.0.0-beta.58.tgz#621b853e74ea8999864548830602014e7c252a19"
   dependencies:
-    "@vuepress/client" "2.0.0-beta.53"
-    "@vuepress/core" "2.0.0-beta.53"
-    "@vuepress/utils" "2.0.0-beta.53"
+    "@vuepress/client" "2.0.0-beta.58"
+    "@vuepress/core" "2.0.0-beta.58"
+    "@vuepress/utils" "2.0.0-beta.58"
     mitt "^3.0.0"
     register-service-worker "^1.7.2"
-    vue "^3.2.41"
+    vue "^3.2.45"
     workbox-build "^6.5.4"
 
 "@vuepress/plugin-search@^2.0.0-beta.58":
