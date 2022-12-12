@@ -1305,7 +1305,7 @@
     "@vuepress/utils" "2.0.0-beta.53"
     execa "^6.1.0"
 
-"@vuepress/plugin-medium-zoom@2.0.0-beta.53", "@vuepress/plugin-medium-zoom@^2.0.0-beta.53":
+"@vuepress/plugin-medium-zoom@2.0.0-beta.53":
   version "2.0.0-beta.53"
   resolved "https://registry.npmjs.org/@vuepress/plugin-medium-zoom/-/plugin-medium-zoom-2.0.0-beta.53.tgz"
   dependencies:
@@ -1314,6 +1314,16 @@
     "@vuepress/utils" "2.0.0-beta.53"
     medium-zoom "^1.0.6"
     vue "^3.2.41"
+
+"@vuepress/plugin-medium-zoom@^2.0.0-beta.58":
+  version "2.0.0-beta.58"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-medium-zoom/-/plugin-medium-zoom-2.0.0-beta.58.tgz#6747f2197758de1af1e0d302a3695f0cb79e8d7d"
+  dependencies:
+    "@vuepress/client" "2.0.0-beta.58"
+    "@vuepress/core" "2.0.0-beta.58"
+    "@vuepress/utils" "2.0.0-beta.58"
+    medium-zoom "^1.0.8"
+    vue "^3.2.45"
 
 "@vuepress/plugin-nprogress@2.0.0-beta.53":
   version "2.0.0-beta.53"
@@ -2464,9 +2474,9 @@ mdurl@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/mdurl/-/mdurl-1.0.1.tgz"
 
-medium-zoom@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.npmjs.org/medium-zoom/-/medium-zoom-1.0.6.tgz"
+medium-zoom@^1.0.6, medium-zoom@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/medium-zoom/-/medium-zoom-1.0.8.tgz#2bd1fbcf2961fa7b0e318fe284462aa9b8608ed2"
 
 merge-stream@^2.0.0:
   version "2.0.0"
