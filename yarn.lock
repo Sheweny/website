@@ -1352,16 +1352,16 @@
     vue "^3.2.41"
     workbox-build "^6.5.4"
 
-"@vuepress/plugin-search@^2.0.0-beta.53":
-  version "2.0.0-beta.53"
-  resolved "https://registry.npmjs.org/@vuepress/plugin-search/-/plugin-search-2.0.0-beta.53.tgz"
+"@vuepress/plugin-search@^2.0.0-beta.58":
+  version "2.0.0-beta.58"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-search/-/plugin-search-2.0.0-beta.58.tgz#3c753bf1d5937a3eedd1c4b9f661e5241a999c0b"
   dependencies:
-    "@vuepress/client" "2.0.0-beta.53"
-    "@vuepress/core" "2.0.0-beta.53"
-    "@vuepress/shared" "2.0.0-beta.53"
-    "@vuepress/utils" "2.0.0-beta.53"
+    "@vuepress/client" "2.0.0-beta.58"
+    "@vuepress/core" "2.0.0-beta.58"
+    "@vuepress/shared" "2.0.0-beta.58"
+    "@vuepress/utils" "2.0.0-beta.58"
     chokidar "^3.5.3"
-    vue "^3.2.41"
+    vue "^3.2.45"
     vue-router "^4.1.6"
 
 "@vuepress/plugin-theme-data@2.0.0-beta.53":
