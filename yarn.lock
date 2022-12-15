@@ -1261,6 +1261,15 @@
     vue "^3.2.45"
     vue-router "^4.1.6"
 
+"@vuepress/client@2.0.0-beta.59":
+  version "2.0.0-beta.59"
+  resolved "https://registry.yarnpkg.com/@vuepress/client/-/client-2.0.0-beta.59.tgz#26b3b5d208355dd8d198c5d337f56101024f098a"
+  dependencies:
+    "@vue/devtools-api" "^6.4.5"
+    "@vuepress/shared" "2.0.0-beta.59"
+    vue "^3.2.45"
+    vue-router "^4.1.6"
+
 "@vuepress/core@2.0.0-beta.53":
   version "2.0.0-beta.53"
   resolved "https://registry.npmjs.org/@vuepress/core/-/core-2.0.0-beta.53.tgz"
@@ -1279,6 +1288,16 @@
     "@vuepress/markdown" "2.0.0-beta.58"
     "@vuepress/shared" "2.0.0-beta.58"
     "@vuepress/utils" "2.0.0-beta.58"
+    vue "^3.2.45"
+
+"@vuepress/core@2.0.0-beta.59":
+  version "2.0.0-beta.59"
+  resolved "https://registry.yarnpkg.com/@vuepress/core/-/core-2.0.0-beta.59.tgz#4dc695380cce85f83f6abee9f6d86eb945f8cd69"
+  dependencies:
+    "@vuepress/client" "2.0.0-beta.59"
+    "@vuepress/markdown" "2.0.0-beta.59"
+    "@vuepress/shared" "2.0.0-beta.59"
+    "@vuepress/utils" "2.0.0-beta.59"
     vue "^3.2.45"
 
 "@vuepress/markdown@2.0.0-beta.53":
@@ -1318,6 +1337,27 @@
     "@types/markdown-it-emoji" "^2.0.2"
     "@vuepress/shared" "2.0.0-beta.58"
     "@vuepress/utils" "2.0.0-beta.58"
+    markdown-it "^13.0.1"
+    markdown-it-anchor "^8.6.5"
+    markdown-it-emoji "^2.0.2"
+    mdurl "^1.0.1"
+
+"@vuepress/markdown@2.0.0-beta.59":
+  version "2.0.0-beta.59"
+  resolved "https://registry.yarnpkg.com/@vuepress/markdown/-/markdown-2.0.0-beta.59.tgz#272e674df06c004d9f5874e67f1a4c1c9e78d5dc"
+  dependencies:
+    "@mdit-vue/plugin-component" "^0.11.1"
+    "@mdit-vue/plugin-frontmatter" "^0.11.1"
+    "@mdit-vue/plugin-headers" "^0.11.1"
+    "@mdit-vue/plugin-sfc" "^0.11.1"
+    "@mdit-vue/plugin-title" "^0.11.1"
+    "@mdit-vue/plugin-toc" "^0.11.1"
+    "@mdit-vue/shared" "^0.11.0"
+    "@mdit-vue/types" "^0.11.0"
+    "@types/markdown-it" "^12.2.3"
+    "@types/markdown-it-emoji" "^2.0.2"
+    "@vuepress/shared" "2.0.0-beta.59"
+    "@vuepress/utils" "2.0.0-beta.59"
     markdown-it "^13.0.1"
     markdown-it-anchor "^8.6.5"
     markdown-it-emoji "^2.0.2"
@@ -1430,14 +1470,14 @@
     vue "^3.2.45"
     workbox-build "^6.5.4"
 
-"@vuepress/plugin-search@^2.0.0-beta.58":
-  version "2.0.0-beta.58"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-search/-/plugin-search-2.0.0-beta.58.tgz#3c753bf1d5937a3eedd1c4b9f661e5241a999c0b"
+"@vuepress/plugin-search@^2.0.0-beta.59":
+  version "2.0.0-beta.59"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-search/-/plugin-search-2.0.0-beta.59.tgz#ec45933d9245be443695708e7ba7747a5107135f"
   dependencies:
-    "@vuepress/client" "2.0.0-beta.58"
-    "@vuepress/core" "2.0.0-beta.58"
-    "@vuepress/shared" "2.0.0-beta.58"
-    "@vuepress/utils" "2.0.0-beta.58"
+    "@vuepress/client" "2.0.0-beta.59"
+    "@vuepress/core" "2.0.0-beta.59"
+    "@vuepress/shared" "2.0.0-beta.59"
+    "@vuepress/utils" "2.0.0-beta.59"
     chokidar "^3.5.3"
     vue "^3.2.45"
     vue-router "^4.1.6"
@@ -1463,6 +1503,13 @@
 "@vuepress/shared@2.0.0-beta.58":
   version "2.0.0-beta.58"
   resolved "https://registry.yarnpkg.com/@vuepress/shared/-/shared-2.0.0-beta.58.tgz#67e9e9f0cff731af780fd716e5fa490b6de6c6e6"
+  dependencies:
+    "@mdit-vue/types" "^0.11.0"
+    "@vue/shared" "^3.2.45"
+
+"@vuepress/shared@2.0.0-beta.59":
+  version "2.0.0-beta.59"
+  resolved "https://registry.yarnpkg.com/@vuepress/shared/-/shared-2.0.0-beta.59.tgz#e1175303d46270e4f0697e5a9f9ee10a39245151"
   dependencies:
     "@mdit-vue/types" "^0.11.0"
     "@vue/shared" "^3.2.45"
@@ -1517,6 +1564,22 @@
     debug "^4.3.4"
     fs-extra "^11.1.0"
     globby "^13.1.2"
+    hash-sum "^2.0.0"
+    ora "^6.1.2"
+    picocolors "^1.0.0"
+    upath "^2.0.1"
+
+"@vuepress/utils@2.0.0-beta.59":
+  version "2.0.0-beta.59"
+  resolved "https://registry.yarnpkg.com/@vuepress/utils/-/utils-2.0.0-beta.59.tgz#14db5ef7a2c24540c7d3e0c5ca05ac4aa31470b6"
+  dependencies:
+    "@types/debug" "^4.1.7"
+    "@types/fs-extra" "^9.0.13"
+    "@types/hash-sum" "^1.0.0"
+    "@vuepress/shared" "2.0.0-beta.59"
+    debug "^4.3.4"
+    fs-extra "^11.1.0"
+    globby "^13.1.3"
     hash-sum "^2.0.0"
     ora "^6.1.2"
     picocolors "^1.0.0"
@@ -2110,6 +2173,16 @@ globals@^11.1.0:
 globby@^13.1.2:
   version "13.1.2"
   resolved "https://registry.npmjs.org/globby/-/globby-13.1.2.tgz"
+  dependencies:
+    dir-glob "^3.0.1"
+    fast-glob "^3.2.11"
+    ignore "^5.2.0"
+    merge2 "^1.4.1"
+    slash "^4.0.0"
+
+globby@^13.1.3:
+  version "13.1.3"
+  resolved "https://registry.yarnpkg.com/globby/-/globby-13.1.3.tgz#f62baf5720bcb2c1330c8d4ef222ee12318563ff"
   dependencies:
     dir-glob "^3.0.1"
     fast-glob "^3.2.11"
