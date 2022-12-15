@@ -1209,10 +1209,6 @@
   version "3.2.45"
   resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.2.45.tgz#a3fffa7489eafff38d984e23d0236e230c818bc2"
 
-"@vue/shared@^3.2.41":
-  version "3.2.41"
-  resolved "https://registry.npmjs.org/@vue/shared/-/shared-3.2.41.tgz"
-
 "@vuepress/bundler-vite@2.0.0-beta.58":
   version "2.0.0-beta.58"
   resolved "https://registry.yarnpkg.com/@vuepress/bundler-vite/-/bundler-vite-2.0.0-beta.58.tgz#6cfd92ec5b7d81fc6c61fec7db9e218de51b4a5d"
@@ -1243,15 +1239,6 @@
     envinfo "^7.8.1"
     esbuild "^0.16.3"
 
-"@vuepress/client@2.0.0-beta.53":
-  version "2.0.0-beta.53"
-  resolved "https://registry.npmjs.org/@vuepress/client/-/client-2.0.0-beta.53.tgz"
-  dependencies:
-    "@vue/devtools-api" "^6.4.5"
-    "@vuepress/shared" "2.0.0-beta.53"
-    vue "^3.2.41"
-    vue-router "^4.1.6"
-
 "@vuepress/client@2.0.0-beta.58":
   version "2.0.0-beta.58"
   resolved "https://registry.yarnpkg.com/@vuepress/client/-/client-2.0.0-beta.58.tgz#d2f5e500a11740b71479f0d2b970522d59366177"
@@ -1269,16 +1256,6 @@
     "@vuepress/shared" "2.0.0-beta.59"
     vue "^3.2.45"
     vue-router "^4.1.6"
-
-"@vuepress/core@2.0.0-beta.53":
-  version "2.0.0-beta.53"
-  resolved "https://registry.npmjs.org/@vuepress/core/-/core-2.0.0-beta.53.tgz"
-  dependencies:
-    "@vuepress/client" "2.0.0-beta.53"
-    "@vuepress/markdown" "2.0.0-beta.53"
-    "@vuepress/shared" "2.0.0-beta.53"
-    "@vuepress/utils" "2.0.0-beta.53"
-    vue "^3.2.41"
 
 "@vuepress/core@2.0.0-beta.58":
   version "2.0.0-beta.58"
@@ -1299,27 +1276,6 @@
     "@vuepress/shared" "2.0.0-beta.59"
     "@vuepress/utils" "2.0.0-beta.59"
     vue "^3.2.45"
-
-"@vuepress/markdown@2.0.0-beta.53":
-  version "2.0.0-beta.53"
-  resolved "https://registry.npmjs.org/@vuepress/markdown/-/markdown-2.0.0-beta.53.tgz"
-  dependencies:
-    "@mdit-vue/plugin-component" "^0.11.1"
-    "@mdit-vue/plugin-frontmatter" "^0.11.1"
-    "@mdit-vue/plugin-headers" "^0.11.1"
-    "@mdit-vue/plugin-sfc" "^0.11.1"
-    "@mdit-vue/plugin-title" "^0.11.1"
-    "@mdit-vue/plugin-toc" "^0.11.1"
-    "@mdit-vue/shared" "^0.11.0"
-    "@mdit-vue/types" "^0.11.0"
-    "@types/markdown-it" "^12.2.3"
-    "@types/markdown-it-emoji" "^2.0.2"
-    "@vuepress/shared" "2.0.0-beta.53"
-    "@vuepress/utils" "2.0.0-beta.53"
-    markdown-it "^13.0.1"
-    markdown-it-anchor "^8.6.5"
-    markdown-it-emoji "^2.0.2"
-    mdurl "^1.0.1"
 
 "@vuepress/markdown@2.0.0-beta.58":
   version "2.0.0-beta.58"
@@ -1415,12 +1371,12 @@
     "@vuepress/utils" "2.0.0-beta.58"
     execa "^6.1.0"
 
-"@vuepress/plugin-git@^2.0.0-beta.53":
-  version "2.0.0-beta.53"
-  resolved "https://registry.npmjs.org/@vuepress/plugin-git/-/plugin-git-2.0.0-beta.53.tgz"
+"@vuepress/plugin-git@^2.0.0-beta.59":
+  version "2.0.0-beta.59"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-git/-/plugin-git-2.0.0-beta.59.tgz#c30d332f02da55576870ad68d1ca5d91573379e8"
   dependencies:
-    "@vuepress/core" "2.0.0-beta.53"
-    "@vuepress/utils" "2.0.0-beta.53"
+    "@vuepress/core" "2.0.0-beta.59"
+    "@vuepress/utils" "2.0.0-beta.59"
     execa "^6.1.0"
 
 "@vuepress/plugin-medium-zoom@2.0.0-beta.58", "@vuepress/plugin-medium-zoom@^2.0.0-beta.58":
@@ -1493,13 +1449,6 @@
     "@vuepress/utils" "2.0.0-beta.58"
     vue "^3.2.45"
 
-"@vuepress/shared@2.0.0-beta.53":
-  version "2.0.0-beta.53"
-  resolved "https://registry.npmjs.org/@vuepress/shared/-/shared-2.0.0-beta.53.tgz"
-  dependencies:
-    "@mdit-vue/types" "^0.11.0"
-    "@vue/shared" "^3.2.41"
-
 "@vuepress/shared@2.0.0-beta.58":
   version "2.0.0-beta.58"
   resolved "https://registry.yarnpkg.com/@vuepress/shared/-/shared-2.0.0-beta.58.tgz#67e9e9f0cff731af780fd716e5fa490b6de6c6e6"
@@ -1536,22 +1485,6 @@
     sass "^1.56.2"
     vue "^3.2.45"
     vue-router "^4.1.6"
-
-"@vuepress/utils@2.0.0-beta.53":
-  version "2.0.0-beta.53"
-  resolved "https://registry.npmjs.org/@vuepress/utils/-/utils-2.0.0-beta.53.tgz"
-  dependencies:
-    "@types/debug" "^4.1.7"
-    "@types/fs-extra" "^9.0.13"
-    "@types/hash-sum" "^1.0.0"
-    "@vuepress/shared" "2.0.0-beta.53"
-    chalk "^5.1.2"
-    debug "^4.3.4"
-    fs-extra "^10.1.0"
-    globby "^13.1.2"
-    hash-sum "^2.0.0"
-    ora "^6.1.2"
-    upath "^2.0.1"
 
 "@vuepress/utils@2.0.0-beta.58":
   version "2.0.0-beta.58"
@@ -1783,7 +1716,7 @@ chalk@^4.0.2:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-chalk@^5.0.0, chalk@^5.1.2:
+chalk@^5.0.0:
   version "5.1.2"
   resolved "https://registry.npmjs.org/chalk/-/chalk-5.1.2.tgz"
 
@@ -2071,14 +2004,6 @@ fill-range@^7.0.1:
 fraction.js@^4.2.0:
   version "4.2.0"
   resolved "https://registry.npmjs.org/fraction.js/-/fraction.js-4.2.0.tgz"
-
-fs-extra@^10.1.0:
-  version "10.1.0"
-  resolved "https://registry.npmjs.org/fs-extra/-/fs-extra-10.1.0.tgz"
-  dependencies:
-    graceful-fs "^4.2.0"
-    jsonfile "^6.0.1"
-    universalify "^2.0.0"
 
 fs-extra@^11.1.0:
   version "11.1.0"
@@ -3150,7 +3075,7 @@ vue-router@^4.1.6:
   dependencies:
     "@vue/devtools-api" "^6.4.5"
 
-vue@^3.2.41, vue@^3.2.45:
+vue@^3.2.45:
   version "3.2.45"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.2.45.tgz#94a116784447eb7dbd892167784619fef379b3c8"
   dependencies:
