@@ -1030,6 +1030,13 @@
     "@types/markdown-it" "^12.2.3"
     markdown-it "^13.0.1"
 
+"@mdit-vue/plugin-component@^0.11.2":
+  version "0.11.2"
+  resolved "https://registry.yarnpkg.com/@mdit-vue/plugin-component/-/plugin-component-0.11.2.tgz#3b7b6aef7368bb1a4b006c8430f0e9b7d4044b5b"
+  dependencies:
+    "@types/markdown-it" "^12.2.3"
+    markdown-it "^13.0.1"
+
 "@mdit-vue/plugin-frontmatter@^0.11.1":
   version "0.11.1"
   resolved "https://registry.npmjs.org/@mdit-vue/plugin-frontmatter/-/plugin-frontmatter-0.11.1.tgz"
@@ -1044,6 +1051,15 @@
   resolved "https://registry.npmjs.org/@mdit-vue/plugin-headers/-/plugin-headers-0.11.1.tgz"
   dependencies:
     "@mdit-vue/shared" "0.11.0"
+    "@mdit-vue/types" "0.11.0"
+    "@types/markdown-it" "^12.2.3"
+    markdown-it "^13.0.1"
+
+"@mdit-vue/plugin-headers@^0.11.2":
+  version "0.11.2"
+  resolved "https://registry.yarnpkg.com/@mdit-vue/plugin-headers/-/plugin-headers-0.11.2.tgz#dd7ca7d00a6b2e28d516ba83718c6e336995d125"
+  dependencies:
+    "@mdit-vue/shared" "0.11.2"
     "@mdit-vue/types" "0.11.0"
     "@types/markdown-it" "^12.2.3"
     markdown-it "^13.0.1"
@@ -1065,6 +1081,15 @@
     "@types/markdown-it" "^12.2.3"
     markdown-it "^13.0.1"
 
+"@mdit-vue/plugin-title@^0.11.2":
+  version "0.11.2"
+  resolved "https://registry.yarnpkg.com/@mdit-vue/plugin-title/-/plugin-title-0.11.2.tgz#8fc030ef1ef835872ce8a184a6941242c8bdc10e"
+  dependencies:
+    "@mdit-vue/shared" "0.11.2"
+    "@mdit-vue/types" "0.11.0"
+    "@types/markdown-it" "^12.2.3"
+    markdown-it "^13.0.1"
+
 "@mdit-vue/plugin-toc@^0.11.1":
   version "0.11.1"
   resolved "https://registry.npmjs.org/@mdit-vue/plugin-toc/-/plugin-toc-0.11.1.tgz"
@@ -1074,9 +1099,26 @@
     "@types/markdown-it" "^12.2.3"
     markdown-it "^13.0.1"
 
+"@mdit-vue/plugin-toc@^0.11.2":
+  version "0.11.2"
+  resolved "https://registry.yarnpkg.com/@mdit-vue/plugin-toc/-/plugin-toc-0.11.2.tgz#ed508ec23fd7ea2b6a7263ac4c1b98a4bbdc0853"
+  dependencies:
+    "@mdit-vue/shared" "0.11.2"
+    "@mdit-vue/types" "0.11.0"
+    "@types/markdown-it" "^12.2.3"
+    markdown-it "^13.0.1"
+
 "@mdit-vue/shared@0.11.0", "@mdit-vue/shared@^0.11.0":
   version "0.11.0"
   resolved "https://registry.npmjs.org/@mdit-vue/shared/-/shared-0.11.0.tgz"
+  dependencies:
+    "@mdit-vue/types" "0.11.0"
+    "@types/markdown-it" "^12.2.3"
+    markdown-it "^13.0.1"
+
+"@mdit-vue/shared@0.11.2", "@mdit-vue/shared@^0.11.2":
+  version "0.11.2"
+  resolved "https://registry.yarnpkg.com/@mdit-vue/shared/-/shared-0.11.2.tgz#ef575b9b6b4697858b9e391dcae7307b503bd9ad"
   dependencies:
     "@mdit-vue/types" "0.11.0"
     "@types/markdown-it" "^12.2.3"
@@ -1345,6 +1387,15 @@
     vue "^3.2.45"
     vue-router "^4.1.6"
 
+"@vuepress/client@2.0.0-beta.60":
+  version "2.0.0-beta.60"
+  resolved "https://registry.yarnpkg.com/@vuepress/client/-/client-2.0.0-beta.60.tgz#978fa040e43b8dd4663d07e2b8dbbff7ff822f4d"
+  dependencies:
+    "@vue/devtools-api" "^6.4.5"
+    "@vuepress/shared" "2.0.0-beta.60"
+    vue "^3.2.45"
+    vue-router "^4.1.6"
+
 "@vuepress/core@2.0.0-beta.58":
   version "2.0.0-beta.58"
   resolved "https://registry.yarnpkg.com/@vuepress/core/-/core-2.0.0-beta.58.tgz#d6906a27713c42902f20bcf71890b953cafd7be3"
@@ -1363,6 +1414,16 @@
     "@vuepress/markdown" "2.0.0-beta.59"
     "@vuepress/shared" "2.0.0-beta.59"
     "@vuepress/utils" "2.0.0-beta.59"
+    vue "^3.2.45"
+
+"@vuepress/core@2.0.0-beta.60":
+  version "2.0.0-beta.60"
+  resolved "https://registry.yarnpkg.com/@vuepress/core/-/core-2.0.0-beta.60.tgz#9a35102fef1aff15ce6bf0b725c54d055032e854"
+  dependencies:
+    "@vuepress/client" "2.0.0-beta.60"
+    "@vuepress/markdown" "2.0.0-beta.60"
+    "@vuepress/shared" "2.0.0-beta.60"
+    "@vuepress/utils" "2.0.0-beta.60"
     vue "^3.2.45"
 
 "@vuepress/markdown@2.0.0-beta.58":
@@ -1404,6 +1465,27 @@
     "@vuepress/utils" "2.0.0-beta.59"
     markdown-it "^13.0.1"
     markdown-it-anchor "^8.6.5"
+    markdown-it-emoji "^2.0.2"
+    mdurl "^1.0.1"
+
+"@vuepress/markdown@2.0.0-beta.60":
+  version "2.0.0-beta.60"
+  resolved "https://registry.yarnpkg.com/@vuepress/markdown/-/markdown-2.0.0-beta.60.tgz#12222cde5ab41395f8c3bf7b2ef512935814f45b"
+  dependencies:
+    "@mdit-vue/plugin-component" "^0.11.2"
+    "@mdit-vue/plugin-frontmatter" "^0.11.1"
+    "@mdit-vue/plugin-headers" "^0.11.2"
+    "@mdit-vue/plugin-sfc" "^0.11.1"
+    "@mdit-vue/plugin-title" "^0.11.2"
+    "@mdit-vue/plugin-toc" "^0.11.2"
+    "@mdit-vue/shared" "^0.11.2"
+    "@mdit-vue/types" "^0.11.0"
+    "@types/markdown-it" "^12.2.3"
+    "@types/markdown-it-emoji" "^2.0.2"
+    "@vuepress/shared" "2.0.0-beta.60"
+    "@vuepress/utils" "2.0.0-beta.60"
+    markdown-it "^13.0.1"
+    markdown-it-anchor "^8.6.6"
     markdown-it-emoji "^2.0.2"
     mdurl "^1.0.1"
 
@@ -1514,13 +1596,13 @@
     "@vuepress/core" "2.0.0-beta.59"
     prismjs "^1.29.0"
 
-"@vuepress/plugin-pwa@^2.0.0-beta.59":
-  version "2.0.0-beta.59"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-pwa/-/plugin-pwa-2.0.0-beta.59.tgz#f857568ea58ba3e2b7ee24bf90da33c1df72eee4"
+"@vuepress/plugin-pwa@^2.0.0-beta.60":
+  version "2.0.0-beta.60"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-pwa/-/plugin-pwa-2.0.0-beta.60.tgz#8fb85216f9f41d4da524cdc695894498f84b08ab"
   dependencies:
-    "@vuepress/client" "2.0.0-beta.59"
-    "@vuepress/core" "2.0.0-beta.59"
-    "@vuepress/utils" "2.0.0-beta.59"
+    "@vuepress/client" "2.0.0-beta.60"
+    "@vuepress/core" "2.0.0-beta.60"
+    "@vuepress/utils" "2.0.0-beta.60"
     mitt "^3.0.0"
     register-service-worker "^1.7.2"
     vue "^3.2.45"
@@ -1559,6 +1641,13 @@
 "@vuepress/shared@2.0.0-beta.59":
   version "2.0.0-beta.59"
   resolved "https://registry.yarnpkg.com/@vuepress/shared/-/shared-2.0.0-beta.59.tgz#e1175303d46270e4f0697e5a9f9ee10a39245151"
+  dependencies:
+    "@mdit-vue/types" "^0.11.0"
+    "@vue/shared" "^3.2.45"
+
+"@vuepress/shared@2.0.0-beta.60":
+  version "2.0.0-beta.60"
+  resolved "https://registry.yarnpkg.com/@vuepress/shared/-/shared-2.0.0-beta.60.tgz#5c5c682dedd2e1ef0e821f08321f74b787558113"
   dependencies:
     "@mdit-vue/types" "^0.11.0"
     "@vue/shared" "^3.2.45"
@@ -1610,6 +1699,22 @@
     "@types/fs-extra" "^9.0.13"
     "@types/hash-sum" "^1.0.0"
     "@vuepress/shared" "2.0.0-beta.59"
+    debug "^4.3.4"
+    fs-extra "^11.1.0"
+    globby "^13.1.3"
+    hash-sum "^2.0.0"
+    ora "^6.1.2"
+    picocolors "^1.0.0"
+    upath "^2.0.1"
+
+"@vuepress/utils@2.0.0-beta.60":
+  version "2.0.0-beta.60"
+  resolved "https://registry.yarnpkg.com/@vuepress/utils/-/utils-2.0.0-beta.60.tgz#dfb31c66df708ffc6a9362242eb16b05047c2903"
+  dependencies:
+    "@types/debug" "^4.1.7"
+    "@types/fs-extra" "^9.0.13"
+    "@types/hash-sum" "^1.0.0"
+    "@vuepress/shared" "2.0.0-beta.60"
     debug "^4.3.4"
     fs-extra "^11.1.0"
     globby "^13.1.3"
@@ -2564,6 +2669,10 @@ magic-string@^0.25.0, magic-string@^0.25.7:
 markdown-it-anchor@^8.6.5:
   version "8.6.5"
   resolved "https://registry.npmjs.org/markdown-it-anchor/-/markdown-it-anchor-8.6.5.tgz"
+
+markdown-it-anchor@^8.6.6:
+  version "8.6.6"
+  resolved "https://registry.yarnpkg.com/markdown-it-anchor/-/markdown-it-anchor-8.6.6.tgz#4a12e358c9c2167ee28cb7a5f10e29d6f1ffd7ca"
 
 markdown-it-container@^3.0.0:
   version "3.0.0"
