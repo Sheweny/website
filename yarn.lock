@@ -1543,12 +1543,20 @@
     "@vuepress/utils" "2.0.0-beta.59"
     vue "^3.2.45"
 
-"@vuepress/plugin-git@2.0.0-beta.59", "@vuepress/plugin-git@^2.0.0-beta.59":
+"@vuepress/plugin-git@2.0.0-beta.59":
   version "2.0.0-beta.59"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-git/-/plugin-git-2.0.0-beta.59.tgz#c30d332f02da55576870ad68d1ca5d91573379e8"
   dependencies:
     "@vuepress/core" "2.0.0-beta.59"
     "@vuepress/utils" "2.0.0-beta.59"
+    execa "^6.1.0"
+
+"@vuepress/plugin-git@^2.0.0-beta.60":
+  version "2.0.0-beta.60"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-git/-/plugin-git-2.0.0-beta.60.tgz#22e381fc531cf12a382e12acd241073820278c2c"
+  dependencies:
+    "@vuepress/core" "2.0.0-beta.60"
+    "@vuepress/utils" "2.0.0-beta.60"
     execa "^6.1.0"
 
 "@vuepress/plugin-medium-zoom@2.0.0-beta.59":
