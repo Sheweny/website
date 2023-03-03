@@ -1331,15 +1331,6 @@
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@vitejs/plugin-vue/-/plugin-vue-4.0.0.tgz#93815beffd23db46288c787352a8ea31a0c03e5e"
 
-"@vue/compiler-core@3.2.45":
-  version "3.2.45"
-  resolved "https://registry.yarnpkg.com/@vue/compiler-core/-/compiler-core-3.2.45.tgz#d9311207d96f6ebd5f4660be129fb99f01ddb41b"
-  dependencies:
-    "@babel/parser" "^7.16.4"
-    "@vue/shared" "3.2.45"
-    estree-walker "^2.0.2"
-    source-map "^0.6.1"
-
 "@vue/compiler-core@3.2.47":
   version "3.2.47"
   resolved "https://registry.yarnpkg.com/@vue/compiler-core/-/compiler-core-3.2.47.tgz#3e07c684d74897ac9aa5922c520741f3029267f8"
@@ -1349,34 +1340,12 @@
     estree-walker "^2.0.2"
     source-map "^0.6.1"
 
-"@vue/compiler-dom@3.2.45":
-  version "3.2.45"
-  resolved "https://registry.yarnpkg.com/@vue/compiler-dom/-/compiler-dom-3.2.45.tgz#c43cc15e50da62ecc16a42f2622d25dc5fd97dce"
-  dependencies:
-    "@vue/compiler-core" "3.2.45"
-    "@vue/shared" "3.2.45"
-
 "@vue/compiler-dom@3.2.47":
   version "3.2.47"
   resolved "https://registry.yarnpkg.com/@vue/compiler-dom/-/compiler-dom-3.2.47.tgz#a0b06caf7ef7056939e563dcaa9cbde30794f305"
   dependencies:
     "@vue/compiler-core" "3.2.47"
     "@vue/shared" "3.2.47"
-
-"@vue/compiler-sfc@3.2.45":
-  version "3.2.45"
-  resolved "https://registry.yarnpkg.com/@vue/compiler-sfc/-/compiler-sfc-3.2.45.tgz#7f7989cc04ec9e7c55acd406827a2c4e96872c70"
-  dependencies:
-    "@babel/parser" "^7.16.4"
-    "@vue/compiler-core" "3.2.45"
-    "@vue/compiler-dom" "3.2.45"
-    "@vue/compiler-ssr" "3.2.45"
-    "@vue/reactivity-transform" "3.2.45"
-    "@vue/shared" "3.2.45"
-    estree-walker "^2.0.2"
-    magic-string "^0.25.7"
-    postcss "^8.1.10"
-    source-map "^0.6.1"
 
 "@vue/compiler-sfc@3.2.47":
   version "3.2.47"
@@ -1393,13 +1362,6 @@
     postcss "^8.1.10"
     source-map "^0.6.1"
 
-"@vue/compiler-ssr@3.2.45":
-  version "3.2.45"
-  resolved "https://registry.yarnpkg.com/@vue/compiler-ssr/-/compiler-ssr-3.2.45.tgz#bd20604b6e64ea15344d5b6278c4141191c983b2"
-  dependencies:
-    "@vue/compiler-dom" "3.2.45"
-    "@vue/shared" "3.2.45"
-
 "@vue/compiler-ssr@3.2.47":
   version "3.2.47"
   resolved "https://registry.yarnpkg.com/@vue/compiler-ssr/-/compiler-ssr-3.2.47.tgz#35872c01a273aac4d6070ab9d8da918ab13057ee"
@@ -1415,16 +1377,6 @@
   version "6.5.0"
   resolved "https://registry.yarnpkg.com/@vue/devtools-api/-/devtools-api-6.5.0.tgz#98b99425edee70b4c992692628fa1ea2c1e57d07"
 
-"@vue/reactivity-transform@3.2.45":
-  version "3.2.45"
-  resolved "https://registry.yarnpkg.com/@vue/reactivity-transform/-/reactivity-transform-3.2.45.tgz#07ac83b8138550c83dfb50db43cde1e0e5e8124d"
-  dependencies:
-    "@babel/parser" "^7.16.4"
-    "@vue/compiler-core" "3.2.45"
-    "@vue/shared" "3.2.45"
-    estree-walker "^2.0.2"
-    magic-string "^0.25.7"
-
 "@vue/reactivity-transform@3.2.47":
   version "3.2.47"
   resolved "https://registry.yarnpkg.com/@vue/reactivity-transform/-/reactivity-transform-3.2.47.tgz#e45df4d06370f8abf29081a16afd25cffba6d84e"
@@ -1435,24 +1387,11 @@
     estree-walker "^2.0.2"
     magic-string "^0.25.7"
 
-"@vue/reactivity@3.2.45":
-  version "3.2.45"
-  resolved "https://registry.yarnpkg.com/@vue/reactivity/-/reactivity-3.2.45.tgz#412a45b574de601be5a4a5d9a8cbd4dee4662ff0"
-  dependencies:
-    "@vue/shared" "3.2.45"
-
 "@vue/reactivity@3.2.47":
   version "3.2.47"
   resolved "https://registry.yarnpkg.com/@vue/reactivity/-/reactivity-3.2.47.tgz#1d6399074eadfc3ed35c727e2fd707d6881140b6"
   dependencies:
     "@vue/shared" "3.2.47"
-
-"@vue/runtime-core@3.2.45":
-  version "3.2.45"
-  resolved "https://registry.yarnpkg.com/@vue/runtime-core/-/runtime-core-3.2.45.tgz#7ad7ef9b2519d41062a30c6fa001ec43ac549c7f"
-  dependencies:
-    "@vue/reactivity" "3.2.45"
-    "@vue/shared" "3.2.45"
 
 "@vue/runtime-core@3.2.47":
   version "3.2.47"
@@ -1460,14 +1399,6 @@
   dependencies:
     "@vue/reactivity" "3.2.47"
     "@vue/shared" "3.2.47"
-
-"@vue/runtime-dom@3.2.45":
-  version "3.2.45"
-  resolved "https://registry.yarnpkg.com/@vue/runtime-dom/-/runtime-dom-3.2.45.tgz#1a2ef6ee2ad876206fbbe2a884554bba2d0faf59"
-  dependencies:
-    "@vue/runtime-core" "3.2.45"
-    "@vue/shared" "3.2.45"
-    csstype "^2.6.8"
 
 "@vue/runtime-dom@3.2.47":
   version "3.2.47"
@@ -1477,13 +1408,6 @@
     "@vue/shared" "3.2.47"
     csstype "^2.6.8"
 
-"@vue/server-renderer@3.2.45":
-  version "3.2.45"
-  resolved "https://registry.yarnpkg.com/@vue/server-renderer/-/server-renderer-3.2.45.tgz#ca9306a0c12b0530a1a250e44f4a0abac6b81f3f"
-  dependencies:
-    "@vue/compiler-ssr" "3.2.45"
-    "@vue/shared" "3.2.45"
-
 "@vue/server-renderer@3.2.47":
   version "3.2.47"
   resolved "https://registry.yarnpkg.com/@vue/server-renderer/-/server-renderer-3.2.47.tgz#8aa1d1871fc4eb5a7851aa7f741f8f700e6de3c0"
@@ -1491,13 +1415,13 @@
     "@vue/compiler-ssr" "3.2.47"
     "@vue/shared" "3.2.47"
 
-"@vue/shared@3.2.45", "@vue/shared@^3.2.45":
-  version "3.2.45"
-  resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.2.45.tgz#a3fffa7489eafff38d984e23d0236e230c818bc2"
-
 "@vue/shared@3.2.47", "@vue/shared@^3.2.47":
   version "3.2.47"
   resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.2.47.tgz#e597ef75086c6e896ff5478a6bfc0a7aa4bbd14c"
+
+"@vue/shared@^3.2.45":
+  version "3.2.45"
+  resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.2.45.tgz#a3fffa7489eafff38d984e23d0236e230c818bc2"
 
 "@vuepress/bundler-vite@2.0.0-beta.60":
   version "2.0.0-beta.60"
@@ -1766,16 +1690,16 @@
     vue "^3.2.45"
     workbox-build "^6.5.4"
 
-"@vuepress/plugin-search@^2.0.0-beta.60":
-  version "2.0.0-beta.60"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-search/-/plugin-search-2.0.0-beta.60.tgz#e253e00bb8070093baa5f7f400df75c1c484b7b4"
+"@vuepress/plugin-search@^2.0.0-beta.61":
+  version "2.0.0-beta.61"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-search/-/plugin-search-2.0.0-beta.61.tgz#473804cd576703c16adae49bcaf81cb6f144bbb4"
   dependencies:
-    "@vuepress/client" "2.0.0-beta.60"
-    "@vuepress/core" "2.0.0-beta.60"
-    "@vuepress/shared" "2.0.0-beta.60"
-    "@vuepress/utils" "2.0.0-beta.60"
+    "@vuepress/client" "2.0.0-beta.61"
+    "@vuepress/core" "2.0.0-beta.61"
+    "@vuepress/shared" "2.0.0-beta.61"
+    "@vuepress/utils" "2.0.0-beta.61"
     chokidar "^3.5.3"
-    vue "^3.2.45"
+    vue "^3.2.47"
     vue-router "^4.1.6"
 
 "@vuepress/plugin-theme-data@2.0.0-beta.60":
@@ -3497,17 +3421,7 @@ vue-router@^4.1.6:
   dependencies:
     "@vue/devtools-api" "^6.4.5"
 
-vue@^3.2.45:
-  version "3.2.45"
-  resolved "https://registry.yarnpkg.com/vue/-/vue-3.2.45.tgz#94a116784447eb7dbd892167784619fef379b3c8"
-  dependencies:
-    "@vue/compiler-dom" "3.2.45"
-    "@vue/compiler-sfc" "3.2.45"
-    "@vue/runtime-dom" "3.2.45"
-    "@vue/server-renderer" "3.2.45"
-    "@vue/shared" "3.2.45"
-
-vue@^3.2.47:
+vue@^3.2.45, vue@^3.2.47:
   version "3.2.47"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.2.47.tgz#3eb736cbc606fc87038dbba6a154707c8a34cff0"
   dependencies:
