@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-585ad198","path":"/doc/typedef/ModalOptions.html","title":"ModalOptions","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1666975406000},"filePathRelative":"doc/typedef/ModalOptions.md"}');export{t as data};

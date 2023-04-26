@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-2bdad83e","path":"/doc/typedef/ButtonOptions.html","title":"ButtonOptions","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1647894816000},"filePathRelative":"doc/typedef/ButtonOptions.md"}');export{t as data};
